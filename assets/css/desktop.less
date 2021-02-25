@@ -1,0 +1,207 @@
+@baseline-grid-increment: 13pt;
+@font-size : 10px;
+@cyan: rgb(0, 174, 239);
+
+.Font-size (@font-size:@base-font-size){
+	font-size: @font-size;
+}
+
+.Line-height (@line-height:@base-line-height){
+	line-height: @line-height;
+}
+
+body {background: url('../images/simple-card.png') repeat; background-size: 1024px 785px;}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ul > li {
+    color: @cyan;
+}
+
+ul > li > span {
+    color: black;
+}
+.wooden-shadow {
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: rgba(0,0,0,.5);
+	text-shadow: 0px 1px 0px rgba(255,255,255,.4);
+	list-style-type: none;
+	margin-top: 20px;
+	margin-right: 0;
+	text-align: right;
+	width: 300px;
+	float: left;
+	display: inline-block;
+}
+
+.indent p, p.indent {
+	margin: 0 10px 10px;
+}
+
+.left-column {
+	position: relative;
+	top: -49px;
+}
+
+.right-column {
+	margin-top: (@baseline-grid-increment * 2);
+}
+
+.header_2 {
+	text-align: right;
+	height: (@baseline-grid-increment * 7);
+	position: relative;
+	right: -2em;
+}
+
+.page-title {
+	padding: @baseline-grid-increment;
+	margin: 0;
+	font-weight: 700;
+	font-size: (@baseline-grid-increment * 3);
+	background-color: rgb(0, 174, 239);
+	display: inline-block;
+	color: #fff;
+	position: absolute;
+	right: 0;
+}
+
+.page-border {
+	border: 1px solid #000;
+	padding: 2em;
+	margin: 2em; /*Illustrativo*/
+	margin-left: 0;
+	box-shadow: 3px 3px 0 #000;
+	background-color: #fff;
+	position: relative;
+	width: 794px;
+	float: right;
+}
+
+.page-subtitle {
+	font-size: @baseline-grid-increment;
+	width: auto;
+	color: #fff;
+	padding: @baseline-grid-increment;
+	padding-top: 0;
+	background-color: rgb(0, 174, 239);
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top:85px;
+}
+
+.section-title {
+	.Font-size(19pt);
+	.Line-height(13pt);
+	color: @cyan;
+	font-weight: 400;
+	margin-top: (@baseline-grid-increment * 2);
+	margin-bottom: @baseline-grid-increment;
+}
+
+.section-body {
+	margin-top: 20px;
+	& h2 {
+		margin: 28px 0 10px 0;
+	}	
+}
+
+.profile-label {
+	background-color: @cyan;
+	color: #fff !important;
+	text-align: right;
+	display: inline-block;
+	height: @baseline-grid-increment;
+	width: 104px;
+	padding-right: 2px;
+	font-weight: 300;
+
+}
+
+.info_1, .info_2 {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.profile-info {
+	display: inline-block;
+	
+}
+.profile-info, .phone, .email a, .site_url a, .address span, .phone span {
+	color: @cyan;
+}
+
+.email a, .site_url a {
+	text-decoration: underline;
+}
+.email a:hover, .site_url a:hover {
+	color:#1175ff;
+}
+
+.linkedin {
+	margin-top: (@baseline-grid-increment * 3);
+	margin-bottom: (@baseline-grid-increment * 2);
+}
+
+.page-footer {
+	background-color: @cyan;
+	height: 2mm;
+	width: 100%;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+
+.autorizzazione-trattamento-dati {
+	font-size: 8pt;
+	margin: 20px;
+	margin-bottom: 0;
+}
+
+
+/* Bootsrap Override */
+h3 {margin-top: 0}
+.fivecolumns .col-1, .fivecolumns .col-sm-1, .fivecolumns .col-lg-1  {
+	float: left;
+}
+
+/* http://stackoverflow.com/questions/10387740/five-equal-columns-in-twitter-bootstrap */
+.fivecolumns .col-1, .fivecolumns .col-sm-1, .fivecolumns .col-lg-1  {
+	width: 20%;
+	*width: 20%;
+}
+
+.fivecolumns .col-2, .fivecolumns .col-sm-2, .fivecolumns .col-lg-2  {
+	width: 40%;
+	*width: 40%;
+}
+
+.fivecolumns .col-3, .fivecolumns .col-sm-3, .fivecolumns .col-lg-3  {
+	width: 60%;
+	*width: 60%;
+}
+
+.fivecolumns .col-4, .fivecolumns .col-sm-4, .fivecolumns .col-lg-4  {
+	width: 80%;
+	*width: 80%;
+}
+
+.fivecolumns .col-5, .fivecolumns .col-sm-5, .fivecolumns .col-lg-5  {
+	width: 100%;
+	*width: 100%;
+}
+
+/* Responsive */
+@media(max-width: 850px) {
+	.page-border {width: auto;margin: 2em;}
+	.wooden-shadow {width: 100%;text-align: center;}
+	.fivecolumns .col-sm-3, .fivecolumns .col-lg-3 {
+		width: 100%;
+	}
+}

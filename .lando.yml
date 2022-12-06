@@ -1,2 +1,4 @@
 name: presonal-website
 recipe: lamp
+excludes:
+  - vendor

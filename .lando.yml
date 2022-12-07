@@ -6,3 +6,9 @@ services:
   appserver:
     run:
       - composer install
+    extras:
+      - "wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh"
+tooling:
+  heroku:
+    service: appserver
+    cmd: /usr/bin/heroku

@@ -16,8 +16,8 @@ try {
     # $doc->setJavascript(true);
     $prince_options = new DocRaptor\PrinceOptions();
     $doc->setPrinceOptions($prince_options);
-    $prince_options->setMedia("print"); # @media 'screen' or 'print' CSS
-    $prince_options->setBaseurl("https://presonal-website.lndo.site/"); # the base URL for any relative URLs
+    // $prince_options->setMedia("print"); # @media 'screen' or 'print' CSS
+    $prince_options->setBaseurl("https://resume-giacomo-secchi.herokuapp.com/"); # the base URL for any relative URLs
 
     $response = $docraptor->createDoc($doc);
 

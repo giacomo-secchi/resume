@@ -1,4 +1,11 @@
 body {
   background-color: purple;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+
+@page  {
+  size: A4;
+  margin: 10mm;
+  padding: 0;
 }
  

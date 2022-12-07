@@ -2,13 +2,20 @@ name: presonal-website
 recipe: lamp
 excludes:
   - vendor
+  - node_modules
 services:
   appserver:
     run:
       - composer install
     extras:
       - "wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh"
+  node:
+    type: node
 tooling:
+  node:
+    service: node
+  npm:
+    service: node
   heroku:
     service: appserver
     cmd: /usr/bin/heroku

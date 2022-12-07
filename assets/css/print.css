@@ -1,3 +1,6 @@
+body {
+  background-color: blue;
+}
 @page  {
   size: A4;
   margin: 10mm;

@@ -1,4 +1,7 @@
 body {
+  background-color: blue;
+}
+body {
   background: url('../images/simple-card.jpg') repeat;
   background-size: 1024px 785px;
 }

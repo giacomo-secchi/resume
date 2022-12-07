@@ -2,3 +2,7 @@ name: presonal-website
 recipe: lamp
 excludes:
   - vendor
+services:
+  appserver:
+    run:
+      - composer install

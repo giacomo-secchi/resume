@@ -1,0 +1,37 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Login Heroku:\r ```lando heroku auth:login```\r copiare link per il login sul browser",
+  "main": "index.js",
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "css-loader": "^6.7.2",
+    "file-loader": "^6.2.0",
+    "postcss-loader": "^7.0.2",
+    "sass": "^1.56.2",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giacomo-secchi/personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giacomo-secchi/personal-website/issues"
+  },
+  "homepage": "https://github.com/giacomo-secchi/personal-website#readme"
+}

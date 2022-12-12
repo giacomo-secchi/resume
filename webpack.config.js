@@ -1,8 +1,8 @@
 const path = require('path');
 
 
+
 module.exports = {
-    mode: 'development',
   entry: './src/js/main.js',
   output: {
     filename: 'main.js',
@@ -22,17 +22,20 @@ module.exports = {
         ],
       },
       {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        include: path.resolve(__dirname, './node_modules/bootstrap-icons/font/fonts'),
-        use: {
-            loader: 'file-loader',
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "svg-sprite-loader",
             options: {
-                name: '[name].[ext]',
-                outputPath: 'webfonts',
-                publicPath: '../webfonts',
-            },
-        }
-    }
+              extract: true,
+              spriteFilename: `bootstrap-icons.svg`
+            }
+          },
+        ],
+        include: [
+          path.resolve(__dirname, 'node_modules/bootstrap-icons')
+        ]
+      }
     ],
   },
 };

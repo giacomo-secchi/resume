@@ -1,6 +1,0 @@
-{
-    "name": "www-data/app",
-    "require": {
-        "docraptor/docraptor": "^4.0"
-    }
-}

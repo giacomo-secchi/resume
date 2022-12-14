@@ -2,13 +2,14 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "Login Heroku:\r ```lando heroku auth:login```\r copiare link per il login sul browser",
-  "main": "index.js",
+  "main": "src/app.js",
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.2",
     "express": "^4.18.2",
-    "glob": "^8.0.3"
+    "glob": "^8.0.3",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
@@ -27,7 +28,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production",
     "start": "node app.js",
-    "start:dev": "nodemon --inspect app.js"
+    "start:dev": "nodemon --inspect src/app.js --watch src -L"
   },
   "repository": {
     "type": "git",

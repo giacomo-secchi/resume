@@ -1,0 +1,20 @@
+body {
+  background-color: purple;
+}
+
+@page  {
+  size: A4;
+  margin: 10mm;
+  padding: 0;
+}
+/* @baseline-grid-increment: 13pt;
+@base-font-size: 10pt;
+@base-line-height: 100%;
+@cyan: cmyk(100,0,0,0);
+@white: cmyk(0,0,0,0);
+@grid-gutter: 5mm;
+@p-padding: 10mm; */
+
+ 
+
+ 

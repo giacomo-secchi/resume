@@ -26,14 +26,7 @@ app.get( '/:lang', ( req, res ) => {
    
   if ( languages.hasOwnProperty(currentLang) ) {
     for (var key of Object.keys(languages[currentLang])) {
-      
-     
-      let pattern = new RegExp("{{" + key + "}}", "g");
-     
-
-      // dataString = dataString.replace(pattern, languages[lang][key]);
-
-      res.render('index', { title: 'Hey', message: 'Hello there!' })
+      res.render('index', { title: languages[currentLang][key], message: 'Hello there!' })
     }
   }
 });

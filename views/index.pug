@@ -1,51 +1,39 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
+extends layout.pug
 
-    <title>Curriculum Vitae | Giacomo Secchi | Frontend Web Developer</title>
+block content 
+    <nav class="navbar navbar-light bg-info bg-gradient sticky-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">        
+                <svg class="bi" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="bootstrap-icons.svg#translate"/>
+                </svg>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="en">English</option>
+                    <option value="it">Italiano</option>
+                </select>
+            </ul>
+        </div>
 
- 
-
-    <!-- Meta -->
-    <meta name="description" content="Web developer specializzato nel frontend">
-    <meta name="keywords" content="web,developer,designer,resume,html5,schema,microdata,Modena,Bologna">
-    <meta name="author" content="Giacomo Secchi">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-    
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" media="print" href="assets/css/print.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
-
-
-
-</head>
-<body>
-
-    <div style="background-color: var(--bs-gray-100);" class="py-5">
+    </nav>
+    <div style="background-color: var(--bs-gray-100);" class="py-5">        
+      
         <div class="container shadow p-5 bg-white" style="--bs-border-opacity: .4; max-width: 794px;">
             <header>
                 <section>
                     <div itemscope itemtype="http://schema.org/Person">
 
                         <div class="row">
-                            <div class="col-2">
-                                //- <img class="rounded-circle w-100 h-auto" src="https://lh3.googleusercontent.com/xSZgKvwNkC61-iJ5ch3juW-VKDkGPDKdPK9c81N6WbmD9XX633GEfFkNAJgp4nuRF9gz7ZDayW76xgNx9A=s592-rw-no" itemprop="image" width="150" height="150" alt="Your Name" />
-
+                            <div class="col-md-2">
+                                <img class="rounded-circle w-100 h-auto" src="https://lh3.googleusercontent.com/xSZgKvwNkC61-iJ5ch3juW-VKDkGPDKdPK9c81N6WbmD9XX633GEfFkNAJgp4nuRF9gz7ZDayW76xgNx9A=s592-rw-no" itemprop="image" width="150" height="150" alt="Your Name" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <h1><span itemprop="name">Giacomo Secchi</span></h1>
                         
                                 <h3><span itemprop="jobTitle">Web Developer / Designer</span></h3>
                                 
                             </div> 
-                            <div class="col-4">
+                            <div class="col-md-4">
                                 <ul class="ps-0">
                                     <li class="d-flex align-items-start mb-1">
                                         <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -191,6 +179,5 @@
 
         </div>
     </div>
-    <script src="dist/main.js"></script>
-</body>
-</html>
+block scripts
+  script(src='main.js')

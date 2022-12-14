@@ -6,6 +6,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.set('view engine', 'pug');
+app.use(express.static('dist'));
 
 
 languages = {};
@@ -22,11 +23,12 @@ glob.sync( './languages/*.json' ).forEach( ( file ) => {
 });
 
 app.get( '/:lang', ( req, res ) => {
-  let currentLang = req.params['lang'];
+  let ISOcode = req.params['lang'];
    
-  if ( languages.hasOwnProperty(currentLang) ) {
-    for (var key of Object.keys(languages[currentLang])) {
-      res.render('index', { title: languages[currentLang][key], message: 'Hello there!' })
+  if ( languages.hasOwnProperty(ISOcode) ) {
+    for (var key of Object.keys(languages[ISOcode])) {
+      
+      res.render('index', { lang: ISOcode, title: languages[ISOcode][key], message: 'Hello there!' })
     }
   }
 });

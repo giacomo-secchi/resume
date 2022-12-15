@@ -1,6 +1,14 @@
 const express = require( 'express' );
 const fs = require( 'fs' );
 const glob = require( 'glob' );
+fetch("http://example.com/api/endpoint")
+  .then((response) => {
+    // Do something with response
+  })
+  .catch(function (err) {
+    console.log("Unable to fetch -", err);
+  });
+
 
 const app = express();
 const port = process.env.PORT || 3000;

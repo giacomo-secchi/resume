@@ -27,8 +27,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production",
-    "start": "node app.js",
-    "start:dev": "nodemon --inspect src/app.js --watch src -L"
+    "start": "node src/app.js --experimental-fetch",
+    "start:dev": "nodemon --inspect src/app.js --experimental-fetch --watch src -L"
   },
   "repository": {
     "type": "git",

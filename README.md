@@ -12,7 +12,9 @@ Deploy:
 se Heroku chiede le credenziali inserire username e token ```heroku auth:token```
 
 Generate pdf:
-```lando php docraptor.php```
+```lando ssh -s appserver -c "curl http://YOUR_API_KEY_HERE@api.docraptor.com/docs   --fail --silent --show-error   --header "Content-Type:application/json"   --data '{"test": true,
+           "document_url": "http://docraptor.com/examples/invoice.html",
+           "type": "pdf" }' > docraptor.pdf"```
 
 Informazioni app produzione:
 ```lando heroku apps:info resume-giacomo-secchi```

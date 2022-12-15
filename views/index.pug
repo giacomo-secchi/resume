@@ -1,7 +1,7 @@
 extends layout.pug
 
 block content 
-    <nav class="navbar navbar-light bg-info bg-gradient sticky-top">
+    <nav class="navbar navbar-light bg-primary bg-gradient sticky-top bg-opacity-50">
         <div class="container-fluid">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">        
                 <svg class="bi" width="1em" height="1em" fill="currentColor">
@@ -13,14 +13,13 @@ block content
                     <option value="it">Italiano</option>
                 </select>
             </ul>
-            <button class="btn btn-outline-light" type="submit">
+            <a class="btn btn-outline-light" href="Giacomo_Secchi_CV.pdf" role="button" target="_blank">
                 = nav_button 
                 | 
                 <svg class="bi" width="1em" height="1em" fill="currentColor">
                     <use xlink:href="bootstrap-icons.svg#file-earmark-pdf"/>
-                </svg>
-                
-            </button>
+                </svg>            
+            </a>
         </div>
 
     </nav>

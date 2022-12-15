@@ -32,6 +32,8 @@ app.get( '/:lang', ( req, res ) => {
         lang: ISOcode,
         title: languages[ISOcode][key],
         nav_button: languages[ISOcode].download_button,
+        section1_title: languages[ISOcode].section1_title,
+        section1_description: languages[ISOcode].section1_description,
         message: 'Hello there!' });
     }
   }

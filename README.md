@@ -24,3 +24,6 @@ https://www.indeed.com/career-advice/resume-samples/engineering-resumes/front-en
 https://www.wearedevelopers.com/magazine/quick-guide-how-to-write-a-software-developer-cv
 https://www.goskills.com/Microsoft-Office/Resources/Microsoft-word-resume-templates
 https://www.comincenter.it/come-realizzare-grafica-curriculum/
+
+TODO: mettere a posto segnalazioni di praxi
+mettere switch ecommerce manager / front end developer

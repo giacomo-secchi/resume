@@ -27,8 +27,12 @@ app.get( '/:lang', ( req, res ) => {
    
   if ( languages.hasOwnProperty(ISOcode) ) {
     for (var key of Object.keys(languages[ISOcode])) {
-      
-      res.render('index', { lang: ISOcode, title: languages[ISOcode][key], message: 'Hello there!' })
+
+      res.render('index', { 
+        lang: ISOcode,
+        title: languages[ISOcode][key],
+        nav_button: languages[ISOcode].download_button,
+        message: 'Hello there!' });
     }
   }
 });

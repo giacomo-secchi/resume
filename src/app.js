@@ -20,6 +20,8 @@ const port = process.env.PORT || 3000;
 app.set('view engine', 'pug');
 app.use(express.static('dist'));
 
+
+
  
 
 languages = {};
@@ -41,13 +43,12 @@ app.get( '/:lang', ( req, res ) => {
   if ( languages.hasOwnProperty(ISOcode) ) {
     for (var key of Object.keys(languages[ISOcode])) {
 
-      res.render('index', { 
+       res.render('index', { 
         lang: ISOcode,
         title: languages[ISOcode][key],
         nav_button: languages[ISOcode].download_button,
-        section1_title: languages[ISOcode].section1_title,
-        section1_description: languages[ISOcode].section1_description,
-        message: 'Hello there!' });
+        sections: languages[ISOcode].sections,
+        message: 'Hello there!' });        
     }
   }
 });

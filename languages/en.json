@@ -2,14 +2,20 @@
     "test_test": "Pricing Tables",
     "download_button": "View Printable CV",
     "language_name": "English",
-    "section1_title": "Profile",
-    "section1_description": "T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity.",
-    "section2_title": "Italiano",
-    "section2_description": "Italiano",
-    "section3_title": "Italiano",
-    "section3_description": "Italiano",
-    "section4_title": "Italiano",
-    "section4_description": "Italiano",
-    "section5_title": "Italiano",
-    "section5_description": "Italiano"
+    "sections": [{
+        "title": "Profile",
+        "description": "T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity.",
+        "jobTitle": "job"
+    }, {
+        "title": "Professional experience",
+        "description": "T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity."
+    }, {
+        "title": "Profile 3",
+        "description": "T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity."
+    }, {
+        "title": "Profile 4",
+        "description": "T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity."
+    }]
+
+    
 }

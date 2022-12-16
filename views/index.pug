@@ -15,7 +15,7 @@ block content
             </ul>
             <a class="btn btn-outline-light" href="Giacomo_Secchi_CV.pdf" role="button" target="_blank">
                 = nav_button 
-                | 
+                | &nbsp;
                 <svg class="bi" width="1em" height="1em" fill="currentColor">
                     <use xlink:href="bootstrap-icons.svg#file-earmark-pdf"/>
                 </svg>            
@@ -87,13 +87,18 @@ block content
                 </section>
             </header>
             
-            <dl>
-                <dt>#{section1_title}</dt>
-                <dd>
-                    <section>#{section1_description}</section>
-                </dd>
-            </dl>
+            dl
+                each section in sections
+                    if section.title
+                        dt #{section.title}
 
+                    if section.description
+                        dd
+                            section #{section.description}
+
+                    if section.jobTitle
+                        dd
+                            section #{section.jobTitle}
           
             <div itemscope itemtype="http://schema.org/ItemList">
  
@@ -127,7 +132,7 @@ block content
 
 
             <dl>
-                <dt>Profile</dt>
+                <dt>Professional experience</dt>
                 <dd>
                     <section>
                         <div itemscope itemtype="http://schema.org/Organization">

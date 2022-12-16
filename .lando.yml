@@ -1,16 +1,19 @@
-name: personal-website2
-recipe: mean
-config:
-  node: 17
-  port: '3000'
-excludes:
-  - node_modules
+name: personal-website
+proxy:
+  appserver:
+    - personal-website.lndo.site
 services:
   appserver:
+    type: node:17
+    ssl: true
+    build:
+      - npm i
     run:
       - npm run start:dev
     extras:
       - "wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh"
+excludes:
+  - node_modules
 tooling:
   heroku:
     service: appserver

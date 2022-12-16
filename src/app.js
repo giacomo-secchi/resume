@@ -1,37 +1,26 @@
 const express = require( 'express' );
+const http = require('http');
+const https = require('https');
 const fs = require( 'fs' );
 const glob = require( 'glob' );
-
-
-
-// fetch("http://example.com/api/endpoint", {
-//   method: 'POST',
-//   mode: 'cors', // no-cors, *cors, same-origin
-//   cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-//   credentials: 'same-origin', // include, *same-origin, omit
-//   headers: {
-//     'Content-Type': 'application/json'
-//   },
-//   redirect: 'follow', // manual, *follow, error
-//   referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-//   body: JSON.stringify(data) // body data type must match "Content-Type" header
-// })
-// .then((body) => {
-//   fs.writeFile('doc_raptor_sample.pdf', body, "binary", function(writeErr) {
-//     console.log('Saved!');
-//   });
-// })
-//   .catch(function (err) {
-//     console.log("Unable to fetch -", err);
-//   });
 
 
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Create our HTTPS server options
+// Get our key and cert
+// const key = fs.readFileSync('/certs/cert.key');
+// const cert = fs.readFileSync('/certs/cert.crt');
+
+// // Create our servers
+// https.createServer({key, cert}, app).listen(443);
+// http.createServer(app).listen(80);
+
 app.set('view engine', 'pug');
 app.use(express.static('dist'));
 
+ 
 
 languages = {};
 

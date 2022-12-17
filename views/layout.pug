@@ -1,3 +1,4 @@
+doctype html
 html(lang=lang)
   head
     <meta charset="UTF-8">
@@ -22,11 +23,18 @@ html(lang=lang)
 
 
     
-  body
+  body(style='background-color: var(--bs-gray-100);')
+    block header
     block content
-    block foot
-      footer
-        p Want to see the source of this project? 
-            a(href='https://github.com/giacomo-secchi/personal-website', target="_blank", rel="noopener") Follow the white rabbit! 
+    block credits
+        p.text-center.text-muted
+          span.fs-2
+            <svg class="bi" width="1em" height="1em" fill="currentColor">
+                <use xlink:href="bootstrap-icons.svg#code-slash"/>
+            </svg>
+          | &nbsp;
+          | Want to see the source code of this project? 
+          a(href='https://github.com/giacomo-secchi/personal-website', target="_blank", rel="noopener") Follow the white rabbit!
+          |💊👨🏻‍💻🐇🕳️
     block scripts
-      script(src='/jquery.js')
+      script(src='/jquery.js')  

@@ -4,18 +4,52 @@
     "language_name": "English",
     "sections": [{
         "title": "Profile",
-        "description": "T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity.",
-        "jobTitle": "job"
+        "description": "T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity."
     }, {
         "title": "Professional experience",
-        "description": "T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity."
-    }, {
-        "title": "Profile 3",
-        "description": "T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity."
-    }, {
-        "title": "Profile 4",
-        "description": "T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity."
+        "organizations": [{
+            "title": "job 1",
+            "name": "Super inc",
+            "date_start": "october 2011",
+            "date_end": "november 2011",
+            "description": "Professional experience description"
+        }, {
+            "title": "job 2",
+            "name": "Super inc",
+            "date_start": "november 2011",
+            "date_end": "november 2011",
+            "description": "Professional experience description"
+        }] 
+    },{
+        "title": "Education",
+        "organizations": [{
+            "type": "Educational",
+            "name": "School 1",
+            "address": {
+                "streetAddress": "2801 Bancroft Street<",
+                "addressLocality": "Toledo",
+                "addressRegion": "Ohio",
+                "postalCode": "43606",
+                "addressCountry": "U.S.A."
+            },
+            "date_start": "october 2011",
+            "date_end": "november 2011",
+            "description": "Professional experience description",
+            "link": {
+                "text": "Link",
+                "url": "https://www.example.com"
+            }
+        }, {
+            "type": "Educational",
+            "name": "School 2",
+            "date_start": "november 2011",
+            "date_end": "november 2011",
+            "description": "Professional experience description with link",
+            "link": {
+                "text": "Link 2",
+                "url": "https://www.example2.com"
+            }
+        }] 
     }]
 
-    
 }

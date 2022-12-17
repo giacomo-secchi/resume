@@ -1,6 +1,6 @@
 extends layout.pug
 
-block content 
+block header 
     <nav class="navbar navbar-light bg-primary bg-gradient sticky-top bg-opacity-50">
         <div class="container-fluid">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">        
@@ -21,175 +21,103 @@ block content
                 </svg>            
             </a>
         </div>
-
     </nav>
-    <div style="background-color: var(--bs-gray-100);" class="py-5">        
-      
-        <div class="container shadow p-5 bg-white" style="--bs-border-opacity: .4; max-width: 794px;">
-            <header>
-                <section>
-                    <div itemscope itemtype="http://schema.org/Person">
+block content 
+    <div class="container shadow p-5 bg-white my-5" style="--bs-border-opacity: .8; max-width: 794px;">
+        <header>
+            <section>
+                <div itemscope itemtype="http://schema.org/Person">
 
-                        <div class="row">
-                            <div class="col-md-2">
-                                <img class="rounded-circle w-100 h-auto" src="https://lh3.googleusercontent.com/xSZgKvwNkC61-iJ5ch3juW-VKDkGPDKdPK9c81N6WbmD9XX633GEfFkNAJgp4nuRF9gz7ZDayW76xgNx9A=s592-rw-no" itemprop="image" width="150" height="150" alt="Your Name" />
-                            </div>
-                            <div class="col-md-6">
-                                <h1><span itemprop="name">Giacomo Secchi</span></h1>
-                        
-                                <h3><span itemprop="jobTitle">Web Developer / Designer</span></h3>
-                                
-                            </div> 
-                            <div class="col-md-4">
-                                <ul class="ps-0">
-                                    <li class="d-flex align-items-start mb-1">
-                                        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                            <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                                <use xlink:href="bootstrap-icons.svg#geo-alt-fill"/>
-                                            </svg>
-                                            <span itemprop="addressLocality">Modena</span>, <span itemprop="addressCountry">IT</span>
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-items-start mb-1">
-                                        <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                            <use xlink:href="bootstrap-icons.svg#telephone-fill"/>
-                                        </svg>
-                                        <span itemprop="telephone">(000) 000-0000</span>
-                                    </li>
-                                    <li class="d-flex align-items-start mb-1">
-                                        <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                           <use xlink:href="bootstrap-icons.svg#envelope-at-fill"/>
-                                        </svg>
-                                        <a href="mailto:giacomo.secchi@gmail.com" itemprop="email">giacomo.secchi@gmail.com</a>
-                                    </li>
-                                    <li class="d-flex align-items-start mb-1">
-                                        <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                            <use xlink:href="bootstrap-icons.svg#globe2"/>
-                                        </svg>
-                                        <a rel="me" itemprop="url" href="http://www.webcodepro.net/about.php" title="www.your-website.com">www.your-website.com</a>
-                                    </li>
-                                    <li class="d-flex align-items-start mb-1">
-                                        <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                            <use xlink:href="bootstrap-icons.svg#github"/>
-                                        </svg>
-                                        <a rel="me" itemprop="url" href="https://github.com/giacomo-secchi" title="Follow Me on Twitter">@giacomo-secchi</a>
-                                    </li>
-                                    <li class="d-flex align-items-start mb-1">
-                                        <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                            <use xlink:href="bootstrap-icons.svg#linkedin"/>
-                                        </svg>
-                                        <a rel="me" itemprop="url" href="https://www.linkedin.com/in/giacomosecchi/" title="Follow Me on Twitter">Giacomo Secchi</a>
-                                    </li>
-                                </ul>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="rounded-circle w-100 h-auto" src="https://lh3.googleusercontent.com/xSZgKvwNkC61-iJ5ch3juW-VKDkGPDKdPK9c81N6WbmD9XX633GEfFkNAJgp4nuRF9gz7ZDayW76xgNx9A=s592-rw-no" itemprop="image" width="150" height="150" alt="Your Name" />
                         </div>
-                    </div>         
-                </section>
-            </header>
-            
+                        <div class="col-md-6">
+                            <h1><span itemprop="name">Giacomo Secchi</span></h1>
+                    
+                            <h3><span itemprop="jobTitle">Web Developer / Designer</span></h3>
+                            
+                        </div> 
+                        <div class="col-md-4">
+                            <ul class="ps-0">
+                                <li class="d-flex align-items-start mb-1">
+                                    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                            <use xlink:href="bootstrap-icons.svg#geo-alt-fill"/>
+                                        </svg>
+                                        <span itemprop="addressLocality">Modena</span>, <span itemprop="addressCountry">IT</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-start mb-1">
+                                    <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                        <use xlink:href="bootstrap-icons.svg#telephone-fill"/>
+                                    </svg>
+                                    <span itemprop="telephone">(000) 000-0000</span>
+                                </li>
+                                <li class="d-flex align-items-start mb-1">
+                                    <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                        <use xlink:href="bootstrap-icons.svg#envelope-at-fill"/>
+                                    </svg>
+                                    <a href="mailto:giacomo.secchi@gmail.com" itemprop="email">giacomo.secchi@gmail.com</a>
+                                </li>
+                                <li class="d-flex align-items-start mb-1">
+                                    <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                        <use xlink:href="bootstrap-icons.svg#globe2"/>
+                                    </svg>
+                                    <a rel="me" itemprop="url" href="http://www.webcodepro.net/about.php" title="www.your-website.com">www.your-website.com</a>
+                                </li>
+                                <li class="d-flex align-items-start mb-1">
+                                    <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                        <use xlink:href="bootstrap-icons.svg#github"/>
+                                    </svg>
+                                    <a rel="me" itemprop="url" href="https://github.com/giacomo-secchi" title="Follow Me on Twitter">@giacomo-secchi</a>
+                                </li>
+                                <li class="d-flex align-items-start mb-1">
+                                    <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                        <use xlink:href="bootstrap-icons.svg#linkedin"/>
+                                    </svg>
+                                    <a rel="me" itemprop="url" href="https://www.linkedin.com/in/giacomosecchi/" title="Follow Me on Twitter">Giacomo Secchi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>         
+            </section>
+        </header>
+        
+        
+        each s in sections
             dl
-                each section in sections
-                    if section.title
-                        dt #{section.title}
+                if s.title
+                    dt= s.title
+                    dd
+                        section= s.description
+                            if s.organizations
+                                each o in s.organizations
+                                    - var organization = o.type ? 'EducationalOrganization' : 'Organization';
+                                    div(itemscope, itemtype="http://schema.org/" + organization)
+                                        h2
+                                            span(itemprop="jobTitle")= o.title
 
-                    if section.description
-                        dd
-                            section #{section.description}
+                                        if o.address
+                                            div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+                                                span(itemprop="streetAddress")= o.address.streetAddress
+                                                br
+                                                <br />
+                                        <span itemprop="addressLocality">Toledo</span>, <span itemprop="addressRegion">Ohio</span>, <span itemprop="postalCode">43606</span><span itemprop="addressCountry">U.S.A.</span>
+                                        </div>
 
-                    if section.jobTitle
-                        dd
-                            section #{section.jobTitle}
-          
-            <div itemscope itemtype="http://schema.org/ItemList">
- 
-                <dl>
-                    <dt itemprop="name">Skills:</dt>
-                    <dd>
-                    
-                        <section>
-                            <ul>
-                                <li itemprop="itemListElement">XHTML</li>
-                                <li itemprop="itemListElement">HTML5</li>
-                                <li itemprop="itemListElement">PHP</li>
-                                <li itemprop="itemListElement">JavaScript</li>
-                                <li itemprop="itemListElement">Magento</li>
-                                <li itemprop="itemListElement">WordPress</li>
-                            </ul>
-                            <ul>
-                                <li itemprop="itemListElement">HTML</li>
-                                <li itemprop="itemListElement">CSS</li>
-                                <li itemprop="itemListElement">MySQL</li>
-                                <li itemprop="itemListElement">jQuery</li>
-                                <li itemprop="itemListElement">CMS Made Simple</li>
-                                <li itemprop="itemListElement">Photoshop</li>
-                            </ul>
-                        </section>
-                    
-                    </dd>
-                </dl>
+                                        p
+                                            span(itemprop="name")= o.name
+                                        p
+                                            span.text-muted #{o.date_start} - #{o.date_end}
+                                        p
+                                            span(itemprop="description")= o.description
+                                            br 
+                                            if o.link
+                                                a(itemprop="url", href=o.link.url, target="_blank", title=o.link.text)= o.link.text
+
                  
-            </div>
-
-
-            <dl>
-                <dt>Professional experience</dt>
-                <dd>
-                    <section>
-                        <div itemscope itemtype="http://schema.org/Organization">
- 
-                            <h2><span itemprop="jobTitle">Web Developer / Designer</span></h2>
-                            <p><span itemprop="name">Company Name 1</span></p>
-                            <p>February 2009 &#45; Present</p>
-                             
-                            <p itemprop="description">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. 
-                            </p>
-                             
-                        </div>
-                             
-                        
-                        <div itemscope itemtype="http://schema.org/Organization">
-                             
-                            <h2><span itemprop="jobTitle">Web Developer / Programmer</span></h2>
-                            <p><span itemprop="name">Company Name 2</span></p>
-                            <p>November 2007 &#45; February 2009</p>
-                             
-                            <p itemprop="description">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. 
-                            </p>
-                             
-                        </div>
-                    </section>
-                </dd>
-            </dl>
-
-            <dl>
-                <dt>Education</dt>
-                <dd>
-                    <section>
-                        <div itemscope itemtype="http://schema.org/EducationalOrganization">
-                         
-                            <p><span itemprop="name">University of Toledo</span></p>
-                            
-                            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <span itemprop="streetAddress">2801 Bancroft Street</span>
-                            <br />
-                            <span itemprop="addressLocality">Toledo</span>, <span itemprop="addressRegion">Ohio</span>, <span itemprop="postalCode">43606</span><span itemprop="addressCountry">U.S.A.</span>
-                            </div>
-                            
-                            <p><span itemprop="name">Web Design</span></p>
-                            <p>2003 &#45; 2005</p>
-                            
-                            <p>
-                                <a itemprop="url" href="http://www.utoledo.edu/" target="_blank" title="University of Toledo">www.utoledo.edu</a>
-                            </p>
-                            
-                        </div>
-                    </section>
-                </dd>
-            </dl>
-
-        </div>
     </div>
 block scripts
   script(src='main.js')

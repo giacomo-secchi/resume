@@ -26,12 +26,13 @@
             "type": "Educational",
             "name": "School 1",
             "address": {
-                "streetAddress": "2801 Bancroft Street<",
-                "addressLocality": "Toledo",
+                "streetAddress": "2801 Bancroft Street",
+                "addressLocality": "ToledoOO",
                 "addressRegion": "Ohio",
                 "postalCode": "43606",
                 "addressCountry": "U.S.A."
             },
+            "course": "course 1",
             "date_start": "october 2011",
             "date_end": "november 2011",
             "description": "Professional experience description",

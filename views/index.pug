@@ -52,7 +52,7 @@ block content
                                     <svg class="bi" width="1em" height="1em" fill="currentColor">
                                         <use xlink:href="bootstrap-icons.svg#telephone-fill"/>
                                     </svg>
-                                    <span itemprop="telephone">(000) 000-0000</span>
+                                    <span itemprop="telephone" content="+393407119634">(0039) 340-7119634</span>
                                 </li>
                                 <li class="d-flex align-items-start mb-1">
                                     <svg class="bi" width="1em" height="1em" fill="currentColor">
@@ -64,7 +64,7 @@ block content
                                     <svg class="bi" width="1em" height="1em" fill="currentColor">
                                         <use xlink:href="bootstrap-icons.svg#globe2"/>
                                     </svg>
-                                    <a rel="me" itemprop="url" href="http://www.webcodepro.net/about.php" title="www.your-website.com">www.your-website.com</a>
+                                    <a rel="me" itemprop="url" href="https://giacomosecchi.com" title="https://giacomosecchi.com">giacomosecchi.com</a>
                                 </li>
                                 <li class="d-flex align-items-start mb-1">
                                     <svg class="bi" width="1em" height="1em" fill="currentColor">
@@ -87,7 +87,7 @@ block content
         
         
         each s in sections
-            dl
+            dl.mb-5
                 if s.title
                     dt= s.title
                     dd
@@ -96,19 +96,28 @@ block content
                                 each o in s.organizations
                                     - var organization = o.type ? 'EducationalOrganization' : 'Organization';
                                     div(itemscope, itemtype="http://schema.org/" + organization)
-                                        h2
-                                            span(itemprop="jobTitle")= o.title
-
+                                        if o.title
+                                            h2
+                                                span(itemprop="jobTitle")= o.title
+                                        if organization == 'Organization'
+                                            p
+                                        else
+                                            h2
+                                                span(itemprop="name")= o.name
                                         if o.address
                                             div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
                                                 span(itemprop="streetAddress")= o.address.streetAddress
                                                 br
-                                                <br />
-                                        <span itemprop="addressLocality">Toledo</span>, <span itemprop="addressRegion">Ohio</span>, <span itemprop="postalCode">43606</span><span itemprop="addressCountry">U.S.A.</span>
-                                        </div>
-
-                                        p
-                                            span(itemprop="name")= o.name
+                                                span(itemprop="addressLocality")= o.address.addressLocality 
+                                                |,&nbsp;
+                                                span(itemprop="addressRegion")= o.address.addressRegion
+                                                |,&nbsp;
+                                                span(itemprop="postalCode")= o.address.postalCode
+                                                |&nbsp;
+                                                span(itemprop="addressCountry")= o.address.addressCountry
+                                        if o.name
+                                            p
+                                                span(itemprop="name")= o.course
                                         p
                                             span.text-muted #{o.date_start} - #{o.date_end}
                                         p

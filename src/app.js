@@ -6,7 +6,7 @@ const glob = require( 'glob' );
 
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 
 // Create our HTTPS server options
 // Get our key and cert
@@ -21,8 +21,6 @@ app.set('view engine', 'pug');
 app.use(express.static('dist'));
 
 
-
- 
 
 languages = {};
 
@@ -40,7 +38,7 @@ glob.sync( './languages/*.json' ).forEach( ( file ) => {
 app.get( '/:lang', ( req, res ) => {
   let ISOcode = req.params['lang'];
 
-  console.log(languages[ISOcode].sections);
+ 
     
   if ( languages.hasOwnProperty(ISOcode) ) {
     for (var key of Object.keys(languages[ISOcode])) {

@@ -1,5 +1,52 @@
 extends layout.pug
 
+mixin definitionList(s) 
+    dl.mb-5
+        if s.title
+            dt= s.title
+            dd
+                section= s.description
+                    if s.organizations
+                        each o in s.organizations
+                            - var organization = o.type ? 'EducationalOrganization' : 'Organization';
+                            div(itemscope, itemtype="http://schema.org/" + organization)
+                                if o.title
+                                    h2
+                                        span(itemprop="jobTitle")= o.title
+                                if organization == 'Organization'
+                                    p
+                                else
+                                    h2
+                                        span(itemprop="name")= o.name
+                                if o.address
+                                    div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+                                        span(itemprop="streetAddress")= o.address.streetAddress
+                                        br
+                                        span(itemprop="addressLocality")= o.address.addressLocality 
+                                        |,&nbsp;
+                                        span(itemprop="addressRegion")= o.address.addressRegion
+                                        |,&nbsp;
+                                        span(itemprop="postalCode")= o.address.postalCode
+                                        |&nbsp;
+                                        span(itemprop="addressCountry")= o.address.addressCountry
+                                if o.name
+                                    p
+                                        span(itemprop="name")= o.course
+                                p
+                                    span.text-muted #{o.date_start} - #{o.date_end}
+                                p
+                                    span(itemprop="description")= o.description
+                                    br 
+                                    if o.link
+                                        a(itemprop="url", href=o.link.url, target="_blank", title=o.link.text)= o.link.text
+                    if s.lists
+                        .row
+                            each l in s.lists
+                                .col
+                                    ul.list-marker
+                                        each i in l
+                                            li(itemprop="itemListElement", itemscope)= i
+    
 block header 
     <nav class="navbar navbar-light bg-primary bg-gradient sticky-top bg-opacity-50">
         <div class="container-fluid">
@@ -52,7 +99,7 @@ block content
                                     <svg class="bi" width="1em" height="1em" fill="currentColor">
                                         <use xlink:href="bootstrap-icons.svg#telephone-fill"/>
                                     </svg>
-                                    <span itemprop="telephone" content="+393407119634">(0039) 340-7119634</span>
+                                    <span itemprop="telephone" content="+393407119634">(0039) 340 7119634</span>
                                 </li>
                                 <li class="d-flex align-items-start mb-1">
                                     <svg class="bi" width="1em" height="1em" fill="currentColor">
@@ -85,48 +132,14 @@ block content
             </section>
         </header>
         
-        
         each s in sections
-            dl.mb-5
-                if s.title
-                    dt= s.title
-                    dd
-                        section= s.description
-                            if s.organizations
-                                each o in s.organizations
-                                    - var organization = o.type ? 'EducationalOrganization' : 'Organization';
-                                    div(itemscope, itemtype="http://schema.org/" + organization)
-                                        if o.title
-                                            h2
-                                                span(itemprop="jobTitle")= o.title
-                                        if organization == 'Organization'
-                                            p
-                                        else
-                                            h2
-                                                span(itemprop="name")= o.name
-                                        if o.address
-                                            div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
-                                                span(itemprop="streetAddress")= o.address.streetAddress
-                                                br
-                                                span(itemprop="addressLocality")= o.address.addressLocality 
-                                                |,&nbsp;
-                                                span(itemprop="addressRegion")= o.address.addressRegion
-                                                |,&nbsp;
-                                                span(itemprop="postalCode")= o.address.postalCode
-                                                |&nbsp;
-                                                span(itemprop="addressCountry")= o.address.addressCountry
-                                        if o.name
-                                            p
-                                                span(itemprop="name")= o.course
-                                        p
-                                            span.text-muted #{o.date_start} - #{o.date_end}
-                                        p
-                                            span(itemprop="description")= o.description
-                                            br 
-                                            if o.link
-                                                a(itemprop="url", href=o.link.url, target="_blank", title=o.link.text)= o.link.text
+            if s.lists
+                div(itemscope, itemtype="http://schema.org/ItemList")
+                    +definitionList(s)
+            else     
+                    +definitionList(s)
 
-                 
+ 
     </div>
 block scripts
   script(src='main.js')

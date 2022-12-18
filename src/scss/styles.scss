@@ -41,3 +41,8 @@ $headings-color: $primary;
 @import "~bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+.list-marker li {
+    &::marker{
+        color: $primary;
+    }
+}

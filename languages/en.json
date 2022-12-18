@@ -1,5 +1,4 @@
 {
-    "test_test": "Pricing Tables",
     "download_button": "View Printable CV",
     "language_name": "English",
     "sections": [{
@@ -8,35 +7,62 @@
     }, {
         "title": "Professional experience",
         "organizations": [{
-            "title": "job 1",
-            "name": "Super inc",
-            "date_start": "october 2011",
-            "date_end": "november 2011",
-            "description": "Professional experience description"
+            "title": "E-commerce Manager",
+            "name": "Francocantiere S.r.l.",
+            "date_start": "febbraio 2020",
+            "date_end": "present",
+            "description": "Work 360 degree to improve the overall experience of <a href='https://www.francocantiere.it'>Francocantiere</a> e-commerce platform; from Interface to marketing ads and make agreements with local curriers in order to improve the website sales"
         }, {
-            "title": "job 2",
-            "name": "Super inc",
-            "date_start": "november 2011",
-            "date_end": "november 2011",
-            "description": "Professional experience description"
+            "title": "Front-end web developer",
+            "name": "YOOX NET-A-PORTER Group",
+            "date_start": "June 2015",
+            "date_end": "February 2020",
+            "description": "Create and mantain the interface for some major luxury brands: <a href='https://www.ysl.com/'>YSL</a>, <a href='https://www.stellamccartney.com/'>Stella McCartney</a>, <a href='https://www.therow.com/'>The Row</a>"
+
+        }, {
+            "title": "Magento Frontend Developer",
+            "name": "MilkyWay S.r.l.",
+            "date_start": "May 2014",
+            "date_end": "June 2015",
+            "description": "Active developing the Magento based ecommerce platform for MilkyWay, a startup project focused on action and extreme sports"
+
+        }, {
+            "title": "Web Developer",
+            "name": "Freelance",
+            "date_start": "marzo 2014",
+            "date_end": "maggio 2014",
+            "description": "realizzazione sito www.floch.it. Sviluppo blog (WordPress) ed implementazione e-commerce (WooCommerce)."
         }] 
     
     
-    } , {
-        "title": "Skills",
+    }, {
+        "title": "Technical Skills",
         "lists": [
             [
-                "HTML",
-                "css",
-                "php",
-                "nodejs",
-                "8"
+                "CSS/CSS3/LESS/Media queries",
+                "JavaScript",
+                "HTML5/SVG",
+                "Node.js",
+                "PHP",
+                "React Framework"
             ], [
-                "1",
-                "3",
-                "4",
-                "5",
-                "16"
+                "Illustrator/Photoshop/Figma",
+                "PrestaShop",
+                "WP/Gutenberg/WooCommerce"
+            ]
+        ]
+    }, {
+        "title": "Soft Skills",
+        "lists": [
+            [
+                "Ability to Work in a Team",
+                "Exellent Communication",
+                "Customer Service",
+                "Business Development",
+                "Organizational skills",
+                "Problem solving",
+                "Networking",
+                "Critical thinking"
             ]
         ]
     }, {

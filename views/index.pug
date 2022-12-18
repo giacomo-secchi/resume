@@ -11,12 +11,12 @@ mixin definitionList(s)
                             - var organization = o.type ? 'EducationalOrganization' : 'Organization';
                             div(itemscope, itemtype="http://schema.org/" + organization)
                                 if o.title
-                                    h2
+                                    h2.fs-3
                                         span(itemprop="jobTitle")= o.title
                                 if organization == 'Organization'
                                     p
                                 else
-                                    h2
+                                    h2.fs-3
                                         span(itemprop="name")= o.name
                                 if o.address
                                     div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
@@ -33,9 +33,9 @@ mixin definitionList(s)
                                     p
                                         span(itemprop="name")= o.course
                                 p
-                                    span.text-muted #{o.date_start} - #{o.date_end}
+                                    span.text-muted #{o.date_start} — #{o.date_end}
                                 p
-                                    span(itemprop="description")= o.description
+                                    span(itemprop="description") !{o.description}
                                     br 
                                     if o.link
                                         a(itemprop="url", href=o.link.url, target="_blank", title=o.link.text)= o.link.text
@@ -55,7 +55,7 @@ block header
                     <use xlink:href="bootstrap-icons.svg#translate"/>
                 </svg>
                 <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
+                    <option selected>Lang</option>
                     <option value="en">English</option>
                     <option value="it">Italiano</option>
                 </select>
@@ -82,7 +82,7 @@ block content
                         <div class="col-md-6">
                             <h1><span itemprop="name">Giacomo Secchi</span></h1>
                     
-                            <h3><span itemprop="jobTitle">Web Developer / Designer</span></h3>
+                            <h3><span itemprop="jobTitle">Web Developer / Ecommerce Specialist</span></h3>
                             
                         </div> 
                         <div class="col-md-4">

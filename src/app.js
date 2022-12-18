@@ -28,8 +28,8 @@ glob.sync( './languages/*.json' ).forEach( ( file ) => {
  
 app.get( '/:lang', ( req, res ) => {
   let ISOcode = req.params['lang'];
-
     
+  
   if ( languages.hasOwnProperty(ISOcode) ) {
     for (var key of Object.keys(languages[ISOcode])) {
 

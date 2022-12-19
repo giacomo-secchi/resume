@@ -36,6 +36,7 @@ app.get( '/:lang', ( req, res ) => {
         lang: ISOcode,
         title: languages[ISOcode].title,
         nav_button: languages[ISOcode].download_button,
+        download_button: languages[ISOcode].download_file,
         sections: languages[ISOcode].sections });        
     // }
   }

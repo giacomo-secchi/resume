@@ -28,18 +28,16 @@ glob.sync( './languages/*.json' ).forEach( ( file ) => {
  
 app.get( '/:lang', ( req, res ) => {
   let ISOcode = req.params['lang'];
-    
-  
+
   if ( languages.hasOwnProperty(ISOcode) ) {
-    for (var key of Object.keys(languages[ISOcode])) {
+    // for (var key of Object.keys(languages[ISOcode])) {
 
        res.render('index', { 
         lang: ISOcode,
-        title: languages[ISOcode][key],
+        title: languages[ISOcode].title,
         nav_button: languages[ISOcode].download_button,
-        sections: languages[ISOcode].sections,
-        message: 'Hello there!' });        
-    }
+        sections: languages[ISOcode].sections });        
+    // }
   }
 });
 

@@ -43,9 +43,9 @@ mixin definitionList(s)
                         .row
                             each l in s.lists
                                 .col
-                                    ul.list-marker
+                                    ul.marker-list
                                         each i in l
-                                            li(itemprop="itemListElement", itemscope)= i
+                                            li(itemprop="itemListElement", itemscope) !{i}
     
 block header 
     <nav class="navbar navbar-light bg-primary bg-gradient sticky-top bg-opacity-50">

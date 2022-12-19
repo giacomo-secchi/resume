@@ -1,6 +1,7 @@
 {
     "download_button": "View Printable CV",
     "language_name": "English",
+    "title": "Resumé | Giacomo Secchi | Frontend Web Developer",
     "sections": [{
         "title": "Profile",
         "description": "T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity."
@@ -44,7 +45,7 @@
                 "HTML5/SVG",
                 "Node.js",
                 "PHP",
-                "React Framework"
+                "ReactJS"
             ], [
                 "Illustrator/Photoshop/Figma",
                 "PrestaShop",
@@ -91,10 +92,7 @@
             "course": "Extreme programming and TDD",
             "date_start": "november 2018",
             "date_end": "april 2019",
-            "description": "Training Course lended by YNAP group to me and the Service Team
-            to develop a better software. Starting to apply metodologies like
-            Test-driven development. After I took part at a follow up course focused on Agile Scrum
-            methodology (project manager oriented)"
+            "description": "Training Course lended by YNAP group to me and the Service Team to develop a better software. Starting to apply metodologies like Test-driven development. After I took part at a follow up course focused on Agile Scrum methodology (project manager oriented)"
         }]
         
     }, {
@@ -104,17 +102,14 @@
             "name": "Caffeina | Ideas Never Sleep",
             "date_start": "aprile 2013",
             "date_end": "ottobre 2013",
-            "description": "I started my first approach to Front-end technologies with some youth
-            but sharp-minded team. In no time by demonstrating attention to
-            details it was gave to me the ability to work on production websites
-            Now this is a big digital company in Italy: <a href='https://caffeina.com/'>Caffeina</a>"
+            "description": "I started my first approach to Front-end technologies with some youth but sharp-minded team. In no time by demonstrating attention to details it was gave to me the ability to work on production websites. Now this is a big digital company in Italy: <a href='https://caffeina.com/'>Caffeina</a>"
         }]
     }, {
         "title": "Languages",
-        "list": [
+        "lists": [
             [
-                "<bold>Italian</bold>: Native",
-                "<bold>English</bold>: Fluent (B2)"
+                "<strong>Italian</strong>: Native",
+                "<strong>English</strong>: Fluent (B2)"
             ]
         ]
     }]

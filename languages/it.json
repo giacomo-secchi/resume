@@ -1,6 +1,7 @@
 {
     "download_button": "Visualizza versione stampabile",
     "language_name": "Italiano",
+    "title": "Curriculum Vitae | Giacomo Secchi | Frontend Web Developer",
     "sections": [{
         "title": "Profilo",
         "description": "Professionista \"T-shaped\" con una profonda conoscenza dello sviluppo front-end web e dell'esperienza utente per siti di e-commerce. Sviluppatore di software esperto nel fornire competenze in progettazione, installazione, test e manutenzione di sistemi software. Esperto nell'utilizzo di piattaforme di marketing digitale per aumentare le vendite e la produttività aziendale."
@@ -36,9 +37,7 @@
             "date_start": "maggio 2012",
             "date_end": "luglio 2012",
             "description": "Realizzazione siti vetrina e aziendali: dalla proposta grafica al frontend in html e css, creazione struttura layout per template Joomla! CMS. Funzionalità integrate di invio mail, latest tweets e aggiornamento dei contenuti tramite back office Joomla."
-        }] 
-    
-    
+        }]
     }, {
         "title": "Competenze tecniche",
         "lists": [
@@ -48,8 +47,7 @@
                 "HTML5/SVG",
                 "Node.js",
                 "PHP",
-                "React Framework"
-            ], [
+                "ReactJS",
                 "Illustrator/Photoshop/Figma",
                 "PrestaShop",
                 "WP/Gutenberg/WooCommerce"
@@ -90,49 +88,29 @@
                 "text": "Link 2",
                 "url": "https://www.example2.com"
             }
+        }]
+    }, {
+        "title": "Tirocini e stage",
+        "organizations": [{
+            "title": "Intern Frontend Developer",
+            "name": "Caffeina S.r.l.",
+            "date_start": "aprile 2013",
+            "date_end": "ottobre 2013",
+            "description": "Lo stagista entrerà attivamente all'interno del flusso di lavoro aziendale relativo a piccoli progetti, nei quali avrà parte sia nella fase di progettazione che di quella di esecuzione e testing. È stato assegnato allo stagista il ruolo di Frontend Developer orientato ai servizi Web. Ha rafforzato la conoscenza dell'ECMAScript 5+ con particolare attenzione alla cross-compatibilità tra i maggiori browser. \r\n Ha sfruttato noti framework per il DOM Handling (jQuery, Zepto) e per il CSS Scaffolding (Twitter Bootstrap). Ha imparato l'utilizzo delle ultime definizioni degli standard HTML5 e CSS Level 3, utilizzando attivamente alcune delle più moderne API disponibili sui browser di ultima generazione. Ha imparato un meta-linguaggio per il CSS (LESS) che ha avvelocizzato la sua operatività nella definizione degli stili. Ha partecipato attivamente allo sviluppo di applicazioni social-oriented soprattutto relativi alla Facebook Platform. Gli sono state indicate risorse, tutorial, e ha potuto consultare materiale di addestramento aziendale, nonchè si è avvalso, durante tutta la durata dello stage, dell'esperienza diretta dei colleghi."
         }, {
-            "title": "Tirocini e stage",
-            "organizations": [{
-                "title": "Intern Frontend Developer",
-                "name": "Caffeina S.r.l.",
-                "date_start": "aprile 2013",
-                "date_end": "ottobre 2013",
-                "description": "Lo stagista entrerà attivamente
-                all'interno del flusso di lavoro aziendale relativo a piccoli progetti, nei
-                quali avrà parte sia nella fase di progettazione che di quella di
-                esecuzione e testing. È stato assegnato allo stagista il ruolo di Frontend
-                Developer orientato ai servizi Web.
-                Ha rafforzato la conoscenza dell'ECMAScript 5+ con particolare
-                attenzione alla cross-compatibilità tra i maggiori browser.
-                Ha sfruttato noti framework per il DOM Handling (jQuery, Zepto) e
-                per il CSS Scaffolding (Twitter Bootstrap). Ha imparato l'utilizzo delle
-                ultime definizioni degli standard HTML5 e CSS Level 3, utilizzando
-                attivamente alcune delle più moderne API disponibili sui browser di
-                ultima generazione.
-                Ha imparato un meta-linguaggio per il CSS (LESS) che ha
-                avvelocizzato la sua operatività nella definizione degli stili. Ha
-                partecipato attivamente allo sviluppo di applicazioni social-oriented soprattutto relativi alla Facebook Platform. Gli sono state indicate
-                risorse, tutorial, e ha potuto consultare materiale di addestramento
-                aziendale, nonchè si è avvalso, durante tutta la durata dello stage,
-                dell'esperienza diretta dei colleghi."
-            }, {
-                "title": "Tirocinante",
-                "name": "Mister Web S.r.l.",
-                "date_start": "dicembre 2010",
-                "date_end": "febbraio 2011",
-                "description": "conoscere gli aspetti operatvi di
-                un’agenzia di comunicazione che lavora soprattutto per il Web ma si
-                occupa anche di comunicazione a 360° (stampa, soluzioni
-                promozionali, pubblicità ecc.).
-                affiancamento alla resp. uff. marketing nell’attuazione delle
-operazioni di marketing pianificate (anche tramite CRM) e nella
-realizzazione dei supporti alla vendita.
-Affiancamento agli operatori della web agency per lo sviluppo dei
-progetti, soprattutto web (aggiornamento siti, inserimento contenuti
-nelle piattaforme CMS, preparazione foto ed immagini, produzione e
-controllo testi, ecc.)."
-        
-        
-        }] 
+            "title": "Tirocinante",
+            "name": "Mister Web S.r.l.",
+            "date_start": "dicembre 2010",
+            "date_end": "febbraio 2011",
+            "description": "conoscere gli aspetti operatvi di un’agenzia di comunicazione che lavora soprattutto per il Web ma si occupa anche di comunicazione a 360° (stampa, soluzioni promozionali, pubblicità ecc.). affiancamento alla resp. uff. marketing nell’attuazione delle operazioni di marketing pianificate (anche tramite CRM) e nella realizzazione dei supporti alla vendita. Affiancamento agli operatori della web agency per lo sviluppo dei progetti, soprattutto web (aggiornamento siti, inserimento contenuti nelle piattaforme CMS, preparazione foto ed immagini, produzione e controllo testi, ecc.)."
+        }]
+    }, {
+        "title": "Languages",
+        "lists": [
+            [
+                "<strong>Italiano</strong>: Nativo",
+                "<strong>Inglese</strong>: Fluente (livello B2)"
+            ]
+        ]
     }]
 }

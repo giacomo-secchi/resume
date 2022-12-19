@@ -3,7 +3,7 @@ extends layout.pug
 mixin definitionList(s) 
     dl.mb-5
         if s.title
-            dt= s.title
+            dt(itemprop=(s.lists ? "name" : false))= s.title
             dd
                 section= s.description
                     if s.organizations

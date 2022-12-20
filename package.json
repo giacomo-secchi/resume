@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Login Heroku:\r ```lando heroku auth:login```\r copiare link per il login sul browser",
   "main": "src/app.js",
+  "type": "module",
   "dependencies": {
     "@popperjs/core": "^2.11.6",
+    "axios": "^1.2.1",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.2",
     "express": "^4.18.2",
@@ -21,14 +23,13 @@
     "sass": "^1.56.2",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
-    "svg-sprite-loader": "^6.0.11",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production",
-    "start": "node --experimental-fetch src/app.js",
+    "start": "node src/app.js",
     "start:dev": "nodemon --inspect --experimental-fetch src/app.js --watch src --watch languages -L"
   },
   "repository": {

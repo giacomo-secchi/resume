@@ -1,8 +1,6 @@
-const express = require( 'express' );
-const http = require('http');
-const https = require('https');
-const fs = require( 'fs' );
-const glob = require( 'glob' );
+import express from 'express';
+import fs from 'fs';
+import glob from 'glob';
 
 
 const app = express();
@@ -13,7 +11,7 @@ app.use(express.static('dist'));
 
 
 
-languages = {};
+let languages = {};
 
 
 glob.sync( './languages/*.json' ).forEach( ( file ) => {
@@ -26,20 +24,32 @@ glob.sync( './languages/*.json' ).forEach( ( file ) => {
 
 });
  
+
+app.get('/', (req, res) => {
+  throw new Error('BROKEN') // Express will catch this on its own.
+});
+
 app.get( '/:lang', ( req, res ) => {
   let ISOcode = req.params['lang'];
+  let template = 'index';
+  let content;
 
-  if ( languages.hasOwnProperty(ISOcode) ) {
-    // for (var key of Object.keys(languages[ISOcode])) {
+  if ( ! languages.hasOwnProperty(ISOcode) )  {
+    res.status(404); 
+    template = 'error';
+    res.render(template);
+    return;
+  };
 
-       res.render('index', { 
-        lang: ISOcode,
-        title: languages[ISOcode].title,
-        nav_button: languages[ISOcode].download_button,
-        download_button: languages[ISOcode].download_file,
-        sections: languages[ISOcode].sections });        
-    // }
-  }
+  content = { 
+    lang: ISOcode,
+    title: languages[ISOcode].title,
+    nav_button: languages[ISOcode].download_button,
+    download_button: languages[ISOcode].download_file,
+    sections: languages[ISOcode].sections
+  };
+  
+  res.render(template, content);
 });
 
 app.listen(port, () => {

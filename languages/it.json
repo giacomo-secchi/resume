@@ -31,7 +31,7 @@
             "name": "Freelance",
             "date_start": "marzo 2014",
             "date_end": "maggio 2014",
-            "description": "realizzazione sito www.floch.it. Sviluppo blog (WordPress) ed implementazione e-commerce (WooCommerce)."
+            "description": "Realizzazione sito www.floch.it. Sviluppo blog (WordPress) ed implementazione e-commerce (WooCommerce)."
         },{
             "title": "Web Developer / Programmer",
             "name": "Gruppo Ciemme Srl",
@@ -60,19 +60,18 @@
             "type": "Educational",
             "name": "Università degli studi di Modena e Reggio Emilia",
             "address": {
-                "streetAddress": "2801 Bancroft Street",
-                "addressLocality": "ToledoOO",
-                "addressRegion": "Ohio",
-                "postalCode": "43606",
-                "addressCountry": "U.S.A."
+                "streetAddress": "Viale Allegri 9",
+                "addressLocality": "Reggio Emilia",
+                "postalCode": "42121",
+                "addressCountry": "IT"
             },
             "course": "Laurea in Scienze della Comunicazione",
             "date_start": "a.a. 2007/2008",
             "date_end": "a.a. 2011/2012",
             "description": "Realizzazione ebooks in formato PDF, esame di Editoria multimediale (30L), Corso per i bibliotecari dell’Università di Modena e Reggio Emilia “Ebook : le caratteristiche, il mercato, l’integrazione in biblioteca”, sviluppo di piccole applicazioni editoriali in codice HTML5. Titolo testi: Riorganizzazione del testo nei libri digitali",
             "link": {
-                "text": "Link",
-                "url": "https://www.example.com"
+                "text": "Facoltà di Scienze della Comunicazione e dell’Economia",
+                "url": "https://www.dce.unimore.it/site/home.html"
             }
         }, {
             "type": "Educational",

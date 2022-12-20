@@ -13,15 +13,15 @@ mixin definitionList(s)
                                 if o.title
                                     h2.fs-3
                                         span(itemprop="jobTitle")= o.title
-                                if organization == 'Organization'
-                                    p
-                                else
-                                    h2.fs-3
-                                        span(itemprop="name")= o.name
+                                if o.course
+                                    h2.fs-3.mb-0
+                                        span(itemprop="name")= o.course
+                                p.mb-0
+                                    span(itemprop="name")= o.name
                                 if o.address
                                     div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
                                         span(itemprop="streetAddress")= o.address.streetAddress
-                                        br
+                                        |,&nbsp;
                                         span(itemprop="addressLocality")= o.address.addressLocality 
                                         |,&nbsp;
                                         span(itemprop="addressRegion")= o.address.addressRegion
@@ -29,9 +29,6 @@ mixin definitionList(s)
                                         span(itemprop="postalCode")= o.address.postalCode
                                         |&nbsp;
                                         span(itemprop="addressCountry")= o.address.addressCountry
-                                if o.name
-                                    p
-                                        span(itemprop="name")= o.course
                                 p
                                     span.text-muted #{o.date_start} — #{o.date_end}
                                 p
@@ -76,7 +73,7 @@ block content
 
                     <div class="row">
                         <div class="col-md-2">
-                            <img class="rounded-circle w-100 h-auto" src="https://lh3.googleusercontent.com/xSZgKvwNkC61-iJ5ch3juW-VKDkGPDKdPK9c81N6WbmD9XX633GEfFkNAJgp4nuRF9gz7ZDayW76xgNx9A=s592-rw-no" itemprop="image" width="150" height="150" alt="Your Name" />
+                            <img class="rounded-circle w-100 h-auto" src="https://s.gravatar.com/avatar/cacd939ed4fbbea7e739d737e3411dc3?s=250" itemprop="image" width="150" height="150" alt="Your Name" />
                         </div>
                         <div class="col-md-6">
                             <h1><span itemprop="name">Giacomo Secchi</span></h1>

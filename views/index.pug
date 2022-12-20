@@ -49,24 +49,23 @@ mixin definitionList(s)
     
 block header 
     <nav class="navbar navbar-light bg-primary bg-gradient sticky-top bg-opacity-50">
-        <div class="container-fluid">
+        <div class="container">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">        
                 <svg class="bi" width="1em" height="1em" fill="currentColor">
                     <use xlink:href="bootstrap-icons.svg#translate"/>
                 </svg>
                 <select class="form-select" aria-label="Default select example">
-                    <option selected>Lang</option>
+                    <option selected>Choose Language</option>
                     <option value="en">English</option>
                     <option value="it">Italiano</option>
                 </select>
             </ul>
-            <a class="btn btn-outline-light" href="Giacomo_Secchi_CV.pdf" role="button" target="_blank">
+            a.btn.btn-outline-light(href= download_button, role="button", target="_blank")
                 = nav_button 
                 | &nbsp;
                 <svg class="bi" width="1em" height="1em" fill="currentColor">
                     <use xlink:href="bootstrap-icons.svg#file-earmark-pdf"/>
-                </svg>            
-            </a>
+                </svg>
         </div>
     </nav>
 block content 

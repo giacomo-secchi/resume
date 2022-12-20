@@ -1,5 +1,6 @@
 {
     "download_button": "Visualizza versione stampabile",
+    "download_file": "Giacomo_Secchi_CV.pdf",
     "language_name": "Italiano",
     "title": "Curriculum Vitae | Giacomo Secchi | Frontend Web Developer",
     "sections": [{
@@ -16,8 +17,8 @@
         }, {
             "title": "Front-end web developer",
             "name": "YOOX NET-A-PORTER Group",
-            "date_start": "June 2015",
-            "date_end": "February 2020",
+            "date_start": "giugno 2015",
+            "date_end": "febbraio 2020",
             "description": "Create and mantain the interface for some major luxury brands: <a href='https://www.ysl.com/'>YSL</a>, <a href='https://www.stellamccartney.com/'>Stella McCartney</a>, <a href='https://www.therow.com/'>The Row</a>"
         }, {
             "title": "Magento Frontend Developer",
@@ -68,7 +69,11 @@
             "course": "Laurea in Scienze della Comunicazione",
             "date_start": "a.a. 2007/2008",
             "date_end": "a.a. 2011/2012",
-            "description": "Professional experience description",
+            "description": "Realizzazione ebooks in formato PDF, esame di Editoria multimedi-
+            ale (30L), Corso per i bibliotecari dell’Università di Modena e Reggio
+            
+            Emilia “Ebook : le caratteristiche, il mercato, l’integrazione in biblioteca”,
+            sviluppo di piccole applicazioni editoriali in codice HTML5. Titolo testi: Riorganizzazione del testo nei libri digitali",
             "link": {
                 "text": "Link",
                 "url": "https://www.example.com"

@@ -3,16 +3,13 @@
   "version": "1.0.0",
   "description": "Login Heroku:\r ```lando heroku auth:login```\r copiare link per il login sul browser",
   "main": "src/app.js",
-  "type": "module",
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "axios": "^1.2.1",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.2",
     "express": "^4.18.2",
-    "glob": "^8.0.3",
-    "pug": "^3.0.2",
-    "request": "^2.88.2"
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

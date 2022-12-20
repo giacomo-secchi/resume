@@ -1,6 +1,6 @@
-import express from 'express';
-import fs from 'fs';
-import glob from 'glob';
+const express = require('express');
+const fs = require('fs');
+const glob  = require('glob');
 
 
 const app = express();

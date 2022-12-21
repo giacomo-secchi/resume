@@ -7,31 +7,53 @@
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" media="print" href="assets/css/print.css">
     <style>
-    @page landscape {
-      size: A4 landscape;
-      margin: 20pt;
+    @page {
+      size: A4;
+      margin: 0;
+      padding: 0;
     }
 
-    @page portrait {
-      size: A4 portrait;
-      margin: 20pt;
-    }
+    
 
-    /* setup CSS classes to refer to these pages we just defined */
-    .landscape {
-      page: landscape;
-    }
-
-    .portrait {
-      page: portrait;
-    }
-
+   
     /* reference http://www.princexml.com/doc/page-breaks/ */
     .page_break {
       page-break-before: always
     }
 
     
+@media print {
+  .d-print-inline {
+    display: inline !important;
+  }
+  .d-print-inline-block {
+    display: inline-block !important;
+  }
+  .d-print-block {
+    display: block !important;
+  }
+  .d-print-grid {
+    display: grid !important;
+  }
+  .d-print-table {
+    display: table !important;
+  }
+  .d-print-table-row {
+    display: table-row !important;
+  }
+  .d-print-table-cell {
+    display: table-cell !important;
+  }
+  .d-print-flex {
+    display: flex !important;
+  }
+  .d-print-inline-flex {
+    display: inline-flex !important;
+  }
+  .d-print-none {
+    display: none !important;
+  }
+}
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +64,7 @@
 
         <p class="landscape page_break">Page 2 content</p>
         
-        <nav class="navbar navbar-light bg-primary bg-gradient sticky-top bg-opacity-50">
+        <nav class="navbar navbar-light bg-primary bg-gradient sticky-top bg-opacity-50 d-print-none">
         
         <div class="container">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">        
@@ -114,7 +136,7 @@
     </div>
     </div>         
     </section>
-    </header><dl class="mb-5"><dt>Profile</dt><dd><section>T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity.</section></dd></dl><dl class="mb-5"><dt>Professional experience</dt><dd><section><div itemscope="itemscope" itemtype="http://schema.org/Organization"><h2 class="fs-3"><span itemprop="jobTitle">E-commerce Manager</span></h2><p class="mb-0"><span itemprop="name">Francocantiere S.r.l.</span></p><p><span class="text-muted">february 2020 — present</span></p><p><span itemprop="description">Work 360 degree to improve the overall experience of <a href='https://www.francocantiere.it'>Francocantiere</a> e-commerce platform; from Interface to marketing ads and make agreements with local curriers in order to improve the website sales</span><br/></p></div><div itemscope="itemscope" itemtype="http://schema.org/Organization"><h2 class="fs-3"><span itemprop="jobTitle">Front-end web developer</span></h2><p class="mb-0"><span itemprop="name">YOOX NET-A-PORTER Group</span></p><p><span class="text-muted">june 2015 — february 2020</span></p><p><span itemprop="description">Create and mantain the interface for some major luxury brands: <a href='https://www.ysl.com/'>YSL</a>, <a href='https://www.stellamccartney.com/'>Stella McCartney</a>, <a href='https://www.therow.com/'>The Row</a></span><br/></p></div><div itemscope="itemscope" itemtype="http://schema.org/Organization"><h2 class="fs-3"><span itemprop="jobTitle">Magento Frontend Developer</span></h2><p class="mb-0"><span itemprop="name">MilkyWay S.r.l.</span></p><p><span class="text-muted">may 2014 — june 2015</span></p><p><span itemprop="description">Active developing the Magento based ecommerce platform for MilkyWay, a startup project focused on action and extreme sports</span><br/></p></div><div itemscope="itemscope" itemtype="http://schema.org/Organization"><h2 class="fs-3"><span itemprop="jobTitle">Web Developer</span></h2><p class="mb-0"><span itemprop="name">Freelance</span></p><p><span class="text-muted">march 2014 — may 2014</span></p><p><span itemprop="description">Realizzazione sito www.floch.it. Sviluppo blog (WordPress) ed implementazione e-commerce (WooCommerce).</span><br/></p></div></section></dd></dl><div itemscope itemtype="http://schema.org/ItemList"><dl class="mb-5"><dt itemprop="name">Technical Skills</dt><dd><section><div class="row"><div class="col"><ul class="marker-list"><li itemprop="itemListElement" itemscope="itemscope">CSS/CSS3/LESS/Media queries</li><li itemprop="itemListElement" itemscope="itemscope">JavaScript</li><li itemprop="itemListElement" itemscope="itemscope">HTML5/SVG</li><li itemprop="itemListElement" itemscope="itemscope">Node.js</li><li itemprop="itemListElement" itemscope="itemscope">PHP</li><li itemprop="itemListElement" itemscope="itemscope">ReactJS</li></ul></div><div class="col"><ul class="marker-list"><li itemprop="itemListElement" itemscope="itemscope">Illustrator/Photoshop/Figma</li><li itemprop="itemListElement" itemscope="itemscope">PrestaShop</li><li itemprop="itemListElement" itemscope="itemscope">WP/Gutenberg/WooCommerce</li></ul></div></div></section></dd></dl></div><div itemscope itemtype="http://schema.org/ItemList"><dl class="mb-5"><dt itemprop="name">Soft Skills</dt><dd><section><div class="row"><div class="col"><ul class="marker-list"><li itemprop="itemListElement" itemscope="itemscope">Ability to Work in a Team</li><li itemprop="itemListElement" itemscope="itemscope">Exellent Communication</li><li itemprop="itemListElement" itemscope="itemscope">Customer Service</li><li itemprop="itemListElement" itemscope="itemscope">Business Development</li><li itemprop="itemListElement" itemscope="itemscope">Organizational skills</li><li itemprop="itemListElement" itemscope="itemscope">Problem solving</li><li itemprop="itemListElement" itemscope="itemscope">Networking</li><li itemprop="itemListElement" itemscope="itemscope">Critical thinking</li></ul></div></div></section></dd></dl></div><dl class="mb-5"><dt>Education</dt><dd><section><div itemscope="itemscope" itemtype="http://schema.org/EducationalOrganization"><h2 class="fs-3 mb-0"><span itemprop="name">course 1</span></h2><p class="mb-0"><span itemprop="name">School 1</span></p><div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">2801 Bancroft Street</span>,&nbsp;<span itemprop="addressLocality">ToledoOO</span>,&nbsp;<span itemprop="addressRegion">Ohio</span>,&nbsp;<span itemprop="postalCode">43606</span>&nbsp;<span itemprop="addressCountry">U.S.A.</span></div><p><span class="text-muted">october 2011 — november 2011</span></p><p><span itemprop="description">Professional experience description</span><br/><a itemprop="url" href="https://www.example.com" target="_blank" title="Link">Link</a></p></div><div itemscope="itemscope" itemtype="http://schema.org/EducationalOrganization"><h2 class="fs-3 mb-0"><span itemprop="name">Extreme programming and TDD</span></h2><p class="mb-0"><span itemprop="name">Agile42</span></p><p><span class="text-muted">november 2018 — april 2019</span></p><p><span itemprop="description">Training Course lended by YNAP group to me and the Service Team to develop a better software. Starting to apply metodologies like Test-driven development. After I took part at a follow up course focused on Agile Scrum methodology (project manager oriented)</span><br/></p></div></section></dd></dl><dl class="mb-5"><dt>Internships</dt><dd><section><div itemscope="itemscope" itemtype="http://schema.org/Organization"><h2 class="fs-3"><span itemprop="jobTitle">Intern Frontend Developer</span></h2><p class="mb-0"><span itemprop="name">Caffeina | Ideas Never Sleep</span></p><p><span class="text-muted">april 2013 — october 2013</span></p><p><span itemprop="description">I started my first approach to Front-end technologies with some youth but sharp-minded team. In no time by demonstrating attention to details it was gave to me the ability to work on production websites. Now this is a big digital company in Italy: <a href='https://caffeina.com/'>Caffeina</a></span><br/></p></div></section></dd></dl><div itemscope itemtype="http://schema.org/ItemList"><dl class="mb-5"><dt itemprop="name">Languages</dt><dd><section><div class="row"><div class="col"><ul class="marker-list"><li itemprop="itemListElement" itemscope="itemscope"><strong>Italian</strong>: Native</li><li itemprop="itemListElement" itemscope="itemscope"><strong>English</strong>: Fluent (B2)</li></ul></div></div></section></dd></dl></div></div><p class="text-center text-muted"><span class="fs-2"><svg class="bi" width="1em" height="1em" fill="currentColor">
+    </header><dl class="mb-5"><dt>Profile</dt><dd><section>T-shaped person with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity.</section></dd></dl><dl class="mb-5"><dt>Professional experience</dt><dd><section><div itemscope="itemscope" itemtype="http://schema.org/Organization"><h2 class="fs-3"><span itemprop="jobTitle">E-commerce Manager</span></h2><p class="mb-0"><span itemprop="name">Francocantiere S.r.l.</span></p><p><span class="text-muted">february 2020 — present</span></p><p><span itemprop="description">Work 360 degree to improve the overall experience of <a href='https://www.francocantiere.it'>Francocantiere</a> e-commerce platform; from Interface to marketing ads and make agreements with local curriers in order to improve the website sales</span><br/></p></div><div itemscope="itemscope" itemtype="http://schema.org/Organization"><h2 class="fs-3"><span itemprop="jobTitle">Front-end web developer</span></h2><p class="mb-0"><span itemprop="name">YOOX NET-A-PORTER Group</span></p><p><span class="text-muted">june 2015 — february 2020</span></p><p><span itemprop="description">Create and mantain the interface for some major luxury brands: <a href='https://www.ysl.com/'>YSL</a>, <a href='https://www.stellamccartney.com/'>Stella McCartney</a>, <a href='https://www.therow.com/'>The Row</a></span><br/></p></div><div itemscope="itemscope" itemtype="http://schema.org/Organization"><h2 class="fs-3"><span itemprop="jobTitle">Magento Frontend Developer</span></h2><p class="mb-0"><span itemprop="name">MilkyWay S.r.l.</span></p><p><span class="text-muted">may 2014 — june 2015</span></p><p><span itemprop="description">Active developing the Magento based ecommerce platform for MilkyWay, a startup project focused on action and extreme sports</span><br/></p></div><div itemscope="itemscope" itemtype="http://schema.org/Organization"><h2 class="fs-3"><span itemprop="jobTitle">Web Developer</span></h2><p class="mb-0"><span itemprop="name">Freelance</span></p><p><span class="text-muted">march 2014 — may 2014</span></p><p><span itemprop="description">Realizzazione sito www.floch.it. Sviluppo blog (WordPress) ed implementazione e-commerce (WooCommerce).</span><br/></p></div></section></dd></dl><div itemscope itemtype="http://schema.org/ItemList"><dl class="mb-5"><dt itemprop="name">Technical Skills</dt><dd><section><div class="row"><div class="col"><ul class="marker-list"><li itemprop="itemListElement" itemscope="itemscope">CSS/CSS3/LESS/Media queries</li><li itemprop="itemListElement" itemscope="itemscope">JavaScript</li><li itemprop="itemListElement" itemscope="itemscope">HTML5/SVG</li><li itemprop="itemListElement" itemscope="itemscope">Node.js</li><li itemprop="itemListElement" itemscope="itemscope">PHP</li><li itemprop="itemListElement" itemscope="itemscope">ReactJS</li></ul></div><div class="col"><ul class="marker-list"><li itemprop="itemListElement" itemscope="itemscope">Illustrator/Photoshop/Figma</li><li itemprop="itemListElement" itemscope="itemscope">PrestaShop</li><li itemprop="itemListElement" itemscope="itemscope">WP/Gutenberg/WooCommerce</li></ul></div></div></section></dd></dl></div><div itemscope itemtype="http://schema.org/ItemList"><dl class="mb-5"><dt itemprop="name">Soft Skills</dt><dd><section><div class="row"><div class="col"><ul class="marker-list"><li itemprop="itemListElement" itemscope="itemscope">Ability to Work in a Team</li><li itemprop="itemListElement" itemscope="itemscope">Exellent Communication</li><li itemprop="itemListElement" itemscope="itemscope">Customer Service</li><li itemprop="itemListElement" itemscope="itemscope">Business Development</li><li itemprop="itemListElement" itemscope="itemscope">Organizational skills</li><li itemprop="itemListElement" itemscope="itemscope">Problem solving</li><li itemprop="itemListElement" itemscope="itemscope">Networking</li><li itemprop="itemListElement" itemscope="itemscope">Critical thinking</li></ul></div></div></section></dd></dl></div><dl class="mb-5"><dt>Education</dt><dd><section><div itemscope="itemscope" itemtype="http://schema.org/EducationalOrganization"><h2 class="fs-3 mb-0"><span itemprop="name">course 1</span></h2><p class="mb-0"><span itemprop="name">School 1</span></p><div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">2801 Bancroft Street</span>,&nbsp;<span itemprop="addressLocality">ToledoOO</span>,&nbsp;<span itemprop="addressRegion">Ohio</span>,&nbsp;<span itemprop="postalCode">43606</span>&nbsp;<span itemprop="addressCountry">U.S.A.</span></div><p><span class="text-muted">october 2011 — november 2011</span></p><p><span itemprop="description">Professional experience description</span><br/><a itemprop="url" href="https://www.example.com" target="_blank" title="Link">Link</a></p></div><div itemscope="itemscope" itemtype="http://schema.org/EducationalOrganization"><h2 class="fs-3 mb-0"><span itemprop="name">Extreme programming and TDD</span></h2><p class="mb-0"><span itemprop="name">Agile42</span></p><p><span class="text-muted">november 2018 — april 2019</span></p><p><span itemprop="description">Training Course lended by YNAP group to me and the Service Team to develop a better software. Starting to apply metodologies like Test-driven development. After I took part at a follow up course focused on Agile Scrum methodology (project manager oriented)</span><br/></p></div></section></dd></dl><dl class="mb-5"><dt>Internships</dt><dd><section><div itemscope="itemscope" itemtype="http://schema.org/Organization"><h2 class="fs-3"><span itemprop="jobTitle">Intern Frontend Developer</span></h2><p class="mb-0"><span itemprop="name">Caffeina | Ideas Never Sleep</span></p><p><span class="text-muted">april 2013 — october 2013</span></p><p><span itemprop="description">I started my first approach to Front-end technologies with some youth but sharp-minded team. In no time by demonstrating attention to details it was gave to me the ability to work on production websites. Now this is a big digital company in Italy: <a href='https://caffeina.com/'>Caffeina</a></span><br/></p></div></section></dd></dl><div itemscope itemtype="http://schema.org/ItemList"><dl class="mb-5"><dt itemprop="name">Languages</dt><dd><section><div class="row"><div class="col"><ul class="marker-list"><li itemprop="itemListElement" itemscope="itemscope"><strong>Italian</strong>: Native</li><li itemprop="itemListElement" itemscope="itemscope"><strong>English</strong>: Fluent (B2)</li></ul></div></div></section></dd></dl></div></div><p class="text-center text-muted d-print-none"><span class="fs-2"><svg class="bi" width="1em" height="1em" fill="currentColor">
     <use xlink:href="bootstrap-icons.svg#code-slash"/>
     </svg></span>&nbsp;
     Want to see the source code of this project? <a href="https://github.com/giacomo-secchi/personal-website" target="_blank" rel="noopener">Follow the white rabbit!</a>💊👨🏻‍💻🐇🕳️</p><script src="main.js"></script></body></html>

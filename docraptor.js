@@ -9,7 +9,15 @@ const fs = require("fs");
 const path = require("path");
 let data1 = require('./languages/en.json').download_file
 let data2 = require('./languages/it.json').download_file
+
  
+ 
+
+var t = fs.readFileSync("./dist/test_page.html", "utf8", (err, data) => {
+  if (err) throw err;
+});
+
+
 config = {
   url: "https://api.docraptor.com/docs",
   method: "post",
@@ -22,8 +30,8 @@ config = {
     doc: {
       test: true, // test documents are free but watermarked
       document_type: "pdf",
-      // document_content: "<h1>Hello, World!</h1>",
-      document_url: "https://resume.giacomosecchi.com/en"
+      // document_content: t,
+      document_url: "https://personal-website2.herokuapp.com/en",
       // javascript: true,
       // prince_options: {
       //   media: "print", // @media 'screen' or 'print' CSS
@@ -41,7 +49,7 @@ axios(config)
 
     files.forEach(file => {
       let path = `dist/${file}`;
-      
+
       fs.writeFile(path, response.data, "binary", function(writeErr) {
         if (writeErr) throw writeErr;
         console.log(`Saved ${file}!"`);

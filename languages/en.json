@@ -71,24 +71,6 @@
         "title": "Education",
         "organizations": [{
             "type": "Educational",
-            "name": "School 1",
-            "address": {
-                "streetAddress": "2801 Bancroft Street",
-                "addressLocality": "ToledoOO",
-                "addressRegion": "Ohio",
-                "postalCode": "43606",
-                "addressCountry": "U.S.A."
-            },
-            "course": "course 1",
-            "date_start": "october 2011",
-            "date_end": "november 2011",
-            "description": "Professional experience description",
-            "link": {
-                "text": "Link",
-                "url": "https://www.example.com"
-            }
-        }, {
-            "type": "Educational",
             "name": "Agile42",
             "course": "Extreme programming and TDD",
             "date_start": "november 2018",

@@ -10,9 +10,6 @@ const path = require("path");
 let data1 = require('./languages/en.json').download_file
 let data2 = require('./languages/it.json').download_file
 
- 
- 
-
 var t = fs.readFileSync("./dist/test_page.html", "utf8", (err, data) => {
   if (err) throw err;
 });
@@ -30,21 +27,20 @@ config = {
     doc: {
       test: true, // test documents are free but watermarked
       document_type: "pdf",
-    document_content: t,
-        // document_url: "https://personal-website2.herokuapp.com/en",
-      // javascript: true,
-      // prince_options: {
+      // document_content: t,
+      document_url: "https://personal-website2.herokuapp.com/en",
+      javascript: true,
+      prince_options: {
+        javascript: true,
       //   media: "print", // @media 'screen' or 'print' CSS
-      //   baseurl: "https://yoursite.com", // the base URL for any relative URLs
-      //   }
+        baseurl: "https://personal-website2.herokuapp.com", // the base URL for any relative URLs
+      }
     }
   }
 };
 
 axios(config)
   .then(function(response) {
-
-     
     let files = [data1, data2];
 
     files.forEach(file => {

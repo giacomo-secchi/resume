@@ -10,7 +10,7 @@ const path = require("path");
 let data1 = require('./languages/en.json').download_file
 let data2 = require('./languages/it.json').download_file
 
-var t = fs.readFileSync("./dist/test_page.html", "utf8", (err, data) => {
+var t = fs.readFileSync("./public/test_page.html", "utf8", (err, data) => {
   if (err) throw err;
 });
 
@@ -43,7 +43,7 @@ axios(config)
     let files = [data1, data2];
 
     files.forEach(file => {
-      let path = `dist/${file}`;
+      let path = `public/${file}`;
 
       fs.writeFile(path, response.data, "binary", function(writeErr) {
         if (writeErr) throw writeErr;

@@ -46,6 +46,7 @@ app.get( '/:lang', ( req, res ) => {
   content = { 
     lang: ISOcode,
     title: languages[ISOcode].title,
+    privacy: languages[ISOcode].privacy_text,
     nav_button: languages[ISOcode].download_button,
     download_button: languages[ISOcode].download_file,
     sections: languages[ISOcode].sections

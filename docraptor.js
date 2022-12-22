@@ -31,7 +31,6 @@ config = {
       document_url: "https://personal-website2.herokuapp.com/en",
       javascript: true,
       prince_options: {
-        javascript: true,
       //   media: "print", // @media 'screen' or 'print' CSS
         baseurl: "https://personal-website2.herokuapp.com", // the base URL for any relative URLs
       }

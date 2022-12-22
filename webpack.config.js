@@ -6,7 +6,7 @@ module.exports = {
   // entry: './src/js/main.js',
   entry: {
     print: path.resolve(__dirname, './src/scss/print.scss'),
-    styles: path.resolve(__dirname, './src/scss/styles.scss')
+    style: path.resolve(__dirname, './src/scss/styles.scss')
   },
   output: {
     // filename: 'main.js',

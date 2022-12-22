@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 //
 // INSTALLATION
 //
@@ -7,8 +9,8 @@
 const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
-let data1 = require('./languages/en.json').download_file
-let data2 = require('./languages/it.json').download_file
+let data1 = require('../languages/en.json').download_file
+let data2 = require('../languages/it.json').download_file
 
 var t = fs.readFileSync("./public/test_page.html", "utf8", (err, data) => {
   if (err) throw err;
@@ -43,7 +45,7 @@ axios(config)
     let files = [data1, data2];
 
     files.forEach(file => {
-      let path = `public/${file}`;
+      let path = `dist/${file}`;
 
       fs.writeFile(path, response.data, "binary", function(writeErr) {
         if (writeErr) throw writeErr;

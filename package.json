@@ -1,8 +1,11 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-  "description": "Login Heroku:\r ```lando heroku auth:login```\r copiare link per il login sul browser",
+  "description": "",
   "main": "src/app.js",
+  "bin": {
+    "docraptor": "./bin/docraptor.js"
+  },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "axios": "^1.2.1",
@@ -27,7 +30,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production",
+    "build": "webpack --mode=production && docraptor",
     "start": "node src/app.js",
     "start:dev": "nodemon --inspect --experimental-fetch src/app.js --watch src --watch languages -L"
   },

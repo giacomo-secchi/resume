@@ -33,7 +33,7 @@
     "build": "webpack --mode=production",
     "start": "node src/app.js",
     "start:dev": "nodemon --inspect --experimental-fetch src/app.js --watch src --watch languages -L",
-    "postinstall": "npm link"
+    "postinstall": "docraptor"
   },
   "repository": {
     "type": "git",

@@ -30,9 +30,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production && npm link && docraptor",
+    "build": "webpack --mode=production",
     "start": "node src/app.js",
-    "start:dev": "nodemon --inspect --experimental-fetch src/app.js --watch src --watch languages -L"
+    "start:dev": "nodemon --inspect --experimental-fetch src/app.js --watch src --watch languages -L",
+    "postinstall": "npm link && docraptor"
   },
   "repository": {
     "type": "git",

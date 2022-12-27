@@ -3,20 +3,24 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
 module.exports = {
-  // entry: './src/js/main.js',
+  mode: 'development',
   entry: {
+    main: path.resolve(__dirname, './src/js/main.js'),
     print: path.resolve(__dirname, './src/scss/print.scss'),
     style: path.resolve(__dirname, './src/scss/styles.scss')
   },
   output: {
-    // filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    // // filename: 'main.js',
+    // path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
+    path: __dirname + '/dist',
+    clean: true,
   },
   plugins: [
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: "css/[name].min.css",
+      filename: "[name].min.css",
     }),
   ],
   module: {

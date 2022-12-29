@@ -87,6 +87,21 @@
         }]
         
     }, {
+        "title": "Event presentations",
+        "organizations": [{
+            "title": "JavaScript Design Patterns - Sveliamo il Revealing Module Pattern",
+            "name": "Beer&Learn - @GetConnected",
+            "date": {
+                "start": "20 april 2016"
+            },
+            "description": "These events are promoted by the GetConnected team, who choose the topics themselves. At the end of the day, everyone meets up and watches a presentation, which is followed by a discussion about the subject at hand. <a href='https://resume.giacomosecchi.com/sveliamo-rmp/'>Slides link</a>.",
+            
+            "link": {
+                "text": "Link evento",
+                "url": "https://www.getconnected.it/2015/12/18/beer-learn-event/"
+            }
+        }]
+    }, {
         "title": "Internships",
         "organizations": [{
             "title": "Intern Frontend Developer",

@@ -11,10 +11,6 @@ Deploy:
 ```git push heroku main```
 se Heroku chiede le credenziali inserire username e token ```heroku auth:token```
 
-Generate pdf:
-```lando ssh -s appserver -c "curl http://YOUR_API_KEY_HERE@api.docraptor.com/docs   --fail --silent --show-error   --header "Content-Type:application/json"   --data '{"test": true,
-           "document_url": "http://docraptor.com/examples/invoice.html",
-           "type": "pdf" }' > docraptor.pdf"```
 
 Informazioni app produzione:
 ```lando heroku apps:info resume-giacomo-secchi```
@@ -28,5 +24,4 @@ https://www.goskills.com/Microsoft-Office/Resources/Microsoft-word-resume-templa
 https://www.comincenter.it/come-realizzare-grafica-curriculum/
 https://code.tutsplus.com/tutorials/how-to-create-an-html5-microdata-powered-resume--net-22046
 
-TODO: mettere a posto segnalazioni di praxi
-mettere switch ecommerce manager / front end developer
+

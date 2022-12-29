@@ -42,6 +42,7 @@ app.get( '/:lang', ( req, res ) => {
     res.render(template);
     return;
   };
+  
 
   content = { 
     lang: ISOcode,

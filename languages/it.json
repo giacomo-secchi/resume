@@ -12,32 +12,42 @@
         "organizations": [{
             "title": "E-commerce Manager",
             "name": "Francocantiere S.r.l.",
-            "date_start": "febbraio 2020",
-            "date_end": "presente",
+            "date": {
+                "start": "febbraio 2020",
+                "end": "presente"
+            },
             "description": "Work 360 degree to improve the overall experience of <a href='https://www.francocantiere.it'>Francocantiere</a> e-commerce platform; from Interface to marketing ads and make agreements with local curriers in order to improve the website sales"
         }, {
             "title": "Front-end web developer",
             "name": "YOOX NET-A-PORTER Group",
-            "date_start": "giugno 2015",
-            "date_end": "febbraio 2020",
+            "date": {
+                "start": "giugno 2015",
+                "end": "febbraio 2020"
+            },
             "description": "Create and mantain the interface for some major luxury brands: <a href='https://www.ysl.com/'>YSL</a>, <a href='https://www.stellamccartney.com/'>Stella McCartney</a>, <a href='https://www.therow.com/'>The Row</a>"
         }, {
             "title": "Magento Frontend Developer",
             "name": "MilkyWay S.r.l.",
-            "date_start": "maggio 2014",
-            "date_end": "giugno 2015",
+            "date": {
+                "start": "maggio 2014",
+                "end": "giugno 2015"
+            },
             "description": "Sviluppo della piattaforma e-commerce www.milkywayshop.it. e del sito corporate milkywaysport.com. Sviluppo e debugging degli elementi frontend dello shop MilkyWay. Sviluppo moduli ed estensioni Magento. Consulenza su UX e design."
         }, {
             "title": "Web Developer",
             "name": "Freelance",
-            "date_start": "marzo 2014",
-            "date_end": "maggio 2014",
+            "date": {
+                "start":  "marzo 2014",
+                "end": "maggio 2014"
+            },
             "description": "Realizzazione sito www.floch.it. Sviluppo blog (WordPress) ed implementazione e-commerce (WooCommerce)."
         },{
             "title": "Web Developer / Programmer",
             "name": "Gruppo Ciemme Srl",
-            "date_start": "maggio 2012",
-            "date_end": "luglio 2012",
+            "date": {
+                "start": "maggio 2012",
+                "end": "luglio 2012"
+            },
             "description": "Realizzazione siti vetrina e aziendali: dalla proposta grafica al frontend in html e css, creazione struttura layout per template Joomla! CMS. Funzionalità integrate di invio mail, latest tweets e aggiornamento dei contenuti tramite back office Joomla."
         }]
     }, {
@@ -67,8 +77,10 @@
                 "addressCountry": "IT"
             },
             "course": "Laurea in Scienze della Comunicazione",
-            "date_start": "a.a. 2007/2008",
-            "date_end": "a.a. 2011/2012",
+            "date": {
+                "start": "a.a. 2007/2008",
+                "end": "a.a. 2011/2012"
+            },
             "description": "Realizzazione ebooks in formato PDF, esame di Editoria multimediale (30L), Corso per i bibliotecari dell’Università di Modena e Reggio Emilia “Ebook : le caratteristiche, il mercato, l’integrazione in biblioteca”, sviluppo di piccole applicazioni editoriali in codice HTML5. Titolo testi: Riorganizzazione del testo nei libri digitali",
             "link": {
                 "text": "Facoltà di Scienze della Comunicazione e dell’Economia",
@@ -76,10 +88,12 @@
             }
         }, {
             "type": "Educational",
-            "name": "Studi Samo",
+            "name": "Studio Samo",
             "course": "Masterclass Rivoluzione E-Commerce",
-            "date_start": "7 maggio 2021",
-            "date_end": "30 maggio 2021",
+            "date": {
+                "start": "7 maggio 2021",
+                "end": "30 maggio 2021"
+            },
             "description": "Corso interamente dedicato all'E-commerce, 72 ore di formazione in aula virtuale. Argomenti del corso: Digital Business Strategy, Strategia digitale, business model e branding, Piattaforme e-commerce: le principali, pro e contro, Business Plan per e-commerce, Facebook e Instagram Ads per E-commerce, Instagram e Influencer Marketing per E-commerce, Introduzione a Google Ads per E-commerce, Google Search e Display per E-commerce, Google Shopping, YouTube per E-commerce, SEO per e-commerce, Copywriting per schede prodotto, CRO (Conversion Rate Optimization), E-mail Marketing per E-commerce, Marketing Automation, Analytics per E-commerce, Visual per E-commerce, Logistica per E-commerce, Aspetti legali dell’E-commerce, Vendere su Amazon.",
             "link": {
                 "text": "Rivoluzione E-commerce",
@@ -93,8 +107,10 @@
                 "addressLocality": "Roma"
             },
             "course": "HTML 5. Un codice per fare tutto. Per editori e giornalisti",
-            "date_start": "dicembre 2011",
-            "date_end": "marzo 2012",
+            "date": {
+                "start": "dicembre 2011",
+                "end": "marzo 2012"
+            },
             "description": "Principali novità introdotte da HTML5, grafica di qualità tipografica, layout di base, tecniche CSS avanzate, inserire o incorporare fogli per diversi media, introduzione a CSS3, uso di font tipografici, Google Web Font, impaginazione a colonne, la barra di navigazione / sommario, gestione delle fotografie, slideshow per monitor e tablet, le infografiche con CSS3, gestione dei video, player nativo contro YouTube, gestione audio, mappe, realizzazione magazine multimediale attraverso il framework Laker, gestione unificata del flusso di lavoro della casa editrice, realizzazione della copertina, il libro elettronico come prodotto scaricabile in HTML5, grafica animata, il libro multilingue, il sommario, la distribuzione e la commercializzazione, dall’oggetto HTML5 al PDF, Integrare il formato ePub, promozione sui ‘social’ e pubblicità su Facebook, i social reader. docente Antonello Mangano",
             "link": {
                 "text": "terrelibere.org",
@@ -102,18 +118,32 @@
             }
         }]
     }, {
+        "title": "Presentazioni",
+        "organizations": [{
+            "title": "JavaScript Design Patterns - Sveliamo il Revealing Module Pattern",
+            "name": "Beer&Learn - @GetConnected",
+            "date": {
+                "start": "20 aprile 2020"
+            },
+            "description": "Work 360 degree to improve the overall experience of <a href='https://www.francocantiere.it'>Francocantiere</a> e-commerce platform; from Interface to marketing ads and make agreements with local curriers in order to improve the website sales"
+        }]  
+    }, {
         "title": "Tirocini e stage",
         "organizations": [{
             "title": "Intern Frontend Developer",
             "name": "Caffeina S.r.l.",
-            "date_start": "aprile 2013",
-            "date_end": "ottobre 2013",
+            "date": {
+                "start": "aprile 2013",
+                "end": "ottobre 2013"
+            },
             "description": "<strong>Obiettivi e modalità del tirocinio</strong>: Lo stagista entrerà attivamente all'interno del flusso di lavoro aziendale relativo a piccoli progetti, nei quali avrà parte sia nella fase di progettazione chi di quella di esecuzione e testing. <br> <br> <strong>Attività</strong>: Sarà assegnato allo stagista il ruolo di Frontend Developer orientato ai servizi Web. <br> Rafforzerà la conoscenza dell'ECMAScript 5+ con particolare attenzione alla cross-compatibilità tra i maggiori browser. <br>Sfrutterà noti framework per il DOM Handling (jQuery, Zepto) e per il CSS Scaffolding (Twitter Bootstrap). Imparerà l'utilizzo delle ultime definizioni degli standard HTML5 e CSS Level 3, utilizzando attivamente alcune delle più moderne API disponibili sui browser di ultima generazione. <br> Imparerà un meta-linguaggio per il CSS (LESS) che velocizzerà la sua operatività nella definizione degli stili. Parteciperà attivamente allo sviluppo fi applicazioni social-oriented soprattutto relativi alla Facebook Platform. Gli verranno indicate risorse, tutorial, e potrà consultare materiale di addestramento aziendale, nonchè avvalersi, durante tutta la durata dello stage, dell'esperienza diretta dei colleghi."
         }, {
             "title": "Tirocinante",
             "name": "Mister Web S.r.l.",
-            "date_start": "dicembre 2010",
-            "date_end": "febbraio 2011",
+            "date": {
+                "start": "dicembre 2010",
+                "end": "febbraio 2011"
+            },
             "description": "<strong>Obiettivi e modalità del tirocinio</strong>: conoscere gli aspetti operatvi di un’agenzia di comunicazione che lavora soprattutto per il Web ma si occupa anche di comunicazione a 360° (stampa, soluzioni promozionali, pubblicità ecc.). <br><br><strong>Attività</strong>: affiancamento alla resp. uff. marketing nell’attuazione delle operazioni di marketing pianificate (anche tramite CRM) e nella realizzazione dei supporti alla vendita. <br>affiancamento agli operatori della web agency per lo sviluppo dei progetti, soprattutto web (aggiornamento siti, inserimento contenuti nelle piattaforme CMS, preparazione foto ed immagini, produzione e controllo testi, ecc.)."
         }]
     }, {

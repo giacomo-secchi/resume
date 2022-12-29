@@ -11,32 +11,38 @@
         "organizations": [{
             "title": "E-commerce Manager",
             "name": "Francocantiere S.r.l.",
-            "date_start": "february 2020",
-            "date_end": "present",
+            "date": {
+                "start": "february 2020",
+                "end": "present"
+            },
             "description": "Work 360 degree to improve the overall experience of <a href='https://www.francocantiere.it'>Francocantiere</a> e-commerce platform; from Interface to marketing ads and make agreements with local curriers in order to improve the website sales"
         }, {
             "title": "Front-end web developer",
             "name": "YOOX NET-A-PORTER Group",
-            "date_start": "june 2015",
-            "date_end": "february 2020",
+            "date": {
+                "start": "june 2015",
+                "end": "february 2020"
+            },
             "description": "Create and mantain the interface for some major luxury brands: <a href='https://www.ysl.com/'>YSL</a>, <a href='https://www.stellamccartney.com/'>Stella McCartney</a>, <a href='https://www.therow.com/'>The Row</a>"
 
         }, {
             "title": "Magento Frontend Developer",
             "name": "MilkyWay S.r.l.",
-            "date_start": "may 2014",
-            "date_end": "june 2015",
+            "date": {
+                "start": "may 2014",
+                "end": "june 2015"
+            },
             "description": "Active developing the Magento based ecommerce platform for MilkyWay, a startup project focused on action and extreme sports"
 
         }, {
             "title": "Web Developer",
             "name": "Freelance",
-            "date_start": "march 2014",
-            "date_end": "may 2014",
+            "date": {
+                "start": "march 2014",
+                "end": "may 2014"
+            },
             "description": "Realizzazione sito www.floch.it. Sviluppo blog (WordPress) ed implementazione e-commerce (WooCommerce)."
-        }] 
-    
-    
+        }]
     }, {
         "title": "Technical Skills",
         "lists": [
@@ -73,8 +79,10 @@
             "type": "Educational",
             "name": "Agile42",
             "course": "Extreme programming and TDD",
-            "date_start": "november 2018",
-            "date_end": "april 2019",
+            "date": {
+                "start": "november 2018",
+                "end": "april 2019"
+            },
             "description": "Training Course lended by YNAP group to me and the Service Team to develop a better software. Starting to apply metodologies like Test-driven development. After I took part at a follow up course focused on Agile Scrum methodology (project manager oriented)"
         }]
         
@@ -83,8 +91,10 @@
         "organizations": [{
             "title": "Intern Frontend Developer",
             "name": "Caffeina | Ideas Never Sleep",
-            "date_start": "april 2013",
-            "date_end": "october 2013",
+            "date": {
+                "start": "april 2013",
+                "end": "october 2013"
+            },
             "description": "I started my first approach to Front-end technologies with some youth but sharp-minded team. In no time by demonstrating attention to details it was gave to me the ability to work on production websites. Now this is a big digital company in Italy: <a href='https://caffeina.com/'>Caffeina</a>"
         }]
     }, {

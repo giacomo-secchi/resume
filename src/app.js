@@ -10,7 +10,7 @@ app.set('view engine', 'pug');
 
 app.use(express.static('dist'));
 app.use(express.static('public'));
-
+app.use('/languages', express.static('languages'));
 
 
 let languages = {};

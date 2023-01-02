@@ -30,7 +30,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production && ./cli.js",
+    "build": "webpack --mode=development && ./cli.js",
     "start": "node src/app.js",
     "start:dev": "nodemon --inspect src/app.js -L"
   },

@@ -1,9 +1,11 @@
 extends layout.pug
 
-mixin definitionList(s) 
+mixin definitionList(s, index) 
     dl.mb-5
         if s.title
-            dt(itemprop=(s.lists ? "name" : false))= s.title
+            script 
+                | console.log(!{JSON.stringify(s)})
+            dt(itemprop=(s.lists ? "name" : false), data-i18n-key="sections[0].title")= s.title
             dd
                 section= s.description
                     if s.organizations
@@ -47,23 +49,28 @@ mixin definitionList(s)
                                             li(itemprop="itemListElement", itemscope) !{i}
     
 block header 
-    <nav class="navbar navbar-light bg-primary bg-gradient sticky-top bg-opacity-50 d-print-none">
+    <nav class="navbar navbar-light bg-primary bg-gradient sticky-top bg-opacity-50 d-print-none py-3">
         <div class="container">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">        
-                <svg class="bi" width="1em" height="1em" fill="currentColor">
-                    <use xlink:href="bootstrap-icons.svg#translate"/>
-                </svg>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Choose Language</option>
-                    <option value="en">English</option>
-                    <option value="it">Italiano</option>
-                </select>
-            </ul>
-            a.btn.btn-outline-light(href= download_button, role="button", target="_blank")
-                = nav_button 
+            <div class="d-flex">        
+                
+                <div class="input-group">
+                    <label class="input-group-text bg-transparent" for="inputGroupSelect01">
+                        <svg class="bi text-white" width="32" height="32" fill="currentColor">
+                            <use xlink:href="bootstrap-icons.svg#translate"/>
+                        </svg>
+                    </label>
+                    <select data-i18n-switcher class="form-select bg-transparent text-white" id="inputGroupSelect01" aria-label="Choose Language">
+                        <option value="en">English</option>
+                        <option value="it">Italiano</option>
+                    </select>
+                </div>
+                
+            </div>
+            a.btn.btn-primary.text-light(href= download_button, role="button", target="_blank" )
+                span.d-none.d-sm-inline-block.align-middle(data-i18n-key="download_button") nav_button 
                 | &nbsp;
-                <svg class="bi" width="1em" height="1em" fill="currentColor">
-                    <use xlink:href="bootstrap-icons.svg#file-earmark-pdf"/>
+                <svg class="bi" width="32px" height="32px" fill="currentColor">
+                    <use xlink:href="bootstrap-icons.svg#file-earmark-pdf-fill"/>
                 </svg>
         </div>
     </nav>
@@ -75,7 +82,7 @@ block content
 
                     <div class="row">
                         <div class="col-md-2">
-                            <img class="rounded-circle w-100 h-auto" src="https://s.gravatar.com/avatar/cacd939ed4fbbea7e739d737e3411dc3?s=250" itemprop="image" width="150" height="150" alt="Your Name" />
+                            <img class="rounded-circle w-100 h-auto" src="https://s.gravatar.com/avatar/cacd939ed4fbbea7e739d737e3411dc3?s=250" itemprop="image" width="150" height="150" alt="Your Name">
                         </div>
                         <div class="col-md-6">
                             <h1><span itemprop="name">Giacomo Secchi</span></h1>
@@ -130,12 +137,12 @@ block content
             </section>
         </header>
         
-        each s in sections
+        each s, index in sections
             if s.lists
                 div(itemscope, itemtype="http://schema.org/ItemList")
-                    +definitionList(s)
+                    +definitionList(s, index)
             else     
-                +definitionList(s)
+                +definitionList(s, index)
         p
             small.text-muted= privacy
 

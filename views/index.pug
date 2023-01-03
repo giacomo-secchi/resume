@@ -3,9 +3,9 @@ extends layout.pug
 mixin definitionList(s, index) 
     dl.mb-5
         if s.title
-            script 
-                | console.log(!{JSON.stringify(s)})
-            dt(itemprop=(s.lists ? "name" : false), data-i18n-key="sections[0].title")= s.title
+            //- script 
+            //-     | console.log(!{JSON.stringify(s)})
+            dt(itemprop=(s.lists ? "name" : false))= s.title
             dd
                 section= s.description
                     if s.organizations

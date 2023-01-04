@@ -24,7 +24,7 @@ config = {
     "Content-Type": "application/json"
   },
   data: {
-    user_credentials: "YOUR_API_KEY_HERE", // this key works in test mode!
+    user_credentials: "KPXpLWUsmMJCD2iUQ-Mu", // this key works in test mode!
     doc: {
       test: true, // test documents are free but watermarked
       document_type: "pdf",

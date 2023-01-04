@@ -31,8 +31,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=development && ./cli.js",
-    "start": "node src/app.js",
-    "start:dev": "nodemon --inspect src/app.js -L"
+    "start": "node app.js",
+    "start:dev": "nodemon --inspect app.js -L"
   },
   "repository": {
     "type": "git",

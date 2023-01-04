@@ -1,10 +1,15 @@
 const express = require('express');
 const fs = require('fs');
+var path = require('path');
 const glob  = require('glob');
-
-
-const app = express();
 const port = process.env.PORT || 3000;
+
+var app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+
 
 app.set('view engine', 'pug');
 

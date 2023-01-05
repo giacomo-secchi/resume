@@ -3,7 +3,6 @@ var path = require('path');
 const port = process.env.PORT || 3000;
 
 let indexRouter = require('./routes/index');
-let langRouter = require('./routes/languages');
 
 
 var app = express();

@@ -104,8 +104,8 @@
             "name": "Agile42",
             "course": "Corso di Formazione: eXtreme Programming and Test-driven development",
             "date": {
-                "start": "november 2018",
-                "end": "april 2019"
+                "start": "novembere 2018",
+                "end": "aprile 2019"
             },
             "description": "Corso di formazione aziendale del Service Team YNAP focalizzato sullo sviluppo di un software di migliore qualità. Abbiamo visto nel dettaglio come applicare metodologie SOLID e come lo sviluppo TDD (guidato dai test) può aiutarci nella scrittura di un codice più mantenibile. Dopo ho partecipato ad un corso di follow-up focalizzato sulla metodologia Agile Scrum (orientato al project management)."
         }, {

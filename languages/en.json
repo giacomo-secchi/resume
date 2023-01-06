@@ -42,6 +42,14 @@
                 "end": "may 2014"
             },
             "description": "Realizzazione sito www.floch.it. Sviluppo blog (WordPress) ed implementazione e-commerce (WooCommerce)."
+        }, {
+            "title": "Web Developer / Programmer",
+            "name": "Gruppo Ciemme Srl",
+            "date": {
+                "start": "may 2012",
+                "end": "july 2012"
+            },
+            "description": "Creation of showcase and corporate websites: from the graphic proposal to the frontend in HTML and CSS, creation of layout structure for Joomla! CMS templates. Integrated mail sending, latest tweets, and content updating functionality through the Joomla back office."
         }]
     }, {
         "title": "Technical Skills",
@@ -77,15 +85,63 @@
         "title": "Education",
         "organizations": [{
             "type": "Educational",
+            "name": "Università degli studi di Modena e Reggio Emilia",
+            "address": {
+                "streetAddress": "Viale Allegri 9",
+                "addressLocality": "Reggio Emilia",
+                "postalCode": "42121",
+                "addressCountry": "IT"
+            },
+            "course": "Laurea in Scienze della Comunicazione",
+            "date": {
+                "start": "a.a. 2007/2008",
+                "end": "a.a. 2011/2012"
+            },
+            "description": "Realizzazione ebooks in formato PDF, esame di Editoria multimediale (30L), Corso per i bibliotecari dell’Università di Modena e Reggio Emilia “Ebook : le caratteristiche, il mercato, l’integrazione in biblioteca”, sviluppo di piccole applicazioni editoriali in codice HTML5. Titolo testi: Riorganizzazione del testo nei libri digitali",
+            "link": {
+                "text": "Facoltà di Scienze della Comunicazione e dell’Economia",
+                "url": "https://www.dce.unimore.it/site/home.html"
+            }
+        }, {
+            "type": "Educational",
+            "name": "Studio Samo",
+            "course": "Masterclass Rivoluzione E-Commerce",
+            "date": {
+                "start": "7 maggio 2021",
+                "end": "30 maggio 2021"
+            },
+            "description": "Corso interamente dedicato all'E-commerce, 72 ore di formazione in aula virtuale. Argomenti del corso: Digital Business Strategy, Strategia digitale, business model e branding, Piattaforme e-commerce: le principali, pro e contro, Business Plan per e-commerce, Facebook e Instagram Ads per E-commerce, Instagram e Influencer Marketing per E-commerce, Introduzione a Google Ads per E-commerce, Google Search e Display per E-commerce, Google Shopping, YouTube per E-commerce, SEO per e-commerce, Copywriting per schede prodotto, CRO (Conversion Rate Optimization), E-mail Marketing per E-commerce, Marketing Automation, Analytics per E-commerce, Visual per E-commerce, Logistica per E-commerce, Aspetti legali dell’E-commerce, Vendere su Amazon.",
+            "link": {
+                "text": "Rivoluzione E-commerce",
+                "url": "https://www.rivoluzioneecommerce.it/"
+            }
+        }, {
+            "type": "Educational",
             "name": "Agile42",
-            "course": "Extreme programming and TDD",
+            "course": "eXtreme Programming and Test-driven development Training",
             "date": {
                 "start": "november 2018",
                 "end": "april 2019"
             },
             "description": "Training Course lended by YNAP group to me and the Service Team to develop a better software. Starting to apply metodologies like Test-driven development. After I took part at a follow up course focused on Agile Scrum methodology (project manager oriented)"
+        }, {
+            "type": "Educational",
+            "name": "Adista",
+            "address": {
+                "streetAddress": "Via Acciaioli 7",
+                "addressLocality": "Roma"
+            },
+            "course": "HTML 5. Un codice per fare tutto. Per editori e giornalisti",
+            "date": {
+                "start": "dicembre 2011",
+                "end": "marzo 2012"
+            },
+            "description": "Principali novità introdotte da HTML5, grafica di qualità tipografica, layout di base, tecniche CSS avanzate, inserire o incorporare fogli per diversi media, introduzione a CSS3, uso di font tipografici, Google Web Font, impaginazione a colonne, la barra di navigazione / sommario, gestione delle fotografie, slideshow per monitor e tablet, le infografiche con CSS3, gestione dei video, player nativo contro YouTube, gestione audio, mappe, realizzazione magazine multimediale attraverso il framework Laker, gestione unificata del flusso di lavoro della casa editrice, realizzazione della copertina, il libro elettronico come prodotto scaricabile in HTML5, grafica animata, il libro multilingue, il sommario, la distribuzione e la commercializzazione, dall’oggetto HTML5 al PDF, Integrare il formato ePub, promozione sui ‘social’ e pubblicità su Facebook, i social reader. docente Antonello Mangano",
+            "link": {
+                "text": "terrelibere.org",
+                "url": "http://terrelibere.org"
+            }
         }]
-        
     }, {
         "title": "Event presentations",
         "organizations": [{

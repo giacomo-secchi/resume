@@ -19,6 +19,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "css-loader": "^6.7.2",
+    "css-minimizer-webpack-plugin": "^4.2.2",
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.7.2",
     "nodemon": "^2.0.20",
@@ -31,7 +32,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=development && ./cli.js",
+    "build": "webpack --mode=production && ./cli.js",
     "start": "node app.js",
     "start:dev": "nodemon --inspect app.js -L"
   },

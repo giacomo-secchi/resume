@@ -1,11 +1,6 @@
-extends layout.pug
-block content 
-    <div class="container shadow p-5 bg-white my-5" style="--bs-border-opacity: .8; max-width: 794px;">
-        
-        p
-         strong Page not Found…   
-        a(href= "/en") Read the resume  
+extends layout
 
-    </div>
-block scripts
-  script(src='/main.js')
+block content
+  h1= message
+  h2= error.status
+  pre #{error.stack}

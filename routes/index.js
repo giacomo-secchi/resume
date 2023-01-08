@@ -24,7 +24,7 @@ router.get('/:lang', function(req, res, next) {
     
       if ( ! languages.hasOwnProperty(ISOcode) )  {
         res.status(404); 
-        template = 'error';
+        template = '404';
         res.render(template);
         return;
       };

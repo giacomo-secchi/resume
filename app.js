@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 const i18next = require('i18next');
 const i18nextMiddleware = require('i18next-express-middleware');
-const Backend = require('i18next-node-fs-backend');
+const Backend = require('i18next-fs-backend');
 const port = process.env.PORT || 3000;
 
 let indexRouter = require('./routes/index');

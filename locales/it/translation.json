@@ -16,7 +16,7 @@
                 "start": "febbraio 2020",
                 "end": "presente"
             },
-            "description": "Work 360 degree to improve the overall experience of <a href='https://www.francocantiere.it'>Francocantiere</a> e-commerce platform; from Interface to marketing ads and make agreements with local curriers in order to improve the website sales"
+            "description": "Lavoro a 360 gradi per migliorare l'esperienza complessiva della piattaforma di vendita online <a href='https://www.francocantiere.it'>Francocantiere</a>; dall'interfaccia agli annunci di marketing e stringere accordi con i corrieri locali al fine di migliorare le vendite del sito web."
         }, {
             "title": "Front-end web developer",
             "name": "YOOX NET-A-PORTER Group",
@@ -24,7 +24,7 @@
                 "start": "giugno 2015",
                 "end": "febbraio 2020"
             },
-            "description": "Create and mantain the interface for some major luxury brands: <a href='https://www.ysl.com/'>YSL</a>, <a href='https://www.stellamccartney.com/'>Stella McCartney</a>, <a href='https://www.therow.com/'>The Row</a>"
+            "description": "Creazione e mantenimento di interfacce web per le piattaforme ecommerce ufficiali di: <a href='https://www.ysl.com/'>YSL</a>, <a href='https://www.stellamccartney.com/'>Stella McCartney</a>, <a href='https://www.therow.com/'>The Row</a>"
         }, {
             "title": "Magento Frontend Developer",
             "name": "MilkyWay S.r.l.",
@@ -81,7 +81,7 @@
                 "start": "a.a. 2007/2008",
                 "end": "a.a. 2011/2012"
             },
-            "description": "Realizzazione ebooks in formato PDF, esame di Editoria multimediale (30L), Corso per i bibliotecari dell’Università di Modena e Reggio Emilia “Ebook : le caratteristiche, il mercato, l’integrazione in biblioteca”, sviluppo di piccole applicazioni editoriali in codice HTML5. Titolo testi: Riorganizzazione del testo nei libri digitali",
+            "description": "Realizzazione di libri elettronici in formato PDF, esame di Editoria multimediale (30/30 cum laude), Corso per i bibliotecari dell’Università di Modena e Reggio Emilia “Ebook : le caratteristiche, il mercato, l’integrazione in biblioteca”, sviluppo di piccole applicazioni editoriali in codice HTML5. Titolo testi: Riorganizzazione del testo nei libri digitali",
             "link": {
                 "text": "Facoltà di Scienze della Comunicazione e dell’Economia",
                 "url": "https://www.dce.unimore.it/site/home.html"
@@ -99,6 +99,15 @@
                 "text": "Rivoluzione E-commerce",
                 "url": "https://www.rivoluzioneecommerce.it/"
             }
+        }, {
+            "type": "Educational",
+            "name": "Agile42",
+            "course": "Corso di Formazione: eXtreme Programming and Test-driven development",
+            "date": {
+                "start": "novembere 2018",
+                "end": "aprile 2019"
+            },
+            "description": "Corso di formazione aziendale del Service Team YNAP focalizzato sullo sviluppo di un software di migliore qualità. Abbiamo visto nel dettaglio come applicare metodologie SOLID e come lo sviluppo TDD (guidato dai test) può aiutarci nella scrittura di un codice più mantenibile. Dopo ho partecipato ad un corso di follow-up focalizzato sulla metodologia Agile Scrum (orientato al project management)."
         }, {
             "type": "Educational",
             "name": "Adista",

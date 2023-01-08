@@ -15,7 +15,7 @@
                 "start": "february 2020",
                 "end": "present"
             },
-            "description": "Work 360 degree to improve the overall experience of <a href='https://www.francocantiere.it'>Francocantiere</a> e-commerce platform; from Interface to marketing ads and make agreements with local curriers in order to improve the website sales"
+            "description": "Work 360 degree to improve the overall experience of <a href='https://www.francocantiere.it'>Francocantiere</a> e-commerce platform; from Interface to marketing ads and make agreements with local couriers in order to improve the website sales"
         }, {
             "title": "Front-end web developer",
             "name": "YOOX NET-A-PORTER Group",
@@ -41,7 +41,15 @@
                 "start": "march 2014",
                 "end": "may 2014"
             },
-            "description": "Realizzazione sito www.floch.it. Sviluppo blog (WordPress) ed implementazione e-commerce (WooCommerce)."
+            "description": "www.floch.it e-commerce Website implementation. Blog development (WordPress) and e-commerce implementation (WooCommerce)."
+        }, {
+            "title": "Web Developer / Programmer",
+            "name": "Gruppo Ciemme Srl",
+            "date": {
+                "start": "may 2012",
+                "end": "july 2012"
+            },
+            "description": "Creation of showcase and corporate websites: from the graphic proposal to the frontend in HTML and CSS, creation of layout structure for Joomla! CMS templates. Integrated mail sending, latest tweets, and content updating functionality through the Joomla back office."
         }]
     }, {
         "title": "Technical Skills",
@@ -77,15 +85,63 @@
         "title": "Education",
         "organizations": [{
             "type": "Educational",
+            "name": "Università degli studi di Modena e Reggio Emilia",
+            "address": {
+                "streetAddress": "Viale Allegri 9",
+                "addressLocality": "Reggio Emilia",
+                "postalCode": "42121",
+                "addressCountry": "IT"
+            },
+            "course": "Bachelor's Degree in Communication Science (Media studies)",
+            "date": {
+                "start": "AY 2007/2008",
+                "end": "AY 2011/2012"
+            },
+            "description": "Ebooks creation in PDF format, Multimedia Publishing exam (30L), Course for librarians at the University of Modena and Reggio Emilia \"Ebook : the characteristics, the market, integration in the library\", development of small publishing applications in HTML5 code. Thesis subject: Text reorganization in digital books",
+            "link": {
+                "text": "Facoltà di Scienze della Comunicazione e dell’Economia",
+                "url": "https://www.dce.unimore.it/site/home.html"
+            }
+        }, {
+            "type": "Educational",
+            "name": "Studio Samo",
+            "course": "Masterclass Rivoluzione E-Commerce",
+            "date": {
+                "start": "7 maggio 2021",
+                "end": "30 maggio 2021"
+            },
+            "description": "Course focused on E-commerce, 72 hours of virtual classroom training. Course topics: Digital Business Strategy, Digital Strategy, Business Model and Branding, E-commerce Platforms: the main ones, pros and cons, Business Plan for E-commerce, Facebook and Instagram Ads for E-commerce, Instagram and Influencer Marketing for E-commerce, Introduction to Google Ads for E-commerce, Google Search and Display for E-commerce, Google Shopping, YouTube for E-commerce, SEO for E-commerce, Copywriting for product sheets, CRO (Conversion Rate Optimization), E-mail Marketing for E-commerce, Marketing Automation, Analytics for E-commerce, Visual for E-commerce, Logistics for E-commerce, Legal Aspects of E-commerce, Selling on Amazon.",
+            "link": {
+                "text": "Rivoluzione E-commerce",
+                "url": "https://www.rivoluzioneecommerce.it/"
+            }
+        }, {
+            "type": "Educational",
             "name": "Agile42",
-            "course": "Extreme programming and TDD",
+            "course": "eXtreme Programming and Test-driven development Training",
             "date": {
                 "start": "november 2018",
                 "end": "april 2019"
             },
             "description": "Training Course lended by YNAP group to me and the Service Team to develop a better software. Starting to apply metodologies like Test-driven development. After I took part at a follow up course focused on Agile Scrum methodology (project manager oriented)"
+        }, {
+            "type": "Educational",
+            "name": "Adista",
+            "address": {
+                "streetAddress": "Via Acciaioli 7",
+                "addressLocality": "Roma"
+            },
+            "course": "HTML 5. Un codice per fare tutto. Per editori e giornalisti",
+            "date": {
+                "start": "dicembre 2011",
+                "end": "marzo 2012"
+            },
+            "description": "Main new features introduced by HTML5, type-quality graphics, basic layout, techniques advanced CSS, inserting or embedding sheets for different media, introduction to CSS3, use of fonts typography, Google Web Fonts, grid page layout, the navigation bar/summary, managing photographs, slideshows for monitors and tablets, infographics with CSS3, managing of videos, native player against YouTube, audio management, maps, making magazine multimedia through the Laker framework, unified workflow management of the house publisher, cover creation, the e-book as a downloadable product in HTML5, animated graphics, the multilingual book, the table of contents, distribution and marketing, from the HTML5 object to the PDF, Integrating the ePub format, promotion on 'social' and advertising on Facebook, social readers. trainer Antonello Mangano.",
+            "link": {
+                "text": "terrelibere.org",
+                "url": "http://terrelibere.org"
+            }
         }]
-        
     }, {
         "title": "Event presentations",
         "organizations": [{

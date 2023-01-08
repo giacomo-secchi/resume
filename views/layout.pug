@@ -16,8 +16,8 @@ html(lang=lang)
  
     
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" media="print" href="print.min.css">
-    <link rel="stylesheet" href="style.min.css">
+    link(rel='stylesheet', media='print', href='/print.min.css')
+    link(rel='stylesheet', href='/main.min.css')
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@ html(lang=lang)
         p.text-center.text-muted.d-print-none
           span.fs-2
             <svg class="bi" width="1em" height="1em" fill="currentColor">
-                <use xlink:href="bootstrap-icons.svg#code-slash"/>
+                <use xlink:href="/bootstrap-icons.svg#code-slash"/>
             </svg>
           | &nbsp;
           | Want to view the source code of this project? 

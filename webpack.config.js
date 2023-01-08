@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 
 module.exports = {
@@ -7,7 +8,6 @@ module.exports = {
   entry: {
     main: path.resolve(__dirname, './src/js/main.js'),
     print: path.resolve(__dirname, './src/scss/print.scss'),
-    style: path.resolve(__dirname, './src/scss/styles.scss')
   },
   output: {
     // // filename: 'main.js',
@@ -50,6 +50,13 @@ module.exports = {
           path.resolve(__dirname, 'node_modules/bootstrap-icons')
         ]
       }
+    ],
+  },
+  optimization: {
+    minimizer: [
+      // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
+      // `...`,
+      new CssMinimizerPlugin(),
     ],
   },
 };

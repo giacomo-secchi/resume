@@ -29,7 +29,7 @@ config = {
       test: true, // test documents are free but watermarked
       document_type: "pdf",
       // document_content: t,
-      document_url: "https://personal-website2.herokuapp.com/en",
+      document_url: "https://personal-website2.herokuapp.com/it",
       javascript: true,
       prince_options: {
       //   media: "print", // @media 'screen' or 'print' CSS

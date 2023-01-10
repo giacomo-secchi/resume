@@ -1,45 +1,31 @@
 const express = require('express');
-const glob  = require('glob');
-const fs = require('fs');
+const i18next = require('i18next');
 var router = express.Router();
 
-let languages = {};
 
-glob.sync( './languages/*.json' ).forEach( ( file ) => {
-    const regex = RegExp('languages/(.*).json', 'g');  
-    let ISOcode = regex.exec(file)[1];
-  
-    fs.readFile(file, function(err, data) {
-      languages[ISOcode] = JSON.parse( data.toString() );
-    });
-  
-});
-  
+
 /* GET users listing. */
-router.get('/:lang', function(req, res, next) {
-    
-      let ISOcode = req.params['lang'];
-      let template = 'index';
-      let content;
-    
-      if ( ! languages.hasOwnProperty(ISOcode) )  {
-        res.status(404); 
-        template = '404';
-        res.render(template);
-        return;
-      };
-      
-    
-      content = { 
-        lang: ISOcode,
-        title: languages[ISOcode].title,
-        privacy: languages[ISOcode].privacy_text,
-        nav_button: languages[ISOcode].download_button,
-        download_button: languages[ISOcode].download_file,
-        sections: languages[ISOcode].sections
-      };
-      
-      res.render(template, content);
+router.get('/', function(req, res, next) {
+  let lng = req.language // 'de-CH'
+  let lngs = req.languages // ['de-CH', 'de', 'en']
+  let template = 'index';
+  // req.i18n.changeLanguage('en') // will not load that!!! assert it was preloaded
+
+  if (lng) {
+    i18next.changeLanguage(lng, (err, t) => {
+      if (err) {
+        return res.status(500).send(err);
+      }
+
+      let sections = i18next.t('sections', { returnObjects: true });
+      res.render(template, { lang: i18next.language, sections, t });
+    });
+  } else {
+    res.render(template, { t: i18next.t });
+  }
+
+  // var exists = req.i18n.exists('myKey')
+  // var translation = req.t('myKey')
 });
 
 module.exports = router;

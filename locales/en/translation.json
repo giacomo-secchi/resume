@@ -1,8 +1,10 @@
 {
+    "404_message": "404 page not found",
     "download_button": "View Printable CV",
     "download_file": "resume_giacomo_secchi.pdf",
     "language_name": "English",
     "title": "Resumé | Giacomo Secchi | Frontend Web Developer",
+    "privacy_text": "",
     "sections": [{
         "title": "Profile",
         "description": "T-shaped professional with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity."

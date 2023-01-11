@@ -11,6 +11,10 @@ $primary: #058ed9;
 $secondary: #98CE00;
 $headings-color: $primary;
 
+$container-max-widths: (
+  xxl: 794px
+);
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "~bootstrap/scss/variables";
 

@@ -7,16 +7,9 @@
 
 const axios = require("axios");
 const fs = require("fs");
-const path = require("path");
-let data1 = require('./languages/en.json').download_file
-let data2 = require('./languages/it.json').download_file
+const i18next = require('./i18n')();
 
-// var t = fs.readFileSync("./public/test_page.html", "utf8", (err, data) => {
-//   if (err) throw err;
-// });
-
-
-config = {
+let config = {
   url: "https://api.docraptor.com/docs",
   method: "post",
   responseType: "arraybuffer", //IMPORTANT! Required to fetch the binary PDF
@@ -29,7 +22,6 @@ config = {
       test: true, // test documents are free but watermarked
       document_type: "pdf",
       // document_content: t,
-      document_url: "https://personal-website2.herokuapp.com/en",
       javascript: true,
       prince_options: {
       //   media: "print", // @media 'screen' or 'print' CSS
@@ -39,22 +31,39 @@ config = {
   }
 };
 
-axios(config)
-  .then(function(response) {
-    let files = [data1, data2];
+// var t = fs.readFileSync("./public/test_page.html", "utf8", (err, data) => {
+//   if (err) throw err;
+// });
 
-    files.forEach(file => {
-      let path = `dist/${file}`;
 
-      fs.writeFile(path, response.data, "binary", function(writeErr) {
-        if (writeErr) throw writeErr;
-        console.log(`Saved ${file}!"`);
-      });      
-    });
+i18next
+  .then((i18n) => i18n.services.resourceStore.data)
+  .then((translations) => {
+
+    Object.keys(translations).forEach(lang => {
+      config.data.doc.document_url = `https://personal-website2.herokuapp.com/${lang}`;
+
+      let path = `dist/${translations[lang].translation.download_file}`;
+
+      axios(config)
+        .then(function(response) {
+   
+          fs.writeFile(path, response.data, "binary", function(writeErr) {
+            if (writeErr) throw writeErr;
+            console.log(`Saved ${path}!"`);
+          });
+
+        })
+        .catch(function(error) {
+          // DocRaptor error messages are contained in the response body
+          // Since the response is binary encoded, let's decode
+          var decoder = new TextDecoder("utf-8");
+          console.log(decoder.decode(error.response.data));
+        });
+    })
   })
-  .catch(function(error) {
-    // DocRaptor error messages are contained in the response body
-    // Since the response is binary encoded, let's decode
-    var decoder = new TextDecoder("utf-8");
-    console.log(decoder.decode(error.response.data));
+  // .then(process.exit())
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
   });

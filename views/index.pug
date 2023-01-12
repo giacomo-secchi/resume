@@ -42,8 +42,8 @@ mixin definitionList(s, index)
                                             | — #{o.date.end}
                                 p
                                     span(itemprop="description") !{o.description}
-                                    br 
                                     if o.link
+                                        <br>
                                         a(itemprop="url", href=o.link.url, target="_blank", title=o.link.text)= o.link.text
                     if s.lists
                             .row
@@ -83,7 +83,7 @@ block content
                             </svg>
                     </li>
                 </ul>
-            .shadow-sm.p-5.bg-white.col-md-6
+            .col-md-6.shadow-sm.p-5.bg-white
                 <header>
                     <section>
                         <div itemscope itemtype="http://schema.org/Person">

@@ -41,7 +41,7 @@ i18next
   .then((translations) => {
 
     Object.keys(translations).forEach(lang => {
-      config.data.doc.document_url = `https://personal-website2.herokuapp.com/${lang}`;
+      config.data.doc.document_url = `https://personal-website2.herokuapp.com/?lang=${lang}`;
 
       let path = `dist/${translations[lang].translation.download_file}`;
 

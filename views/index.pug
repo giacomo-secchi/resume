@@ -40,8 +40,7 @@ mixin definitionList(s, index)
                                     span.text-muted #{o.date.start} 
                                         if o.date.end
                                             | — #{o.date.end}
-                                p
-                                    span(itemprop="description") !{o.description}
+                                p(itemprop="description") !{o.description}
                                     if o.link
                                         <br>
                                         a(itemprop="url", href=o.link.url, target="_blank", title=o.link.text)= o.link.text

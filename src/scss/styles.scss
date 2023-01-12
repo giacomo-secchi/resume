@@ -11,12 +11,9 @@ $primary: #058ed9;
 $secondary: #98CE00;
 $headings-color: $primary;
 
-$container-max-widths: (
-  xxl: 794px
-);
-
-// 3. Include remainder of required Bootstrap stylesheets
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
 
@@ -32,6 +29,9 @@ $container-max-widths: (
 @import "~bootstrap/scss/images";
 @import "~bootstrap/scss/containers";
 @import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/breadcrumb";
 
 @import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/buttons";
@@ -46,7 +46,8 @@ $container-max-widths: (
 
 // 8. Add additional custom code here
 .marker-list li {
-    &::marker{
+    &::marker {
         color: $primary;
     }
 }
+ 

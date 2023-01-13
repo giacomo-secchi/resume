@@ -12,7 +12,7 @@ html(lang=lang)
     meta(name='keywords', content='web,developer,designer,resume,html5,schema,microdata,Modena,Bologna')
     meta(property='og:title', content='Web developer specializzato nel frontend')
     meta(property='og:description', content='Web developer specializzato nel frontend')
-    meta(name='twitter:title', content='Web developer specializzato nel frontend')
+    meta(name='twitter:title', content=t('title'))
     meta(name='twitter:description', content='Web developer specializzato nel frontend')
     meta(name='author', content='Giacomo Secchi')
     
@@ -41,7 +41,7 @@ html(lang=lang)
             </svg>
           | &nbsp;
           | Want to view the source code of this project? 
-          a(href='https://github.com/giacomo-secchi/personal-website', target="_blank", rel="noopener") Follow the white rabbit!
+          a(href='https://github.com/giacomo-secchi/personal-website', class="text-decoration-none", target="_blank", rel="noopener") Follow the white rabbit!
           |💊👨🏻‍💻🐇🕳️
     block scripts
       //- script(src='/jquery.js')  

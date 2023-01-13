@@ -5,9 +5,11 @@
 // The Axios package is the only requirement for this example:
 // $ npm install axios
 
-const axios = require("axios");
-const fs = require("fs");
+const axios = require('axios');
+const fs = require('fs');
 const i18next = require('./i18n')();
+const pug = require('pug');
+let content = "<html><body>TEST!</body></html>";
 
 let config = {
   url: "https://api.docraptor.com/docs",
@@ -21,7 +23,7 @@ let config = {
     doc: {
       test: true, // test documents are free but watermarked
       document_type: "pdf",
-      // document_content: t,
+      document_content: content,
       javascript: true,
       prince_options: {
       //   media: "print", // @media 'screen' or 'print' CSS
@@ -31,19 +33,26 @@ let config = {
   }
 };
 
-// var t = fs.readFileSync("./public/test_page.html", "utf8", (err, data) => {
-//   if (err) throw err;
-// });
 
 
 i18next
+  .then((i18next) => {
+    let sections = i18next.t('sections', { returnObjects: true });
+    const html = pug.renderFile('views/index.pug', { lang: i18next.language, sections, t: i18next.t  });
+
+    return { html, i18next };
+  })
+  .then(({ html, i18next }) => {
+    config.data.doc.document_content = html;
+    
+    return i18next;
+  })
   .then((i18n) => i18n.services.resourceStore.data)
-  .then((translations) => {
+  .then((response) => {
 
-    Object.keys(translations).forEach(lang => {
-      config.data.doc.document_url = `https://personal-website2.herokuapp.com/?lang=${lang}`;
-
-      let path = `dist/${translations[lang].translation.download_file}`;
+    Object.keys(response).forEach(lang => {
+ 
+      let path = `dist/${response[lang].translation.download_file}`;
 
       axios(config)
         .then(function(response) {

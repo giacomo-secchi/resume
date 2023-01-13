@@ -8,7 +8,7 @@
 $font-family-sans-serif: "Open Sans";
 $headings-font-family: 'Noto Serif';
 $primary: #058ed9;
-$secondary: #98CE00;
+$secondary: #06D6A0;
 $headings-color: $primary;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
@@ -45,6 +45,18 @@ $headings-color: $primary;
 @import "~bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+
+a {
+    text-decoration-color: $secondary;
+    text-decoration-thickness: .125em;
+    text-underline-offset: 4px;
+    
+    
+    &:hover {
+        text-decoration-color: shift-color($secondary, -40%);
+    }
+}
+
 .marker-list li {
     &::marker {
         color: $primary;

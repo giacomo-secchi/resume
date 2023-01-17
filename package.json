@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/app.js",
-  "engines": {
-    "node": "18.12.1"
-  },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "axios": "^1.2.1",

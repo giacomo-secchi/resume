@@ -38,7 +38,7 @@ let config = {
 i18next
   .then((i18next) => {
     let sections = i18next.t('sections', { returnObjects: true });
-    const html = pug.renderFile('views/index.pug', { lang: i18next.language, sections, t: i18next.t  });
+    const html = pug.renderFile('views/index.pug', { sections, t: i18next.t  });
 
     return { html, i18next };
   })

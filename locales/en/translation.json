@@ -2,7 +2,6 @@
     "404_message": "404 page not found",
     "download_button": "View Printable CV",
     "download_file": "resume_giacomo_secchi.pdf",
-    "language_name": "English",
     "title": "Resumé | Giacomo Secchi | Frontend Web Developer",
     "privacy_text": "",
     "sections": [{
@@ -68,7 +67,8 @@
                 "PrestaShop",
                 "WP/Gutenberg/WooCommerce"
             ]
-        ]
+        ],
+        "color": "primary"
     }, {
         "title": "Soft Skills",
         "lists": [
@@ -82,7 +82,8 @@
                 "Networking",
                 "Critical thinking"
             ]
-        ]
+        ],
+        "color": "secondary"
     }, {
         "title": "Education",
         "organizations": [{

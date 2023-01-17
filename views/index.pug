@@ -11,7 +11,7 @@ mixin definitionList(s, index)
     +wrapper(s.lists)
         dl.mb-5
             if s.title
-                dt(itemprop=(s.lists ? "name" : false))= s.title
+                dt(itemprop=(s.lists && "name"))= s.title
                 dd= s.description
                     if s.organizations
                         each o in s.organizations
@@ -48,7 +48,7 @@ mixin definitionList(s, index)
                             .row
                                 each l in s.lists
                                     .col
-                                        ul.marker-list
+                                        ul(class=(s.color && `marker-list-${s.color}`))
                                             each i in l
                                                 li(itemprop="itemListElement", itemscope) !{i}
         
@@ -58,30 +58,24 @@ block content
     .p-md-4
     .container-fluid
         .row.flex-md-row-reverse.d-print-block
-            .col-md-3.sticky-top.py-3.bg-light.bg-gradient.bg-opacity-50.h-100.d-print-none
-                <ul class="nav justify-content-between align-items-center align-items-md-start flex-md-column">
-                    <li class="nav-item">
+            .col-md-3.sticky-top.py-3.bg-light.bg-gradient.bg-opacity-75.h-100.d-print-none
+                ul.nav.justify-content-between.align-items-center.align-items-md-start.flex-md-column
+                    .nav-item
                         <svg class="bi text-black-50" width="1em" height="1em" fill="currentColor">
                             <use xlink:href="/bootstrap-icons.svg#translate"/>
                         </svg>
- 
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a class="text-decoration-none" href="/?lang=it">Italiano</a></li>
-                                <li class="breadcrumb-item active"><a class="text-decoration-none" aria-current="page" href="/?lang=en">English</a></li>
-                            </ol>
-                        </nav>
-                    </li>
-                    
-                    <li class="nav-item">
+                        ul.nav.nav-divider.mx-n3(style={'--bs-nav-link-color': 'var(--bs-gray)'})
+                            each lang, code in (typeof languageNames !== 'undefined' && Object.keys(languageNames).length ? languageNames : [['No languages available', '']])
+                                - var currentLang = (code == language)
+                                li.nav-item
+                                    a.nav-link(href=`/?lang=${code}`, class=(currentLang && "active"), aria-current=(currentLang && "page"))= lang
+                    .nav-item
                         a.btn.btn-primary.text-light(href= t('download_file'), role="button", target="_blank" )
                             span.d-none.d-sm-inline-block.align-middle= t('download_button') 
                             | &nbsp;
                             <svg class="bi" width="32px" height="32px" fill="currentColor">
                                 <use xlink:href="/bootstrap-icons.svg#file-earmark-pdf-fill"/>
                             </svg>
-                    </li>
-                </ul>
             .col-md-6.shadow-sm.p-5.bg-white
                 <header>
                     <section>
@@ -152,4 +146,6 @@ block content
 
 
 block scripts
-  script(src='/main.js')
+    script(src='/main.js')
+    //- script 
+    //-     | console.log(!{JSON.stringify(languageNames)})

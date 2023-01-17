@@ -2,7 +2,6 @@
     "404_message": "404 pagina non trovata",
     "download_button": "Visualizza versione stampabile",
     "download_file": "Giacomo_Secchi_CV.pdf",
-    "language_name": "Italiano",
     "privacy_text": "Ai sensi del D.L. 196/2003 denominato “Codice in materia di protezione dei dati personali” autorizzo al trattamento dei dati personali contenuti nel presente curriculum.",
     "title": "Curriculum Vitae | Giacomo Secchi | Frontend Web Developer",
     "sections": [{
@@ -65,7 +64,8 @@
                 "PrestaShop",
                 "WP/Gutenberg/WooCommerce"
             ]
-        ]
+        ],
+        "color": "primary"
     }, {
         "title": "Studi e Formazione",
         "organizations": [{

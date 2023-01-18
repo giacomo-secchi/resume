@@ -106,3 +106,13 @@ a {
     }
 }
  
+
+[data-bs-theme-value="light"].active {
+    color: var(--bs-yellow) !important;
+    background-color: white !important;
+}
+
+[data-bs-theme-value="dark"].active {
+    color: var(--bs-blue) !important;
+    background-color: white !important;
+}

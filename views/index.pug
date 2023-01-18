@@ -71,22 +71,23 @@ block content
                                     a.nav-link(href=`/?lang=${code}`, class=(currentLang && "active"), aria-current=(currentLang && "page"))= lang
                     .nav-item
                         <div class="btn-group py-md-3" role="group" aria-label="Change color theme">
-                            <button type="button" class="btn btn-dark" style="color: var(--bs-yellow);" data-bs-theme-value="light">
+                            <button type="button" class="btn bg-dark-subtle text-light" data-bs-theme-value="light">
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
                                     <use href="/bootstrap-icons.svg#sun"/>
                                 </svg>
                             </button>
-                            <button type="button" class="btn btn-secondary bg-white" style="color: var(--bs-blue);" data-bs-theme-value="dark">
+                            <button type="button" class="btn bg-dark-subtle text-light" data-bs-theme-value="dark">
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
                                     <use href="/bootstrap-icons.svg#moon-stars-fill"/>
                                 </svg>
-                                <svg class="bi theme-icon-active d-none" width="1em" height="1em" fill="currentColor">
-                                    <use href="/bootstrap-icons.svg#yin-yang"/>
-                                </svg>
-                             
+                               
                             </button>
                             
                         </div>
+                        .d-none
+                            <svg class="bi theme-icon-active " width="1em" height="1em" fill="currentColor">
+                                <use href="/bootstrap-icons.svg#yin-yang"/>
+                            </svg>
                     .nav-item
                         a.btn.btn-primary.text-light(href=t('download_file') role="button", target="_blank")
                             span.d-none.d-sm-inline-block.align-middle= t('download_button') 

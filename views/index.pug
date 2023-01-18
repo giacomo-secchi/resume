@@ -70,12 +70,35 @@ block content
                                 li.nav-item
                                     a.nav-link(href=`/?lang=${code}`, class=(currentLang && "active"), aria-current=(currentLang && "page"))= lang
                     .nav-item
-                        a.btn.btn-primary.text-light(href= t('download_file'), role="button", target="_blank" )
+                        <div class="btn-group py-2 pb-4" role="group" aria-label="Change color theme">
+                            <button type="button" class="btn btn-dark" style="color: var(--bs-yellow);" data-bs-theme-value="light">
+                                <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                    <use href="/bootstrap-icons.svg#sun"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="btn btn-secondary" style="color: var(--bs-blue);" data-bs-theme-value="dark">
+                                <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                    <use href="/bootstrap-icons.svg#moon-stars-fill"/>
+                                </svg>
+                            </button>
+                            <svg class="bi theme-icon-active d-none" width="1em" height="1em" fill="currentColor">
+                                <use href="/bootstrap-icons.svg#moon-stars-fill"/>
+                            </svg>
+                        </div>
+                    .nav-item
+                        a.btn.btn-primary.text-light(role="button", target="_blank")
                             span.d-none.d-sm-inline-block.align-middle= t('download_button') 
                             | &nbsp;
                             <svg class="bi" width="32px" height="32px" fill="currentColor">
                                 <use xlink:href="/bootstrap-icons.svg#file-earmark-pdf-fill"/>
                             </svg>
+                    
+
+
+                        
+                        
+                       
+
             .col-md-6.shadow-sm.p-5.bg-white
                 <header>
                     <section>

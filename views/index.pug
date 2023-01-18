@@ -58,7 +58,7 @@ block content
     .p-md-4
     .container-fluid
         .row.flex-md-row-reverse.d-print-block
-            .col-md-3.sticky-top.py-3.bg-light.bg-gradient.bg-opacity-75.h-100.d-print-none
+            .col-md-3.helper-menu.sticky-top.h-100.bg-light.bg-gradient.bg-opacity-75.d-print-none
                 ul.nav.justify-content-between.align-items-center.align-items-md-start.flex-md-column
                     .nav-item
                         <svg class="bi text-black-50" width="1em" height="1em" fill="currentColor">
@@ -70,7 +70,7 @@ block content
                                 li.nav-item
                                     a.nav-link(href=`/?lang=${code}`, class=(currentLang && "active"), aria-current=(currentLang && "page"))= lang
                     .nav-item
-                        <div class="btn-group py-2 pb-4" role="group" aria-label="Change color theme">
+                        <div class="btn-group py-md-3" role="group" aria-label="Change color theme">
                             <button type="button" class="btn btn-dark" style="color: var(--bs-yellow);" data-bs-theme-value="light">
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
                                     <use href="/bootstrap-icons.svg#sun"/>
@@ -81,25 +81,16 @@ block content
                                     <use href="/bootstrap-icons.svg#moon-stars-fill"/>
                                 </svg>
                             </button>
-                            <svg class="bi theme-icon-active d-none" width="1em" height="1em" fill="currentColor">
-                                <use href="/bootstrap-icons.svg#moon-stars-fill"/>
-                            </svg>
+                            
                         </div>
                     .nav-item
-                        a.btn.btn-primary.text-light(role="button", target="_blank")
+                        a.btn.btn-primary.text-light(href=t('download_file') role="button", target="_blank")
                             span.d-none.d-sm-inline-block.align-middle= t('download_button') 
                             | &nbsp;
                             <svg class="bi" width="32px" height="32px" fill="currentColor">
                                 <use xlink:href="/bootstrap-icons.svg#file-earmark-pdf-fill"/>
                             </svg>
-                    
-
-
-                        
-                        
-                       
-
-            .col-md-6.shadow-sm.p-5.bg-white
+            .col-md-6.shadow-sm.p-5.bg-white.paper
                 <header>
                     <section>
                         <div itemscope itemtype="http://schema.org/Person">
@@ -107,49 +98,49 @@ block content
                             <div class="row mb-4">
                                 
                                 <div class="col-sm-6">
-                                    <img class="rounded-circle mb-4" src="https://s.gravatar.com/avatar/cacd939ed4fbbea7e739d737e3411dc3?s=250" itemprop="image" width="150" height="150" alt="Your Name">
+                                    <img class="rounded-circle mb-4" src="https://s.gravatar.com/avatar/cacd939ed4fbbea7e739d737e3411dc3?s=250" itemprop="image" width="150" height="150" alt="Giacomo Secchi">
 
-                                    <h1 class="text-dark fw-bold" style="font-family: var(--bs-font-sans-serif);"><span itemprop="name">Giacomo Secchi</span></h1>
+                                    <h1 class="fw-bold" style="font-family: var(--bs-font-sans-serif);"><span itemprop="name">Giacomo Secchi</span></h1>
                             
                                     <h3><span itemprop="jobTitle">Web Developer / Ecommerce Specialist</span></h3> 
                                 </div> 
                                 <div class="col-sm-6">
                                     
-                                    <ul class="list-group list-group-flush">
+                                    <ul class="list-group list-group-flush rounded-4">
                                         <li class="list-group-item">
                                             <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                                <svg class="bi text-black-50" width="1.4em" height="1.4em" fill="currentColor">
+                                                <svg class="bi text-dark-subtle" width="1.4em" height="1.4em" fill="currentColor">
                                                     <use xlink:href="/bootstrap-icons.svg#geo-alt-fill"/>
                                                 </svg>
                                                 <span itemprop="addressLocality">Modena</span>, <span itemprop="addressCountry">IT</span>
                                             </div>
                                         </li>
                                         <li class="list-group-item">
-                                            <svg class="bi text-black-50 me-2" width="1em" height="1em" fill="currentColor">
+                                            <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
                                                 <use xlink:href="/bootstrap-icons.svg#telephone-fill"/>
                                             </svg>
                                             <span itemprop="telephone" content="+393407119634">(0039) 340 7119634</span>
                                         </li>
                                         <li class="list-group-item">
-                                            <svg class="bi text-black-50 me-2" width="1em" height="1em" fill="currentColor">
+                                            <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
                                                 <use xlink:href="/bootstrap-icons.svg#envelope-at-fill"/>
                                             </svg>
                                             <a href="mailto:giacomo.secchi@gmail.com" itemprop="email">giacomo.secchi@gmail.com</a>
                                         </li>
                                         <li class="list-group-item">
-                                            <svg class="bi text-black-50 me-2" width="1em" height="1em" fill="currentColor">
+                                            <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
                                                 <use xlink:href="/bootstrap-icons.svg#globe2"/>
                                             </svg>
                                             <a rel="me" itemprop="url" href="https://giacomosecchi.com" title="https://giacomosecchi.com">giacomosecchi.com</a>
                                         </li>
                                         <li class="list-group-item">
-                                            <svg class="bi text-black-50 me-2" width="1em" height="1em" fill="currentColor">
+                                            <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
                                                 <use xlink:href="/bootstrap-icons.svg#github"/>
                                             </svg>
                                             <a rel="me" itemprop="url" href="https://github.com/giacomo-secchi" title="Follow Me on Twitter">@giacomo-secchi</a>
                                         </li>
                                         <li class="list-group-item align-items-start mb-1">
-                                            <svg class="bi text-black-50 me-2" width="1em" height="1em" fill="currentColor">
+                                            <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
                                                 <use xlink:href="/bootstrap-icons.svg#linkedin"/>
                                             </svg>
                                             <a rel="me" itemprop="url" href="https://www.linkedin.com/in/giacomosecchi/" title="Follow Me on Twitter">Giacomo Secchi</a>

@@ -1,4 +1,16 @@
 {
     "version": 2,
-    "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
+    "buildCommand": "npm run build",
+    "builds": [
+        {
+            "src": "bin/www",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "bin/www"
+        }
+    ]
 }

@@ -2,18 +2,15 @@
 
  
 
-Login Heroku:
-```lando heroku auth:login```
-copiare link per il login sul browser
+Local development command start:
+```vercel dev```
+ 
 
 
 Deploy:
-```git push heroku main```
-se Heroku chiede le credenziali inserire username e token ```heroku auth:token```
+ 
 
 
-Informazioni app produzione:
-```lando heroku apps:info resume-giacomo-secchi```
 
 CONTENT SUGGESTIONS
 https://www.indeed.com/career-advice/resumes-cover-letters/skills-based-resume-template

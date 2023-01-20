@@ -2,11 +2,5 @@
 import '../scss/styles.scss';
 
 
-import * as bootstrap from 'bootstrap';
-
-
-document.addEventListener('DOMContentLoaded', () => {
-
-});
-
- 
+import { Button } from 'bootstrap';
+import './color-modes';

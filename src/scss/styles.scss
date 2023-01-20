@@ -5,19 +5,20 @@
 @import "~bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
+$enable-negative-margins: true;
+
 $font-family-sans-serif: "Open Sans";
 $headings-font-family: 'Noto Serif';
 $primary: #058ed9;
 $secondary: #06D6A0;
-$headings-color: $primary;
- 
+$headings-color: $primary; 
 
-
-$enable-negative-margins: true;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/variables-dark";
+
+$body-bg: $gray-100;
 
 // 4. Include any default map overrides here
 
@@ -87,4 +88,31 @@ a {
             content: var(--bs-breadcrumb-divider, "/");      
         }
     }
+}
+
+
+@include media-breakpoint-up(md) { 
+    .helper-menu {
+        background: transparent !important;   
+
+    }
+}
+
+// Color mode variables in _root.scss
+@include color-mode(dark) {
+    // CSS variable overrides here...
+    .paper {
+        background-color: var(--bs-primary-bg-subtle) !important;
+    }
+}
+ 
+
+[data-bs-theme-value="light"].active {
+    color: var(--bs-yellow) !important;
+    background-color: white !important;
+}
+
+[data-bs-theme-value="dark"].active {
+    color: var(--bs-blue) !important;
+    background-color: white !important;
 }

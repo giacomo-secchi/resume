@@ -34,9 +34,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack && node ./cli.js",
-    "start": "node ./bin/www",
-    "start:dev": "concurrently --kill-others -n \"App,CLI\" \"nodemon app.js\" \"nodemon --watch . cli.js\""
+    "build": "webpack && ./cli.js",
+    "start": "node ./app.js",
+    "build:watch": "nodemon --watch . --exec \"npm run build && npm start\"",
+    "start:watch": "nodemon --watch ./bin -e js --exec \"npm start\"",
+    "dev": "concurrently --kill-others -n \"App,CLI\" \"npm run build:watch\" \"npm run start:watch\""
+
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,9 @@
+services:
+  # A Node.js web service
+  - type: web
+    name: personal-website
+    env: node
+    repo: https://github.com/giacomo-secchi/personal-website
+    region: frankfurt
+    buildCommand: npm install && npm run build
+    startCommand: npm start

@@ -1,6 +1,8 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 
 module.exports = {
@@ -12,7 +14,7 @@ module.exports = {
   output: {
     // // filename: 'main.js',
     // path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: '[name].min.js',
     path: __dirname + '/dist',
     clean: true,
   },
@@ -22,6 +24,9 @@ module.exports = {
       // both options are optional
       filename: "[name].min.css",
     }),
+    new CompressionPlugin({
+      algorithm: 'gzip',
+    })
   ],
   module: {
     rules: [
@@ -53,10 +58,12 @@ module.exports = {
     ],
   },
   optimization: {
+    minimize: true,
     minimizer: [
       // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
       // `...`,
       new CssMinimizerPlugin(),
+      new TerserPlugin(),
     ],
   },
 };

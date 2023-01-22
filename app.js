@@ -3,6 +3,8 @@ const express = require('express');
 const path = require('path');
 const middleware = require('i18next-http-middleware');
 const i18next = require('./i18n2');
+const compression = require('compression');
+
 
 const port = process.env.PORT || 3000;
 
@@ -17,6 +19,8 @@ app.set('view engine', 'pug');
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'dist')));
+
+app.use(compression());
 
 app.use(middleware.handle(i18next, {
   removeLngFromUrl: false

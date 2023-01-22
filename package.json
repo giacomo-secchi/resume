@@ -8,6 +8,7 @@
     "axios": "^1.2.3",
     "bootstrap": "5.3.0-alpha1",
     "bootstrap-icons": "^1.10.2",
+    "compression": "^1.7.4",
     "debug": "^4.3.4",
     "express": "^4.18.2",
     "http-errors": "^2.0.0",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "compression-webpack-plugin": "^10.0.0",
     "concurrently": "^7.6.0",
     "css-loader": "^6.7.2",
     "css-minimizer-webpack-plugin": "^4.2.2",
@@ -29,17 +31,17 @@
     "sass": "^1.56.2",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.6",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production && ./cli.js",
-    "start": "node ./app.js",
+    "start": "node ./bin/www",
     "build:watch": "nodemon --watch . --exec \"npm run build && npm start\"",
     "start:watch": "nodemon --watch ./bin -e js --exec \"npm start\"",
     "dev": "concurrently --kill-others -n \"App,CLI\" \"npm run build:watch\" \"npm run start:watch\""
-
   },
   "repository": {
     "type": "git",

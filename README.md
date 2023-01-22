@@ -3,7 +3,7 @@
  
 
 Local development command start:
-```vercel dev```
+``````
  
 
 

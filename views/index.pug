@@ -9,7 +9,7 @@ mixin wrapper(condition)
 
 mixin definitionList(s, index)
     +wrapper(s.lists)
-        dl.mb-5
+        dl.mt-5
             if s.title
                 dt(itemprop=(s.lists && "name"))= s.title
                 dd= s.description
@@ -100,18 +100,18 @@ block content
                     <section>
                         <div itemscope itemtype="http://schema.org/Person">
 
-                            <div class="row mb-4">
+                            <div class="row">
                                 
                                 <div class="col-sm-6">
-                                    <img class="rounded-circle mb-4" src="https://s.gravatar.com/avatar/cacd939ed4fbbea7e739d737e3411dc3?s=250" itemprop="image" width="150" height="150" alt="Giacomo Secchi">
+                                    <img class="rounded-circle" src="https://s.gravatar.com/avatar/cacd939ed4fbbea7e739d737e3411dc3?s=250" itemprop="image" width="150" height="150" alt="Giacomo Secchi">
 
-                                    <h1 class="fw-bold" style="font-family: var(--bs-font-sans-serif);"><span itemprop="name">Giacomo Secchi</span></h1>
+                                    <h1 class="fw-bold mt-4" style="font-family: var(--bs-font-sans-serif);"><span itemprop="name">Giacomo Secchi</span></h1>
                             
                                     <h3><span itemprop="jobTitle">Web Developer / Ecommerce Specialist</span></h3> 
                                 </div> 
                                 <div class="col-sm-6">
                                     
-                                    <ul class="list-group list-group-flush rounded-4">
+                                    <ul class="list-group list-group-flush rounded-4 mt-4 mt-sm-0">
                                         <li class="list-group-item">
                                             <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                                                 <svg class="bi text-dark-subtle" width="1.4em" height="1.4em" fill="currentColor">

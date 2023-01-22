@@ -7,3 +7,5 @@ services:
     region: frankfurt
     buildCommand: npm install && npm run build
     startCommand: npm start
+    domains:
+      - resume.giacomosecchi.com

@@ -58,7 +58,7 @@ block content
     .p-md-4
     .container-fluid
         .row.flex-md-row-reverse.d-print-block
-            .col-md-3.helper-menu.sticky-top.h-100.bg-light.bg-opacity-75.d-print-none
+            .col-md-3.helper-menu.sticky-top.h-100.d-print-none
                 ul.nav.justify-content-between.align-items-center.align-items-md-start.flex-md-column
                     .nav-item
                         <svg class="bi text-black-50" width="1em" height="1em" fill="currentColor">
@@ -71,23 +71,17 @@ block content
                                     a.nav-link(href=`/?lang=${code}`, class=(currentLang && "active"), aria-current=(currentLang && "page"))= lang
                     .nav-item
                         <div class="btn-group py-md-3" role="group" aria-label="Change color theme">
-                            <button type="button" class="btn bg-dark-subtle text-light" data-bs-theme-value="light">
+                            <button type="button" class="btn btn-sm bg-dark-subtle text-light" data-bs-theme-value="light">
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
                                     <use href="/bootstrap-icons.svg#sun"/>
                                 </svg>
                             </button>
-                            <button type="button" class="btn bg-dark-subtle text-light" data-bs-theme-value="dark">
+                            <button type="button" class="btn btn-sm bg-dark-subtle text-light" data-bs-theme-value="dark">
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
                                     <use href="/bootstrap-icons.svg#moon-stars-fill"/>
                                 </svg>
-                               
                             </button>
-                            
                         </div>
-                        .d-none
-                            <svg class="bi theme-icon-active " width="1em" height="1em" fill="currentColor">
-                                <use href="/bootstrap-icons.svg#yin-yang"/>
-                            </svg>
                     .nav-item
                         a.btn.btn-primary.text-light(href=t('download_file') role="button", target="_blank")
                             span.d-none.d-sm-inline-block.align-middle= t('download_button') 

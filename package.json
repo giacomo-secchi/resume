@@ -37,7 +37,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production && node ./cli.js",
+    "build": "webpack --mode=production && ./cli.js",
     "start": "node ./bin/www",
     "build:watch": "nodemon --watch . --exec \"npm run build && npm start\"",
     "start:watch": "nodemon --watch ./bin -e js --exec \"npm start\"",

@@ -36,27 +36,38 @@ let config = {
 
 
 i18next
+//   .then((i18next) => {
+//     let sections = i18next.t('sections', { returnObjects: true });
+//     const html = pug.renderFile('views/index.pug', { lang: i18next.language, sections, t: i18next.t  });
+// console.log(html)
+//     return { html, i18next };
+//   })
+//   .then(({ html, i18next }) => {
+//     config.data.doc.document_content = html;
+//     // console.log(html)
+//     return i18next;
+//   })
   .then((i18next) => {
-    let sections = i18next.t('sections', { returnObjects: true });
-    const html = pug.renderFile('views/index.pug', { sections, t: i18next.t  });
+    let data = i18next.services.resourceStore.data;
+  
+    Object.keys(data).forEach(lang => {
 
-    return { html, i18next };
-  })
-  .then(({ html, i18next }) => {
-    config.data.doc.document_content = html;
     
-    return i18next;
-  })
-  .then((i18n) => i18n.services.resourceStore.data)
-  .then((response) => {
+      i18next.changeLanguage(lang);
+      let sections = i18next.t('sections', { returnObjects: true });
 
-    Object.keys(response).forEach(lang => {
- 
-      let path = `dist/${response[lang].translation.download_file}`;
+      let html = pug.renderFile('views/index.pug', { sections, t: i18next.t  });
+
+      
+      let path = `dist/${data[lang].translation.download_file}`;
+
+      config.data.doc.document_content = html;
+      
 
       axios(config)
         .then(function(response) {
-   
+        
+
           fs.writeFile(path, response.data, "binary", function(writeErr) {
             if (writeErr) throw writeErr;
             console.log(`Saved ${path}!"`);
@@ -69,7 +80,7 @@ i18next
           var decoder = new TextDecoder("utf-8");
           console.log(decoder.decode(error.response.data));
         });
-    })
+    });
   })
   // .then(process.exit())
   .catch((err) => {

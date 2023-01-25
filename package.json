@@ -21,12 +21,12 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "compression-webpack-plugin": "^10.0.0",
-    "concurrently": "^7.6.0",
     "css-loader": "^6.7.2",
     "css-minimizer-webpack-plugin": "^4.2.2",
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.7.2",
     "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
     "postcss-loader": "^7.0.2",
     "sass": "^1.56.2",
     "sass-loader": "^13.2.0",
@@ -37,11 +37,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production && node ./cli.js",
+    "build": "npm-run-all build:*",
+    "build:css": "webpack --mode=production",
+    "build:cli": "node ./cli",
     "start": "node ./bin/www",
-    "build:watch": "nodemon --watch . --exec \"npm run build && npm start\"",
-    "start:watch": "nodemon --watch ./bin -e js --exec \"npm start\"",
-    "dev": "concurrently --kill-others -n \"App,CLI\" \"npm run build:watch\" \"npm run start:watch\""
+    "watch": "nodemon --watch . --exec \"npm-run-all build start\""
   },
   "repository": {
     "type": "git",

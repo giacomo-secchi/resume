@@ -27,7 +27,7 @@ let config = {
       javascript: true,
       prince_options: {
       //   media: "print", // @media 'screen' or 'print' CSS
-        baseurl: "https://personal-website2.herokuapp.com", // the base URL for any relative URLs
+        baseurl: "https://resume.giacomosecchi.com", // the base URL for any relative URLs
       }
     }
   }

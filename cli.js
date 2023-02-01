@@ -36,34 +36,19 @@ let config = {
 
 
 i18next
-//   .then((i18next) => {
-//     let sections = i18next.t('sections', { returnObjects: true });
-//     const html = pug.renderFile('views/index.pug', { lang: i18next.language, sections, t: i18next.t  });
-// console.log(html)
-//     return { html, i18next };
-//   })
-//   .then(({ html, i18next }) => {
-//     config.data.doc.document_content = html;
-//     // console.log(html)
-//     return i18next;
-//   })
+
   .then((i18next) => {
     let data = i18next.services.resourceStore.data;
   
     Object.keys(data).forEach(lang => {
 
-    
       i18next.changeLanguage(lang);
       let sections = i18next.t('sections', { returnObjects: true });
-
       let html = pug.renderFile('views/index.pug', { sections, t: i18next.t  });
-
-      
       let path = `dist/${data[lang].translation.download_file}`;
 
       config.data.doc.document_content = html;
       
-
       axios(config)
         .then(function(response) {
         

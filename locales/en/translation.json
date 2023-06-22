@@ -10,11 +10,19 @@
     }, {
         "title": "Professional experience",
         "organizations": [{
+            "title": "E-Commerce Business Analyst",
+            "name": "Digital Boîte",
+            "date": {
+                "start": "may 2023",
+                "end": "present"
+            },
+            "description": "Gestione progetti Agile su piattaforme come Salesforce Commerce Cloud, Service Cloud, Oracle Netsuite Cloud; Attività di raccolta requisiti, analisi funzionale e pianificazione sprint di rilascio. Set-up e monitoraggio attività di progetto su Jira Software;"
+        }, {
             "title": "E-commerce Manager",
             "name": "Francocantiere S.r.l.",
             "date": {
                 "start": "february 2020",
-                "end": "present"
+                "end": "may 2023"
             },
             "description": "Work 360 degree to improve the overall experience of <a href='https://www.francocantiere.it'>Francocantiere</a> e-commerce platform; from Interface to marketing ads and make agreements with local couriers in order to improve the website sales"
         }, {

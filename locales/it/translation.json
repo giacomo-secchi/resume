@@ -10,11 +10,19 @@
     }, {
         "title": "Professional experience",
         "organizations": [{
+            "title": "Analista tecnico funzionale",
+            "name": "Digital Boîte",
+            "date": {
+                "start": "maggio 2023",
+                "end": "presente"
+            },
+            "description": "Gestione progetti Agile su piattaforme come Salesforce Commerce Cloud, Service Cloud, Oracle Netsuite Cloud; Attività di raccolta requisiti, analisi funzionale e pianificazione sprint di rilascio. Set-up e monitoraggio attività di progetto su Jira Software;"
+        }, {
             "title": "E-commerce Manager",
             "name": "Francocantiere S.r.l.",
             "date": {
                 "start": "febbraio 2020",
-                "end": "presente"
+                "end": "maggio 2023"
             },
             "description": "Lavoro a 360 gradi per migliorare l'esperienza complessiva della piattaforma di vendita online <a href='https://www.francocantiere.it'>Francocantiere</a>; dall'interfaccia agli annunci di marketing e stringere accordi con i corrieri locali al fine di migliorare le vendite del sito web."
         }, {
@@ -41,7 +49,7 @@
                 "end": "maggio 2014"
             },
             "description": "Realizzazione sito www.floch.it. Sviluppo blog (WordPress) ed implementazione e-commerce (WooCommerce)."
-        },{
+        }, {
             "title": "Web Developer / Programmer",
             "name": "Gruppo Ciemme Srl",
             "date": {

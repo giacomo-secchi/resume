@@ -6,9 +6,11 @@
     "title": "Curriculum Vitae | Giacomo Secchi | Frontend Web Developer",
     "sections": [{
         "title": "Profilo",
-        "description": "Professionista \"T-shaped\" con una profonda conoscenza dello sviluppo front-end web e dell'esperienza utente per siti di e-commerce. Sviluppatore di software esperto nel fornire competenze in progettazione, installazione, test e manutenzione di sistemi software. Esperto nell'utilizzo di piattaforme di marketing digitale per aumentare le vendite e la produttività aziendale."
+        "icon": "person",
+        "description": "Professionista \"T-shaped\" con una profonda conoscenza dello sviluppo front-end web e dell'esperienza utente per siti di e-commerce. Sviluppatore software capace di fornire competenze in progettazione, installazione, test e manutenzione di sistemi software. Esperto nell'utilizzo di piattaforme di marketing digitale per aumentare le vendite e la produttività aziendale."
     }, {
-        "title": "Professional experience",
+        "title": "Esperienze professionali",
+        "icon": "briefcase",
         "organizations": [{
             "title": "Analista tecnico funzionale",
             "name": "Digital Boîte",
@@ -60,6 +62,7 @@
         }]
     }, {
         "title": "Competenze tecniche",
+        "icon": "tools",
         "lists": [
             [
                 "CSS/CSS3/LESS/Media queries",
@@ -76,6 +79,7 @@
         "color": "primary"
     }, {
         "title": "Studi e Formazione",
+        "icon": "mortarboard",
         "organizations": [{
             "type": "Educational",
             "name": "Università degli studi di Modena e Reggio Emilia",
@@ -137,6 +141,7 @@
         }]
     }, {
         "title": "Presentazioni",
+        "icon": "easel2",
         "organizations": [{
             "title": "JavaScript Design Patterns - Sveliamo il Revealing Module Pattern",
             "name": "Beer&Learn - @GetConnected",
@@ -152,6 +157,7 @@
         }]  
     }, {
         "title": "Tirocini e stage",
+        "icon": "person-workspace",
         "organizations": [{
             "title": "Intern Frontend Developer",
             "name": "Caffeina S.r.l.",
@@ -171,6 +177,7 @@
         }]
     }, {
         "title": "Languages",
+        "icon": "globe2",
         "lists": [
             [
                 "<strong>Italiano</strong>: Nativo",

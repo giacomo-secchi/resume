@@ -11,12 +11,16 @@ mixin definitionList(s, index)
     +wrapper(s.lists)
         dl.mt-5
             if s.title
-                dt(itemprop=(s.lists && "name"))= s.title
+                dt(itemprop=(s.lists && "name"))
+                    <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
+                        use(xlink:href="/bootstrap-icons.svg#" + s.icon)
+                    </svg>
+                    = s.title
                 dd= s.description
                     if s.organizations
                         each o in s.organizations
                             - var organization = o.type ? 'EducationalOrganization' : 'Organization';
-                            div(itemscope, itemtype="http://schema.org/" + organization)
+                            div.mb-4(itemscope, itemtype="http://schema.org/" + organization)
                                 if o.title
                                     h2.fs-3
                                         span(itemprop="jobTitle")= o.title

@@ -10,13 +10,13 @@
     }, {
         "title": "Professional experience",
         "organizations": [{
-            "title": "E-Commerce Business Analyst",
+            "title": "E-Commerce Technical Business Analyst",
             "name": "Digital Boîte",
             "date": {
                 "start": "may 2023",
                 "end": "present"
             },
-            "description": "Gestione progetti Agile su piattaforme come Salesforce Commerce Cloud, Service Cloud, Oracle Netsuite Cloud; Attività di raccolta requisiti, analisi funzionale e pianificazione sprint di rilascio. Set-up e monitoraggio attività di progetto su Jira Software;"
+            "description": "Agile project management on Salesforce Commerce Cloud and Service Cloud platforms; Requirements gathering, functional analysis, and release sprint planning activities. Set-up and monitoring of project activities on Jira Software."
         }, {
             "title": "E-commerce Manager",
             "name": "Francocantiere S.r.l.",

@@ -11,7 +11,7 @@ mixin definitionList(s, index)
     +wrapper(s.lists)
         dl.mt-5
             if s.title
-                dt(itemprop=(s.lists && "name"))
+                dt.text-capitalize.mb-3(itemprop=(s.lists && "name"))
                     <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
                         use(xlink:href="/bootstrap-icons.svg#" + s.icon)
                     </svg>
@@ -22,10 +22,10 @@ mixin definitionList(s, index)
                             - var organization = o.type ? 'EducationalOrganization' : 'Organization';
                             div.mb-4(itemscope, itemtype="http://schema.org/" + organization)
                                 if o.title
-                                    h2.fs-3
+                                    h2.h4
                                         span(itemprop="jobTitle")= o.title
                                 if o.course
-                                    h2.fs-3.mb-0
+                                    h2.h4.mb-0
                                         span(itemprop="name")= o.course
                                 p.mb-0
                                     span(itemprop="name")= o.name

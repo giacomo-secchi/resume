@@ -10,7 +10,7 @@
         "description": "T-shaped professional with a deep knowledge of front-end web development and user experience for e-commerce websites. Experienced Software Developer adept in bringing forth expertise in design, installation, testing and maintenance of software systems. Adept in using digital marketing platforms to increase sales and overall company productivity."
     }, {
         "title": "Professional experience",
-        "icon": "person",
+        "icon": "briefcase",
         "organizations": [{
             "title": "E-Commerce Technical Business Analyst",
             "name": "Digital Boîte",
@@ -64,7 +64,7 @@
         }]
     }, {
         "title": "Technical Skills",
-        "icon": "person",
+        "icon": "tools",
         "lists": [
             [
                 "CSS/CSS3/LESS/Media queries",
@@ -82,7 +82,7 @@
         "color": "primary"
     }, {
         "title": "Soft Skills",
-        "icon": "person",
+        "icon": "diagram-2",
         "lists": [
             [
                 "Ability to Work in a Team",
@@ -98,7 +98,7 @@
         "color": "secondary"
     }, {
         "title": "Education",
-        "icon": "person",
+        "icon": "mortarboard",
         "organizations": [{
             "type": "Educational",
             "name": "Università degli studi di Modena e Reggio Emilia",
@@ -160,7 +160,7 @@
         }]
     }, {
         "title": "Event presentations",
-        "icon": "person",
+        "icon": "easel2",
         "organizations": [{
             "title": "JavaScript Design Patterns - Sveliamo il Revealing Module Pattern",
             "name": "Beer&Learn - @GetConnected",
@@ -176,7 +176,7 @@
         }]
     }, {
         "title": "Internships",
-        "icon": "person",
+        "icon": "person-workspace",
         "organizations": [{
             "title": "Intern Frontend Developer",
             "name": "Caffeina | Ideas Never Sleep",
@@ -188,7 +188,7 @@
         }]
     }, {
         "title": "Languages",
-        "icon": "person",
+        "icon": "globe2",
         "lists": [
             [
                 "<strong>Italian</strong>: Native",

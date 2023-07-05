@@ -37,11 +37,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm-run-all build:*",
-    "build:css": "webpack --mode=production",
-    "build:cli": "node ./cli",
+    "build": "npm-run-all build-*",
+    "build-css": "webpack --mode=production",
+    "build-cli": "node ./cli",
     "start": "node ./bin/www",
-    "watch": "nodemon --watch . --exec \"npm-run-all start\""
+    "watch": "nodemon --watch . -x \"npm run build-css && npm start\""
   },
   "repository": {
     "type": "git",

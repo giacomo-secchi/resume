@@ -17,7 +17,6 @@ $headings-color: $primary;
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/variables-dark";
-
 $body-bg: $gray-200;
 
 // 4. Include any default map overrides here
@@ -94,10 +93,6 @@ a {
 
 .helper-menu {
     backdrop-filter: saturate(180%) blur(5px);
-    @include media-breakpoint-up(md) {
-        background: transparent !important;   
-
-    }
 }
 
 // Color mode variables in _root.scss
@@ -108,6 +103,11 @@ a {
     }
 }
  
+@include color-mode(light) {
+    .contact-infos .list-group-item {
+       background-color: var(--bs-white);
+    }
+}
 
 [data-bs-theme-value="light"].active {
     color: var(--bs-yellow) !important;

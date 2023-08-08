@@ -92,7 +92,8 @@ a {
 
 
 .helper-menu {
-    backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(1.44px);
+    background: transparent;
 }
 
 // Color mode variables in _root.scss

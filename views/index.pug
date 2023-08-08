@@ -1,63 +1,5 @@
 extends layout
-
-mixin wrapper(condition)
-    if condition
-        div(itemscope, itemtype="http://schema.org/ItemList")
-            block
-    else
-        block
-
-mixin definitionList(s, index)
-    +wrapper(s.lists)
-        dl.mt-5
-            if s.title
-                dt.text-capitalize.mb-3(itemprop=(s.lists && "name"))
-                    <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
-                        use(xlink:href="/bootstrap-icons.svg#" + s.icon)
-                    </svg>
-                    = s.title
-                dd= s.description
-                    if s.organizations
-                        each o in s.organizations
-                            - var organization = o.type ? 'EducationalOrganization' : 'Organization';
-                            div.mb-4(itemscope, itemtype="http://schema.org/" + organization)
-                                if o.title
-                                    h2.h4
-                                        span(itemprop="jobTitle")= o.title
-                                if o.course
-                                    h2.h4.mb-0
-                                        span(itemprop="name")= o.course
-                                p.mb-0
-                                    span(itemprop="name")= o.name
-                                if o.address
-                                    div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
-                                        span(itemprop="streetAddress")= o.address.streetAddress
-                                        |,&nbsp;
-                                        span(itemprop="addressLocality")= o.address.addressLocality 
-                                        |,&nbsp;
-                                        span(itemprop="addressRegion")= o.address.addressRegion
-                                        |,&nbsp;
-                                        span(itemprop="postalCode")= o.address.postalCode
-                                        |&nbsp;
-                                        span(itemprop="addressCountry")= o.address.addressCountry
-                                p
-                                    span.text-muted #{o.date.start} 
-                                        if o.date.end
-                                            | — #{o.date.end}
-                                p(itemprop="description") !{o.description}
-                                    if o.link
-                                        <br>
-                                        a(itemprop="url", href=o.link.url, target="_blank", title=o.link.text)= o.link.text
-                    if s.lists
-                            .row
-                                each l in s.lists
-                                    .col
-                                        ul(class=(s.color && `marker-list-${s.color}`))
-                                            each i in l
-                                                li(itemprop="itemListElement", itemscope) !{i}
-        
- 
- 
+include mixins
 block content
     .p-md-4
     .container-fluid
@@ -65,9 +7,7 @@ block content
             .col-md-3.helper-menu.sticky-top.h-100.d-print-none
                 ul.nav.justify-content-between.align-items-center.align-items-md-start.flex-md-column
                     .nav-item
-                        <svg class="bi text-black-50" width="1em" height="1em" fill="currentColor">
-                            <use xlink:href="/bootstrap-icons.svg#translate"/>
-                        </svg>
+                        +customIcon('translate', 'text-black-50')
                         ul.nav.nav-divider.mx-n3(style={'--bs-nav-link-color': 'var(--bs-gray)'})
                             each lang, code in (typeof languageNames !== 'undefined' && Object.keys(languageNames).length ? languageNames : [['No languages available', '']])
                                 - var currentLang = (code == language)
@@ -76,23 +16,18 @@ block content
                     .nav-item
                         <div class="btn-group py-md-3" role="group" aria-label="Change color theme">
                             <button type="button" class="btn btn-sm bg-dark-subtle text-light" data-bs-theme-value="light">
-                                <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                    <use href="/bootstrap-icons.svg#sun"/>
-                                </svg>
+                                +customIcon('sun')
                             </button>
                             <button type="button" class="btn btn-sm bg-dark-subtle text-light" data-bs-theme-value="dark">
-                                <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                    <use href="/bootstrap-icons.svg#moon-stars-fill"/>
-                                </svg>
+                                +customIcon('moon-stars-fill')
                             </button>
                         </div>
                     .nav-item
                         a.btn.btn-primary.text-light(href=t('download_file') role="button", target="_blank")
                             span.d-none.d-sm-inline-block.align-middle= t('download_button') 
                             | &nbsp;
-                            <svg class="bi" width="32px" height="32px" fill="currentColor">
-                                <use xlink:href="/bootstrap-icons.svg#file-earmark-pdf-fill"/>
-                            </svg>
+                          
+                            +customIcon('file-earmark-pdf-fill', undefined, '32px', '32px')
             .col-md-8.col-lg-6.shadow-sm.p-5.bg-white.paper
                 <header>
                     <section>
@@ -112,40 +47,28 @@ block content
                                     <ul class="list-group list-group-flush rounded-4 mt-4 mt-sm-0 contact-infos">
                                         <li class="list-group-item">
                                             <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                                <svg class="bi text-dark-subtle" width="1.4em" height="1.4em" fill="currentColor">
-                                                    <use xlink:href="/bootstrap-icons.svg#geo-alt-fill"/>
-                                                </svg>
+                                                +customIcon('geo-alt-fill', 'text-dark-subtle', '1.4em', '1.4em')
                                                 <span itemprop="addressLocality">Modena</span>, <span itemprop="addressCountry">IT</span>
                                             </div>
                                         </li>
                                         <li class="list-group-item">
-                                            <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
-                                                <use xlink:href="/bootstrap-icons.svg#telephone-fill"/>
-                                            </svg>
+                                            +customIcon('telephone-fill', 'text-dark-subtle me-2')
                                             <span itemprop="telephone" content="+393407119634">(0039) 340 7119634</span>
                                         </li>
                                         <li class="list-group-item">
-                                            <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
-                                                <use xlink:href="/bootstrap-icons.svg#envelope-at-fill"/>
-                                            </svg>
+                                            +customIcon('envelope-at-fill', 'text-dark-subtle me-2')
                                             <a href="mailto:giacomo.secchi@gmail.com" itemprop="email">giacomo.secchi@gmail.com</a>
                                         </li>
                                         <li class="list-group-item">
-                                            <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
-                                                <use xlink:href="/bootstrap-icons.svg#globe2"/>
-                                            </svg>
+                                            +customIcon('globe2', 'text-dark-subtle me-2')
                                             <a rel="me" itemprop="url" href="https://giacomosecchi.com" title="https://giacomosecchi.com">giacomosecchi.com</a>
                                         </li>
                                         <li class="list-group-item">
-                                            <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
-                                                <use xlink:href="/bootstrap-icons.svg#github"/>
-                                            </svg>
+                                            +customIcon('github', 'text-dark-subtle me-2')
                                             <a rel="me" itemprop="url" href="https://github.com/giacomo-secchi" title="Follow Me on Twitter">@giacomo-secchi</a>
                                         </li>
                                         <li class="list-group-item align-items-start">
-                                            <svg class="bi text-dark-subtle me-2" width="1em" height="1em" fill="currentColor">
-                                                <use xlink:href="/bootstrap-icons.svg#linkedin"/>
-                                            </svg>
+                                            +customIcon('linkedin', 'text-dark-subtle me-2')
                                             <a rel="me" itemprop="url" href="https://www.linkedin.com/in/giacomosecchi/" title="Follow Me on Twitter">Giacomo Secchi</a>
                                         </li>
                                     </ul>

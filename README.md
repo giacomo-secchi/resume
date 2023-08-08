@@ -13,7 +13,8 @@ This is the source code for my personal website, which is built using Express an
 1. Clone the repository: `git clone https://github.com/giacomo-secchi/personal-website.git`
 2. Install the dependencies: `npm install`
 3. Start the server locally for development: `npm start`
-4. Deploy the code to your Render service
+4. Navigate to http://localhost:3000/
+5. Deploy the code to your Render service
 
 ## Deployment
 

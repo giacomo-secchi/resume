@@ -1,0 +1,58 @@
+mixin customIcon(iconName, classNames, width = '1em', height = '1em', fill = 'currentColor')
+    svg(class=`bi${classNames ? ' ' + classNames : ''}` width=width height=height fill=fill)
+        use(xlink:href=`/bootstrap-icons.svg#${iconName}`)
+
+mixin schemaWrapper(condition, itemType)
+    if condition
+        div(itemscope, itemtype=`http://schema.org/${itemType}`)
+            block
+    else
+        block
+
+
+mixin definitionList(s, index)
+    +schemaWrapper(s.lists, 'ItemList')
+        dl.mt-5
+            if s.title
+                dt.text-capitalize.mb-3(itemprop=(s.lists && "name"))
+                    +customIcon(s.icon, 'text-dark-subtle me-2')
+                    = s.title
+                dd= s.description
+                    if s.organizations
+                        each o in s.organizations
+                            - var organization = o.type ? 'EducationalOrganization' : 'Organization';
+                            div.mb-4(itemscope, itemtype="http://schema.org/" + organization)
+                                if o.title
+                                    h2.h4
+                                        span(itemprop="jobTitle")= o.title
+                                if o.course
+                                    h2.h4.mb-0
+                                        span(itemprop="name")= o.course
+                                p.mb-0
+                                    span(itemprop="name")= o.name
+                                if o.address
+                                    div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+                                        span(itemprop="streetAddress")= o.address.streetAddress
+                                        |,&nbsp;
+                                        span(itemprop="addressLocality")= o.address.addressLocality 
+                                        |,&nbsp;
+                                        span(itemprop="addressRegion")= o.address.addressRegion
+                                        |,&nbsp;
+                                        span(itemprop="postalCode")= o.address.postalCode
+                                        |&nbsp;
+                                        span(itemprop="addressCountry")= o.address.addressCountry
+                                p
+                                    span.text-muted #{o.date.start} 
+                                        if o.date.end
+                                            | — #{o.date.end}
+                                p(itemprop="description") !{o.description}
+                                    if o.link
+                                        <br>
+                                        a(itemprop="url", href=o.link.url, target="_blank", title=o.link.text)= o.link.text
+                    if s.lists
+                            .row
+                                each l in s.lists
+                                    .col
+                                        ul(class=(s.color && `marker-list-${s.color}`))
+                                            each i in l
+                                                li(itemprop="itemListElement", itemscope) !{i}

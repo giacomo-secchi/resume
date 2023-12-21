@@ -27,10 +27,10 @@ router.get('/', function(req, res, next) {
         languageNames[lng] = ISO6391.getName(lng);
       });
 
-      res.render(template, { sections, languageNames, t });
+      res.render(template, { sections, languageNames, t, ...process.env });
     });
   } else {
-    res.render(template, { t: i18next.t });
+    res.render(template, { t: i18next.t, ...process.env });
   }
 
   // var exists = req.i18n.exists('myKey')

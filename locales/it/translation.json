@@ -61,6 +61,24 @@
             "description": "Realizzazione siti vetrina e aziendali: dalla proposta grafica al frontend in html e css, creazione struttura layout per template Joomla! CMS. Funzionalità integrate di invio mail, latest tweets e aggiornamento dei contenuti tramite back office Joomla."
         }]
     }, {
+        "title": "Progetti Personali",
+        "icon": "journal-code",
+        "projects": [{
+            "title": "Write Poetry WordPress Plugin", 
+            "description": "Sono l'autore di Write Poetry, un plugin per WordPress pensato per aiutare gli sviluppatori a realizzare progetti complessi senza dover scrivere codice. Attualmente in fase di sviluppo, il suo obiettivo è semplificare e velocizzare la creazione di siti web tramite configurazioni intuitive.",
+            "link": {
+                "text": "Write Poetry website",
+                "url": "https://writepoetry.com"
+            }
+        }, {
+            "title": "Tema a blocchi per WordPress",
+            "description": "Insieme a WritePoetry, ho creato Write Blank: un tema a blocchi per fornire una una solida base ai progetti web su cui ho lavorato, ho inserito funzionalità aggiuntive come il caricamento automatico delle risorse frontend. Il tema è ancora in beta.",
+            "link": {
+                "text": "Write Blank Block Theme",
+                "url": "https://github.com/giacomo-secchi/write-white"
+            }
+        }]
+    }, {
         "title": "Competenze tecniche",
         "icon": "tools",
         "lists": [

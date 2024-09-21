@@ -63,6 +63,25 @@
             "description": "Creation of showcase and corporate websites: from the graphic proposal to the frontend in HTML and CSS, creation of layout structure for Joomla! CMS templates. Integrated mail sending, latest tweets, and content updating functionality through the Joomla back office."
         }]
     }, {
+        "title": "Personal Projects",
+        "icon": "journal-code",
+        "projects": [{
+            "title": "Write Poetry WordPress Plugin", 
+            "description": "I am the author of <a href='https://github.com/giacomo-secchi/write-poetry'>WritePoetry</a>, a WordPress plugin designed to empower developers by streamlining the website creation process. This plugin simplifies daily tasks and optimizes workflow, leaving developers free to focus solely on configurations.",
+            "link": {
+                "text": "Write Poetry website",
+                "url": "https://writepoetry.com"
+            }
+        }, {
+            "title": "Write Blank WordPress Theme",
+            "description": "I created a block theme alongside WritePoetry to provide a skeleton theme and a solid foundation, with added features like automatic frontend asset loading. The theme is still in beta.",
+            "link": {
+                "text": "Write Blank Block Theme",
+                "url": "https://github.com/giacomo-secchi/write-white"
+            }
+        }]
+    },
+    {
         "title": "Technical Skills",
         "icon": "tools",
         "lists": [

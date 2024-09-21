@@ -36,7 +36,6 @@ let config = {
 
 
 i18next
-
   .then((i18next) => {
     let data = i18next.services.resourceStore.data;
   
@@ -51,8 +50,7 @@ i18next
       
       axios(config)
         .then(function(response) {
-        
-
+          // Save the PDF file
           fs.writeFile(path, response.data, "binary", function(writeErr) {
             if (writeErr) throw writeErr;
             console.log(`Saved ${path}!"`);

@@ -32,6 +32,10 @@ You can also replace the resume PDF file in the `public` folder with your own.
 - [Node.js](https://nodejs.org/)
 - [Render](https://render.com/)
 
+## References
+
+I took inspiration for the microdata structure from this guide: https://webdesign.tutsplus.com/how-to-create-an-html5-microdata-powered-resume--net-22046t.
+
 ## Authors
 
 - Giacomo Secchi - [GitHub](https://github.com/giacomo-secchi)

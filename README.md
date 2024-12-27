@@ -10,7 +10,7 @@ This is the source code for my personal website, which is built using Express an
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/giacomo-secchi/personal-website.git`
+1. Clone the repository: `git clone https://github.com/giacomo-secchi/resume.git`
 2. Install the dependencies: `npm install`
 3. Start the server locally for development: `npm start`
 4. Navigate to http://localhost:3000/

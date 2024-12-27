@@ -67,18 +67,18 @@
         "title": "Personal Projects",
         "icon": "journal-code",
         "projects": [{
-            "title": "Write Poetry WordPress Plugin", 
-            "description": "I am the author of <a href='https://github.com/giacomo-secchi/write-poetry'>WritePoetry</a>, a WordPress plugin designed to empower developers by streamlining the website creation process. This plugin simplifies daily tasks and optimizes workflow, leaving developers free to focus solely on configurations.",
+            "title": "WritePoetry WordPress Plugin", 
+            "description": "I am the author of <a href='https://github.com/WritePoetry/wordpress-plugin/'>WritePoetry</a>, a WordPress plugin designed to empower developers by streamlining the website creation process. This plugin simplifies daily tasks and optimizes workflow, leaving developers free to focus solely on configurations.",
             "link": {
                 "text": "Write Poetry website",
-                "url": "https://writepoetry.com"
+                "url": "https://write-poetry.com"
             }
         }, {
-            "title": "Write Blank WordPress Theme",
+            "title": "BlankSpace WordPress Theme",
             "description": "I created a block theme alongside WritePoetry to provide a skeleton theme and a solid foundation, with added features like automatic frontend asset loading. The theme is still in beta.",
             "link": {
-                "text": "Write Blank Block Theme",
-                "url": "https://github.com/giacomo-secchi/write-white"
+                "text": "BlankSpace Block Theme",
+                "url": "https://github.com/writePoetry/blankspace-theme/"
             }
         }]
     },

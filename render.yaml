@@ -3,7 +3,7 @@ services:
   - type: web
     name: personal-website
     env: node
-    repo: https://github.com/giacomo-secchi/personal-website
+    repo: https://github.com/giacomo-secchi/resume
     region: frankfurt
     buildCommand: npm install && npm run build
     startCommand: npm start

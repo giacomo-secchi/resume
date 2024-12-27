@@ -1,5 +1,5 @@
 {
-  "name": "personal-website",
+  "name": "resume",
   "version": "1.0.0",
   "description": "",
   "main": "src/app.js",
@@ -45,13 +45,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/giacomo-secchi/personal-website.git"
+    "url": "git+https://github.com/giacomo-secchi/resume.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/giacomo-secchi/personal-website/issues"
+    "url": "https://github.com/giacomo-secchi/resume/issues"
   },
-  "homepage": "https://github.com/giacomo-secchi/personal-website#readme"
+  "homepage": "https://github.com/giacomo-secchi/resume#readme"
 }

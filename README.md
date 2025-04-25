@@ -18,7 +18,9 @@ This is the source code for my personal website, which is built using Express an
 
 ## Deployment
 
-This website is deployed on Render, a platform for hosting web applications. Follow the instructions on Render to deploy the code. Make sure to configure the environment variables and set the correct file paths.
+This application is automatically deployed to [Fly.io](https://fly.io) on every push to the `main` branch.
+
+To pull the remote Fly.io's Dockerfile use the official **[Fly.io Dockerfile Generator](https://fly.io/javascript-journal/demystify-docker-js/)** for Node.js applications.
 
 ## Customization
 

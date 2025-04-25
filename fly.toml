@@ -19,3 +19,6 @@ primary_region = 'fra'
   cpu_kind = 'shared'
   cpus = 1
   memory_mb = 1024
+
+[build]
+  builder = "heroku/buildpacks:20"  # Versione compatibile con Node 20

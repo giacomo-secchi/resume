@@ -14,14 +14,11 @@ block content
                                 li.nav-item
                                     a.nav-link(href=`/?lang=${code}`, class=(currentLang && "active"), aria-current=(currentLang && "page"))= lang
                     .nav-item
-                        <div class="btn-group py-md-3" role="group" aria-label="Change color theme">
-                            <button type="button" class="btn btn-sm bg-dark-subtle text-light" data-bs-theme-value="light">
+                        div.btn-group.py-md-3(role="group" aria-label="Change color theme")
+                            button.btn.btn-sm.bg-dark-subtle.text-light(type="button" data-bs-theme-value="light")
                                 +customIcon('sun')
-                            </button>
-                            <button type="button" class="btn btn-sm bg-dark-subtle text-light" data-bs-theme-value="dark">
+                            button.btn.btn-sm.bg-dark-subtle.text-light(type="button" data-bs-theme-value="dark")
                                 +customIcon('moon-stars-fill')
-                            </button>
-                        </div>
                     .nav-item
                         a.btn.btn-primary.text-light(href=t('download_file') role="button", target="_blank")
                             span.d-none.d-sm-inline-block.align-middle= t('download_button') 
@@ -29,65 +26,60 @@ block content
                           
                             +customIcon('file-earmark-pdf-fill', undefined, '32px', '32px')
             .col-md-8.col-lg-6.shadow-sm.p-5.bg-white.paper
-                <header>
-                    <section>
-                        <div itemscope itemtype="http://schema.org/Person">
-
-                            <div class="row">
-                                
-                                <div class="col-sm-6">
-                                    <img class="rounded-circle" src="https://s.gravatar.com/avatar/cacd939ed4fbbea7e739d737e3411dc3?s=250" itemprop="image" width="150" height="150" alt="Giacomo Secchi">
-
-                                    <h1 class="fw-bold mt-4" style="font-family: var(--bs-font-sans-serif);"><span itemprop="name">Giacomo Secchi</span></h1>
-                            
-                                    <h3><span itemprop="jobTitle">Web Developer / Ecommerce Specialist</span></h3> 
-                                </div> 
-                                <div class="col-sm-6">
-                                    
-                                    <ul class="list-group list-group-flush rounded-4 mt-4 mt-sm-0 contact-infos">
-                                        <li class="list-group-item">
-                                            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                header
+                    section
+                        div(itemscope itemtype="http://schema.org/Person")
+                            .row
+                                .col
+                                    img.rounded-circle(
+                                    src="https://s.gravatar.com/avatar/cacd939ed4fbbea7e739d737e3411dc3?s=250",
+                                    itemprop="image",
+                                    width="150",
+                                    height="150",
+                                    alt="Giacomo Secchi"
+                                    )
+                                    h1.fw-bold.mt-4(style="font-family: var(--bs-font-sans-serif);")
+                                        span(itemprop="name") Giacomo Secchi
+                                    h3
+                                        span(itemprop="jobTitle") Web Developer / Ecommerce Specialist
+                                .col
+                                    ul.list-group.list-group-flush.rounded-4.mt-4.mt-sm-0.contact-infos
+                                        li.list-group-item
+                                            div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
                                                 +customIcon('geo-alt-fill', 'text-dark-subtle', '1.4em', '1.4em')
-                                                <span itemprop="addressLocality">Modena</span>, <span itemprop="addressCountry">IT</span>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
+                                                span(itemprop="addressLocality") Modena
+                                                | , 
+                                                span(itemprop="addressCountry") IT
+                                                                                 
+                                        li.list-group-item
                                             +customIcon('telephone-fill', 'text-dark-subtle me-2')
-                                            <span itemprop="telephone" content="+393407119634">(0039) 340 7119634</span>
-                                        </li>
-                                        <li class="list-group-item">
+                                            span(itemprop="telephone" content="+393407119634") (0039) 340 7119634
+                                        
+                                        li.list-group-item
                                             +customIcon('envelope-at-fill', 'text-dark-subtle me-2')
-                                            <a href="mailto:giacomo.secchi@gmail.com" itemprop="email">giacomo.secchi@gmail.com</a>
-                                        </li>
-                                        <li class="list-group-item">
+                                            a(href="mailto:giacomo.secchi@gmail.com" itemprop="email") giacomo.secchi@gmail.com
+                                        
+                                        li.list-group-item
                                             +customIcon('globe2', 'text-dark-subtle me-2')
-                                            <a rel="me" itemprop="url" href="https://giacomosecchi.com" title="https://giacomosecchi.com">giacomosecchi.com</a>
-                                        </li>
-                                        <li class="list-group-item">
+                                            a(rel="me" itemprop="url" href="https://giacomosecchi.com" title="https://giacomosecchi.com") giacomosecchi.com
+
+                                        li.list-group-item
                                             +customIcon('briefcase-fill', 'text-dark-subtle me-2')
                                             a(rel="me" itemprop="url" href="https://giacomosecchi.com/portfolio" title="Giacomo Secchi Portfolio")= t('portfolio_link')                   
-                                        </li>
-                                        <li class="list-group-item">
-                                            +customIcon('github', 'text-dark-subtle me-2')
-                                            <a rel="me" itemprop="url" href="https://github.com/giacomo-secchi" title="Follow Me on GitHub">@giacomo-secchi</a>
-                                        </li>
-                                        <li class="list-group-item align-items-start">
-                                            +customIcon('linkedin', 'text-dark-subtle me-2')
-                                            <a rel="me" itemprop="url" href="https://www.linkedin.com/in/giacomosecchi/" title="Follow Me on LinkedIn">Giacomo Secchi</a>
-                                        </li>
                                         
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>         
-                    </section>
-                </header>
-                
+                                        li.list-group-item
+                                            +customIcon('github', 'text-dark-subtle me-2')
+                                            a(rel="me" itemprop="url" href="https://github.com/giacomo-secchi" title="Follow Me on GitHub") @giacomo-secchi
+
+                                        
+                                        li.list-group-item.align-items-start
+                                            +customIcon('linkedin', 'text-dark-subtle me-2')
+                                            a(rel="me" itemprop="url" href="https://www.linkedin.com/in/giacomosecchi/" title="Follow Me on LinkedIn") Giacomo Secchi
+
                 each section, index in sections
                     +definitionList(section, index)
                 p
                     small.text-muted= t('privacy_text')
-            .col-md-3
 
 
 block scripts

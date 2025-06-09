@@ -32,7 +32,7 @@ You can also replace the resume PDF file in the `public` folder with your own.
 
 - [Express](https://expressjs.com/)
 - [Node.js](https://nodejs.org/)
-- [Render](https://render.com/)
+- [Fly.io](https://fly.io)
 
 ## References
 

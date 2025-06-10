@@ -6,20 +6,20 @@ block content
         .row.flex-md-row-reverse.d-print-block
             .col-md-3.helper-menu.sticky-top.h-100.d-print-none
                 ul.nav.justify-content-between.align-items-center.align-items-md-start.flex-md-column
-                    .nav-item
+                    li.nav-item
                         +customIcon('translate', 'text-black-50')
                         ul.nav.nav-divider.mx-n3(style={'--bs-nav-link-color': 'var(--bs-gray)'})
                             each lang, code in (typeof languageNames !== 'undefined' && Object.keys(languageNames).length ? languageNames : [['No languages available', '']])
                                 - var currentLang = (code == language)
                                 li.nav-item
                                     a.nav-link(href=`/?lang=${code}`, class=(currentLang && "active"), aria-current=(currentLang && "page"))= lang
-                    .nav-item
+                    li.nav-item
                         div.btn-group.py-md-3(role="group" aria-label="Change color theme")
                             button.btn.btn-sm.bg-dark-subtle.text-light(type="button" data-bs-theme-value="light")
                                 +customIcon('sun')
                             button.btn.btn-sm.bg-dark-subtle.text-light(type="button" data-bs-theme-value="dark")
                                 +customIcon('moon-stars-fill')
-                    .nav-item
+                    li.nav-item
                         a.btn.btn-primary.text-light(href=t('download_file') role="button", target="_blank")
                             span.d-none.d-sm-inline-block.align-middle= t('download_button') 
                             | &nbsp;

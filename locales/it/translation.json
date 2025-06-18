@@ -57,7 +57,7 @@
             "name": "Gruppo Ciemme Srl",
             "date": {
                 "start": "maggio 2012",
-                "end": "luglio 2012"
+                "end": "febbraio 2013"
             },
             "description": "Realizzazione siti vetrina e aziendali: dalla proposta grafica al frontend in html e css, creazione struttura layout per template Joomla! CMS. Funzionalità integrate di invio mail, latest tweets e aggiornamento dei contenuti tramite back office Joomla."
         }]
@@ -90,6 +90,7 @@
                 "Node.js",
                 "PHP",
                 "ReactJS",
+                "Python",
                 "Illustrator/Photoshop/Figma",
                 "PrestaShop",
                 "WP/Gutenberg/WooCommerce"

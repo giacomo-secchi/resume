@@ -58,11 +58,10 @@ mixin definitionList(s, index)
                                                 li(itemprop="itemListElement", itemscope) !{i}
                     
                     if s.projects
-                            .row
-                                each p in s.projects
-                                    h2.h4
-                                        span= p.title
-                                    p !{p.description}
-                                        if p.link
-                                            <br>
-                                            a(href=p.link.url, target="_blank", title=p.link.text)= p.link.text
+                            each p in s.projects
+                                h2.h4
+                                    span= p.title
+                                p !{p.description}
+                                    if p.link
+                                        <br>
+                                        a(href=p.link.url, target="_blank", title=p.link.text)= p.link.text

@@ -59,7 +59,7 @@
             "name": "Gruppo Ciemme Srl",
             "date": {
                 "start": "may 2012",
-                "end": "july 2012"
+                "end": "february 2013"
             },
             "description": "Creation of showcase and corporate websites: from the graphic proposal to the frontend in HTML and CSS, creation of layout structure for Joomla! CMS templates. Integrated mail sending, latest tweets, and content updating functionality through the Joomla back office."
         }]
@@ -92,7 +92,8 @@
                 "HTML5/SVG",
                 "Node.js",
                 "PHP",
-                "ReactJS"
+                "ReactJS",
+                "Python"
             ], [
                 "Illustrator/Photoshop/Figma",
                 "PrestaShop",

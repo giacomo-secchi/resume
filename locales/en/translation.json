@@ -5,6 +5,9 @@
     "title": "Resumé | Giacomo Secchi | Frontend Web Developer",
     "privacy_text": "",
     "portfolio_link": "Personal Portfolio",
+    "certificate_title": "Certificate:",
+    "certificate_label": "View Certificate",
+    "project_label": "Project link:",
     "sections": [{
         "title": "Profile",
         "icon": "person",
@@ -150,7 +153,10 @@
             "description": "Course focused on E-commerce, 72 hours of virtual classroom training. Course topics: Digital Business Strategy, Digital Strategy, Business Model and Branding, E-commerce Platforms: the main ones, pros and cons, Business Plan for E-commerce, Facebook and Instagram Ads for E-commerce, Instagram and Influencer Marketing for E-commerce, Introduction to Google Ads for E-commerce, Google Search and Display for E-commerce, Google Shopping, YouTube for E-commerce, SEO for E-commerce, Copywriting for product sheets, CRO (Conversion Rate Optimization), E-mail Marketing for E-commerce, Marketing Automation, Analytics for E-commerce, Visual for E-commerce, Logistics for E-commerce, Legal Aspects of E-commerce, Selling on Amazon.",
             "link": {
                 "text": "Rivoluzione E-commerce",
-                "url": "https://www.rivoluzioneecommerce.it/"
+                "url": "https://www.studiosamo.it/"
+            },
+            "certificate": {
+                "url": "https://resume.giacomosecchi.com/certificates/Giacomo%20Secchi.pdf"
             }
         }, {
             "type": "Educational",
@@ -160,10 +166,14 @@
                 "start": "november 2018",
                 "end": "april 2019"
             },
-            "description": "Training Course lended by YNAP group to me and the Service Team to develop a better software. Starting to apply metodologies like Test-driven development. After I took part at a follow up course focused on Agile Scrum methodology (project manager oriented)."
+            "description": "Training Course lended by YNAP group to me and the Service Team to develop a better software. Starting to apply metodologies like Test-driven development. After I took part at a follow up course focused on Agile Scrum methodology (project manager oriented).",
+            "link": {
+                "text": "agile42",
+                "url": "https://www.agile42.com/"
+            }
         }, {
             "type": "Educational",
-            "name": "Adista",
+            "name": "terrelibere.org",
             "address": {
                 "streetAddress": "Via Acciaioli 7",
                 "addressLocality": "Roma"
@@ -177,10 +187,14 @@
             "link": {
                 "text": "terrelibere.org",
                 "url": "http://terrelibere.org"
-            }
+            },
+            "certificate": {
+                "url": "https://resume.giacomosecchi.com/certificates/secchi.pdf"
+            } 
         }]
     }, {
         "title": "Event presentations",
+        "type": "Article",
         "icon": "easel2",
         "organizations": [{
             "title": "JavaScript Design Patterns - Sveliamo il Revealing Module Pattern",
@@ -205,16 +219,17 @@
                 "start": "april 2013",
                 "end": "october 2013"
             },
-            "description": "I started my first approach to Front-end technologies with some youth but sharp-minded team. In no time by demonstrating attention to details it was gave to me the ability to work on production websites. Now this is a big digital company in Italy: <a href='https://caffeina.com/'>Caffeina</a>."
+            "description": "I started my first approach to Front-end technologies with some youth but sharp-minded team. In no time by demonstrating attention to details it was gave to me the ability to work on production websites.",
+            "link": {
+                "url": "https://caffeina.com/"
+            }
         }]
     }, {
         "title": "Languages",
         "icon": "globe2",
-        "lists": [
-            [
-                "<strong>Italian</strong>: Native",
-                "<strong>English</strong>: Fluent (B2)"
-            ]
+        "languages": [
+            { "name": "Italian:", "level": "Native", "code": "IT" },
+            { "name": "English:", "level": "Fluent (B2)", "code": "EN" }
         ]
     }]
 }

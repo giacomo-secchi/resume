@@ -25,56 +25,46 @@ block content
                             | &nbsp;
                           
                             +customIcon('file-earmark-pdf-fill', undefined, '32px', '32px')
-            .col-md-8.col-lg-6.shadow-sm.p-5.bg-white.paper
+            .col-md-8.col-lg-6.shadow-sm.p-4.p-sm-5.bg-white.paper
                 header
-                    section
-                        div(itemscope itemtype="http://schema.org/Person")
-                            .row
-                                .col
-                                    img.rounded-circle(
-                                    src="https://s.gravatar.com/avatar/cacd939ed4fbbea7e739d737e3411dc3?s=250",
-                                    itemprop="image",
-                                    width="150",
-                                    height="150",
-                                    alt="Giacomo Secchi"
-                                    )
-                                    h1.fw-bold.mt-4(style="font-family: var(--bs-font-sans-serif);")
-                                        span(itemprop="name") Giacomo Secchi
-                                    h3
-                                        span(itemprop="jobTitle") Web Developer / Ecommerce Specialist
-                                .col
-                                    ul.list-group.list-group-flush.rounded-4.mt-4.mt-sm-0.contact-infos
-                                        li.list-group-item
-                                            div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
-                                                +customIcon('geo-alt-fill', 'text-dark-subtle', '1.4em', '1.4em')
-                                                span(itemprop="addressLocality") Modena
-                                                | , 
-                                                span(itemprop="addressCountry") IT
-                                                                                 
-                                        li.list-group-item
-                                            +customIcon('telephone-fill', 'text-dark-subtle me-2')
-                                            span(itemprop="telephone" content="+393407119634") (0039) 340 7119634
-                                        
-                                        li.list-group-item
-                                            +customIcon('envelope-at-fill', 'text-dark-subtle me-2')
-                                            a(href="mailto:info@giacomosecchi.com" itemprop="email") info@giacomosecchi.com
-                                        
-                                        li.list-group-item
-                                            +customIcon('globe2', 'text-dark-subtle me-2')
-                                            a(rel="me" itemprop="url" href="https://giacomosecchi.com" title="https://giacomosecchi.com") giacomosecchi.com
+                    .row
+                        .col
+                            img.rounded-circle(
+                            src="https://s.gravatar.com/avatar/cacd939ed4fbbea7e739d737e3411dc3?s=300",
+                            width="150",
+                            alt="Giacomo Secchi"
+                            )
+                            h1.fw-bold.mt-4(style="font-family: var(--bs-font-sans-serif);") Giacomo Secchi
+                            h3 Web Developer / Ecommerce Specialist
+                        .col
+                            ul.list-group.list-group-flush.rounded-4.mt-4.mt-sm-0.contact-infos
+                                li.list-group-item
+                                    +customIcon('geo-alt-fill', 'text-dark-subtle', '1.4em', '1.4em')
+                                    span Modena, IT
+                                                                            
+                                li.list-group-item
+                                    +customIcon('telephone-fill', 'text-dark-subtle me-2')
+                                    a(href="+393407119634") (0039) 340 7119634
+                                
+                                li.list-group-item
+                                    +customIcon('envelope-at-fill', 'text-dark-subtle me-2')
+                                    a(href="mailto:info@giacomosecchi.com") info@giacomosecchi.com
+                                
+                                li.list-group-item
+                                    +customIcon('globe2', 'text-dark-subtle me-2')
+                                    a(href="https://giacomosecchi.com" title="Giacomo Secchi Website") giacomosecchi.com
 
-                                        li.list-group-item
-                                            +customIcon('briefcase-fill', 'text-dark-subtle me-2')
-                                            a(rel="me" itemprop="url" href="https://giacomosecchi.com/portfolio" title="Giacomo Secchi Portfolio")= t('portfolio_link')                   
-                                        
-                                        li.list-group-item
-                                            +customIcon('github', 'text-dark-subtle me-2')
-                                            a(rel="me" itemprop="url" href="https://github.com/giacomo-secchi" title="Follow Me on GitHub") @giacomo-secchi
-
-                                        
-                                        li.list-group-item.align-items-start
-                                            +customIcon('linkedin', 'text-dark-subtle me-2')
-                                            a(rel="me" itemprop="url" href="https://www.linkedin.com/in/giacomosecchi/" title="Follow Me on LinkedIn") Giacomo Secchi
+                                li.list-group-item
+                                    +customIcon('briefcase-fill', 'text-dark-subtle me-2')
+                                    a(href="https://giacomosecchi.com/portfolio" title="Giacomo Secchi Portfolio")= t('portfolio_link')                   
+                                
+                                li.list-group-item
+                                    +customIcon('github', 'text-dark-subtle me-2')
+                                    a(href="https://github.com/giacomo-secchi" title="Follow Me on GitHub") @giacomo-secchi
+                                
+                                li.list-group-item.align-items-start
+                                    +customIcon('linkedin', 'text-dark-subtle me-2')
+                                    a(href="https://www.linkedin.com/in/giacomosecchi/" title="Follow Me on LinkedIn") Giacomo Secchi
 
                 each section, index in sections
                     +definitionList(section, index)

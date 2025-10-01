@@ -5,6 +5,9 @@
     "privacy_text": "Ai sensi del D.L. 196/2003 denominato “Codice in materia di protezione dei dati personali” autorizzo al trattamento dei dati personali contenuti nel presente curriculum.",
     "portfolio_link": "Portfolio Personale",
     "title": "Curriculum Vitae | Giacomo Secchi | Frontend Web Developer",
+    "certificate_title": "Certificato:",
+    "certificate_label": "Visualizza Certificato",
+    "project_label": "Link al Progetto:",
     "sections": [{
         "title": "Profilo",
         "icon": "person",
@@ -130,7 +133,10 @@
             "description": "Corso interamente dedicato all'E-commerce, 72 ore di formazione in aula virtuale. Argomenti del corso: Digital Business Strategy, Strategia digitale, business model e branding, Piattaforme e-commerce: le principali, pro e contro, Business Plan per e-commerce, Facebook e Instagram Ads per E-commerce, Instagram e Influencer Marketing per E-commerce, Introduzione a Google Ads per E-commerce, Google Search e Display per E-commerce, Google Shopping, YouTube per E-commerce, SEO per e-commerce, Copywriting per schede prodotto, CRO (Conversion Rate Optimization), E-mail Marketing per E-commerce, Marketing Automation, Analytics per E-commerce, Visual per E-commerce, Logistica per E-commerce, Aspetti legali dell’E-commerce, Vendere su Amazon.",
             "link": {
                 "text": "Rivoluzione E-commerce",
-                "url": "https://www.rivoluzioneecommerce.it/"
+                "url": "https://www.studiosamo.it/"
+            },
+            "certificate": {
+                "url": "https://resume.giacomosecchi.com/certificates/Giacomo%20Secchi.pdf"
             }
         }, {
             "type": "Educational",
@@ -143,7 +149,7 @@
             "description": "Corso di formazione aziendale del Service Team YNAP focalizzato sullo sviluppo di un software di migliore qualità. Abbiamo visto nel dettaglio come applicare metodologie SOLID e come lo sviluppo TDD (guidato dai test) può aiutarci nella scrittura di un codice più mantenibile. Dopo ho partecipato ad un corso di follow-up focalizzato sulla metodologia Agile Scrum (orientato al project management)."
         }, {
             "type": "Educational",
-            "name": "Adista",
+            "name": "terrelibere.org",
             "address": {
                 "streetAddress": "Via Acciaioli 7",
                 "addressLocality": "Roma"
@@ -157,10 +163,14 @@
             "link": {
                 "text": "terrelibere.org",
                 "url": "http://terrelibere.org"
-            }
+            },
+            "certificate": {
+                "url": "https://resume.giacomosecchi.com/certificates/secchi.pdf"
+            } 
         }]
     }, {
         "title": "Presentazioni",
+        "type": "Article",
         "icon": "easel2",
         "organizations": [{
             "title": "JavaScript Design Patterns - Sveliamo il Revealing Module Pattern",
@@ -168,8 +178,7 @@
             "date": {
                 "start": "20 aprile 2016"
             },
-            "description": "<a href='https://resume.giacomosecchi.com/sveliamo-rmp/'>Link presentazione</a>",
-            
+            "description": "Questi eventi sono promossi dal team di GetConnected, che sceglie autonomamente gli argomenti. Al termine della giornata, tutti si incontrano e guardano una presentazione, seguita da una discussione sull'argomento trattato. <a href='https://resume.giacomosecchi.com/sveliamo-rmp/'>Link presentazione</a>.",
             "link": {
                 "text": "Link evento",
                 "url": "https://www.getconnected.it/2015/12/18/beer-learn-event/"
@@ -185,7 +194,10 @@
                 "start": "aprile 2013",
                 "end": "ottobre 2013"
             },
-            "description": "<strong>Obiettivi e modalità del tirocinio</strong>: Lo stagista entrerà attivamente all'interno del flusso di lavoro aziendale relativo a piccoli progetti, nei quali avrà parte sia nella fase di progettazione chi di quella di esecuzione e testing. <br> <br> <strong>Attività</strong>: Sarà assegnato allo stagista il ruolo di Frontend Developer orientato ai servizi Web. <br> Rafforzerà la conoscenza dell'ECMAScript 5+ con particolare attenzione alla cross-compatibilità tra i maggiori browser. <br>Sfrutterà noti framework per il DOM Handling (jQuery, Zepto) e per il CSS Scaffolding (Twitter Bootstrap). Imparerà l'utilizzo delle ultime definizioni degli standard HTML5 e CSS Level 3, utilizzando attivamente alcune delle più moderne API disponibili sui browser di ultima generazione. <br> Imparerà un meta-linguaggio per il CSS (LESS) che velocizzerà la sua operatività nella definizione degli stili. Parteciperà attivamente allo sviluppo fi applicazioni social-oriented soprattutto relativi alla Facebook Platform. Gli verranno indicate risorse, tutorial, e potrà consultare materiale di addestramento aziendale, nonchè avvalersi, durante tutta la durata dello stage, dell'esperienza diretta dei colleghi."
+            "description": "<strong>Obiettivi e modalità del tirocinio</strong>: Lo stagista entrerà attivamente all'interno del flusso di lavoro aziendale relativo a piccoli progetti, nei quali avrà parte sia nella fase di progettazione chi di quella di esecuzione e testing. <br> <br> <strong>Attività</strong>: Sarà assegnato allo stagista il ruolo di Frontend Developer orientato ai servizi Web. <br> Rafforzerà la conoscenza dell'ECMAScript 5+ con particolare attenzione alla cross-compatibilità tra i maggiori browser. <br>Sfrutterà noti framework per il DOM Handling (jQuery, Zepto) e per il CSS Scaffolding (Twitter Bootstrap). Imparerà l'utilizzo delle ultime definizioni degli standard HTML5 e CSS Level 3, utilizzando attivamente alcune delle più moderne API disponibili sui browser di ultima generazione. <br> Imparerà un meta-linguaggio per il CSS (LESS) che velocizzerà la sua operatività nella definizione degli stili. Parteciperà attivamente allo sviluppo fi applicazioni social-oriented soprattutto relativi alla Facebook Platform. Gli verranno indicate risorse, tutorial, e potrà consultare materiale di addestramento aziendale, nonchè avvalersi, durante tutta la durata dello stage, dell'esperienza diretta dei colleghi.",
+            "link": {
+                "url": "https://caffeina.com/"
+            }
         }, {
             "title": "Tirocinante",
             "name": "Mister Web S.r.l.",
@@ -197,12 +209,11 @@
         }]
     }, {
         "title": "Lingue straniere",
+        "type": "Language",
         "icon": "globe2",
         "lists": [
-            [
-                "<strong>Italiano</strong>: Nativo",
-                "<strong>Inglese</strong>: Fluente (livello B2)"
-            ]
+            { "name": "Italiano:", "level": "Nativo", "code": "IT" },
+            { "name": "Inglese:", "level": "Fluente (livello B2)", "code": "EN"  }
         ]
     }]
 }

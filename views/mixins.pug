@@ -2,66 +2,79 @@ mixin customIcon(iconName, classNames, width = '1em', height = '1em', fill = 'cu
     svg(class=`bi${classNames ? ' ' + classNames : ''}` width=width height=height fill=fill)
         use(xlink:href=`/bootstrap-icons.svg#${iconName}`)
 
-mixin schemaWrapper(condition, itemType)
-    if condition
-        div(itemscope, itemtype=`http://schema.org/${itemType}`)
-            block
-    else
-        block
-
 
 mixin definitionList(s, index)
-    +schemaWrapper(s.lists, 'ItemList')
         dl.mt-5
             if s.title
-                dt.text-capitalize.mb-3(itemprop=(s.lists && "name"))
+                dt.text-capitalize.mb-3
                     +customIcon(s.icon, 'text-dark-subtle me-2')
                     = s.title
                 dd !{s.description}
                     if s.organizations
                         each o in s.organizations
-                            - var organization = o.type ? 'EducationalOrganization' : 'Organization';
-                            div.mb-4(itemscope, itemtype="http://schema.org/" + organization)
-                                if o.title
-                                    h2.h4
-                                        span(itemprop="jobTitle")= o.title
-                                if o.course
-                                    h2.h4.mb-0
-                                        span(itemprop="name")= o.course
-                                p.mb-0
-                                    span(itemprop="name")= o.name
+                            div.mb-4
+                                h2.h4.mb-1
+                                    if o.title
+                                        = o.title
+                                    if o.course
+                                        = o.course
+                                p.mb-1
+                                    if o.link
+                                        a(href=o.link.url, target="_blank", title=o.link.text)= o.name
+                                    else
+                                        = o.name
+
+
                                 if o.address
-                                    div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
-                                        span(itemprop="streetAddress")= o.address.streetAddress
+                                        = o.address.streetAddress
                                         |,&nbsp;
-                                        span(itemprop="addressLocality")= o.address.addressLocality 
+                                        = o.address.addressLocality 
                                         |,&nbsp;
-                                        span(itemprop="addressRegion")= o.address.addressRegion
+                                        = o.address.addressRegion
                                         |,&nbsp;
-                                        span(itemprop="postalCode")= o.address.postalCode
+                                        = o.address.postalCode
                                         |&nbsp;
-                                        span(itemprop="addressCountry")= o.address.addressCountry
+                                        = o.address.addressCountry
                                 p
                                     span.text-muted #{o.date.start} 
                                         if o.date.end
                                             | — #{o.date.end}
-                                p(itemprop="description") !{o.description}
-                                    if o.link
-                                        <br>
-                                        a(itemprop="url", href=o.link.url, target="_blank", title=o.link.text)= o.link.text
+                                p !{o.description}
+
+                                if o.certificate
+                                    span
+                                        = t('certificate_title')
+                                        |&nbsp;
+                                        a(href=o.certificate.url, target="_blank", title=t('certificate_label'))=t('certificate_label')
+                                            +customIcon('box-arrow-up-right', 'text-black-50')
                     if s.lists
-                            .row
-                                each l in s.lists
+                        .row
+                            each l in s.lists
+                                - var chunkSize = 4;
+                                - for(var i = 0; i < l.length; i += chunkSize)
                                     .col
-                                        ul(class=(s.color && `marker-list-${s.color}`))
-                                            each i in l
-                                                li(itemprop="itemListElement", itemscope) !{i}
+                                        ul(class=`marker-list-${s.color}`)
+                                            - var chunk = l.slice(i, i + chunkSize);
+                                            each item in chunk
+                                                li !{item}
+                    if s.languages
+                        .col
+                            ul
+                                each item in s.languages
+                                    li= `${item.name}  ${item.level}`
+                                        
                     
                     if s.projects
                             each p in s.projects
-                                h2.h4
-                                    span= p.title
-                                p !{p.description}
+                                .mb-4
+                                    h2.h4
+                                        span= p.title
+                                    p.mb-1 !{p.description}
+
                                     if p.link
-                                        <br>
-                                        a(href=p.link.url, target="_blank", title=p.link.text)= p.link.text
+                                        span
+                                            = t('project_label')
+                                            |&nbsp;
+                                            a(href=p.link.url, target="_blank", title=p.link.text)= p.link.text
+                                                +customIcon('box-arrow-up-right', 'text-black-50')
+                                        

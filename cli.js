@@ -21,7 +21,7 @@ let config = {
   data: {
     user_credentials: "KPXpLWUsmMJCD2iUQ-Mu", // this key works in test mode!
     doc: {
-      test: false, // test documents are free but watermarked
+      test: true, // test documents are free but watermarked
       document_type: "pdf",
       document_content: content,
       javascript: true,

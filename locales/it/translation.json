@@ -211,7 +211,7 @@
         "title": "Lingue straniere",
         "type": "Language",
         "icon": "globe2",
-        "lists": [
+        "languages": [
             { "name": "Italiano:", "level": "Nativo", "code": "IT" },
             { "name": "Inglese:", "level": "Fluente (livello B2)", "code": "EN"  }
         ]

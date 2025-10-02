@@ -3,12 +3,10 @@
     const education = [];
     const skills = [];
     const languages = [];
-    const articles = []; // Aggiunto array per gli articoli
 
     // Processa ogni sezione
     (Array.isArray(sections) ? sections : []).forEach(section => {
         if (section.type === "Article") {
-            processArticles(section);
             return;
         }
     
@@ -17,52 +15,29 @@
         processLanguages(section);
     });
 
-    function iterate(array, callback) {
+    function iterate(array, requiredProps, callback) {
         if (!Array.isArray(array)) {
             return;
         }
-
-        array.forEach(item => callback(item));
-    }
-
-
-    /**
-    * Processa gli articoli/presentazioni
-    */
-    function processArticles(section) {
-
-        iterate(section.organizations, org => {
-        
-            if (!org?.title) return;
-
-            const article = {
-                "@type": "Article",
-                "headline": org.title,
-                "datePublished": org.date?.start
-            };
-
-            if (org.name) {
-                article.publisher = {
-                    "@type": "Organization",
-                    "name": org.name
-                };
+     
+        array.forEach(item => {
+            if (!item) {
+                return;
+            }
+            
+            if (Array.isArray(requiredProps) && typeof item === 'object' &&
+                !requiredProps.every(prop => item[prop])) {
+                return;
             }
 
-            if (org.description) {
-                article.articleBody = org.description;
-            }
-
-            if (org.link?.url) {
-                article.url = org.link.url;
-            }
-
-            articles.push(article);
+            callback(item);
         });
+
     }
+
 
     function processLanguages(section) {
-        iterate(section.languages, language => {
-            if (!language?.name) return;
+        iterate(section.languages, ['name'], language => {
             languages.push(language.code);
         });
     }
@@ -72,9 +47,7 @@
     */
     function processOrganizations(section) {
 
-        iterate(section.organizations, organization => {
-            if (!organization?.name) return;
-
+        iterate(section.organizations, ['name'], organization => {
             if (organization.type) {
                 processEducationalOrganization(organization);
             } else {
@@ -139,13 +112,8 @@
     * Processa liste di skills
     */
     function processLists(section) {
-        
-        iterate(section.lists, list => {
-
-            if (!Array.isArray(list)) return;
-
-            list.forEach(item => {
-                if (!item) return;
+        iterate(section.lists, [], list => {
+             iterate(list, ['item'], item => {
                 skills.push(item);
             });
         });
@@ -174,8 +142,7 @@
         "hasOccupation": occupations,
         "alumniOf": education,
         "skills": skills,
-        "knowsLanguage": languages,
-        "author": articles
+        "knowsLanguage": languages
     }
 
 script(type="application/ld+json").

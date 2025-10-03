@@ -13,7 +13,6 @@ router.get('/', function(req, res, next) {
   let template = 'index';
   let languageNames = {};
   // req.i18n.changeLanguage('en') // will not load that!!! assert it was preloaded
-  let sections = i18next.t('sections', { returnObjects: true }) || [];
 
   if (lng) {
     i18next.changeLanguage(lng, (err, t) => {
@@ -22,6 +21,7 @@ router.get('/', function(req, res, next) {
       }
 
       let languages =  Object.keys(i18next.services.resourceStore.data);
+      let sections = i18next.t('sections', { returnObjects: true });
 
       languages.forEach(lng => {
         languageNames[lng] = ISO6391.getName(lng);
@@ -30,7 +30,7 @@ router.get('/', function(req, res, next) {
       res.render(template, {sections, languageNames, t, ...process.env});
     });
   } else {
-    res.render(template, {sections, t: i18next.t, ...process.env});
+    res.render(template, {t: i18next.t, ...process.env });
   }
 
   // var exists = req.i18n.exists('myKey')

@@ -30,7 +30,7 @@
                 "start": "february 2020",
                 "end": "may 2023"
             },
-            "description": "Work 360 degree to improve the overall experience of <a href='https://www.francocantiere.it'>Francocantiere</a> e-commerce platform; from Interface to marketing ads and make agreements with local couriers in order to improve the website sales."
+            "description": "Work 360 degree to improve the overall experience of <a href='https://www.francocantiere.it' target='_blank'>Francocantiere</a> e-commerce platform; from Interface to marketing ads and make agreements with local couriers in order to improve the website sales."
         }, {
             "title": "Front-end web developer",
             "name": "YOOX NET-A-PORTER Group",
@@ -38,7 +38,7 @@
                 "start": "june 2015",
                 "end": "february 2020"
             },
-            "description": "Create and mantain the interface for some major luxury brands: <a href='https://www.ysl.com/'>YSL</a>, <a href='https://www.stellamccartney.com/'>Stella McCartney</a>, <a href='https://www.therow.com/'>The Row</a>."
+            "description": "Create and mantain the interface for some major luxury brands: <a href='https://www.ysl.com/' target='_blank'>YSL</a>, <a href='https://www.stellamccartney.com/' target='_blank'>Stella McCartney</a>, <a href='https://www.therow.com/' target='_blank'>The Row</a>."
 
         }, {
             "title": "Magento Frontend Developer",
@@ -140,7 +140,7 @@
             "description": "Ebooks creation in PDF format, Multimedia Publishing exam (30L), Course for librarians at the University of Modena and Reggio Emilia \"Ebook : the characteristics, the market, integration in the library\", development of small publishing applications in HTML5 code. Thesis subject: Text reorganization in digital books.",
             "link": {
                 "text": "Facoltà di Scienze della Comunicazione e dell’Economia",
-                "url": "https://www.dce.unimore.it/site/home.html"
+                "url": "https://www.dce.unimore.it/it"
             }
         }, {
             "type": "Educational",

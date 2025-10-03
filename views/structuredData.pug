@@ -4,7 +4,7 @@
     const skills = [];
     const languages = [];
 
-    // Processa ogni sezione
+    // Process each section
     (Array.isArray(sections) ? sections : []).forEach(section => {
         if (section.type === "Article") {
             return;
@@ -34,8 +34,10 @@
         });
 
     }
-
-
+    
+    /**
+    * Process languages from the section
+    */
     function processLanguages(section) {
         iterate(section.languages, ['name'], language => {
             languages.push(language.code);
@@ -43,7 +45,7 @@
     }
 
     /**
-    * Processa le organizzazioni dalla sezione
+    * Process organizations from the section
     */
     function processOrganizations(section) {
 
@@ -57,7 +59,7 @@
     }
 
     /**
-    * Crea e aggiunge un'organizzazione educativa
+    * Create and add an educational organization
     */
     function processEducationalOrganization(org) {
         const educationalOrg = {
@@ -73,7 +75,7 @@
     }
 
     /**
-    * Crea e aggiunge un ruolo lavorativo
+    * Create and add a job role
     */
     function processEmployeeRole(org) {
         const employeeRole = {
@@ -88,7 +90,7 @@
     }
 
     /**
-    * Crea un indirizzo postale strutturato
+    * Create a structured postal address
     */
     function createPostalAddress(address) {
         const postalAddress = { "@type": "PostalAddress" };
@@ -109,7 +111,7 @@
     }
 
     /**
-    * Processa liste di skills
+    * Process skill lists
     */
     function processLists(section) {
         iterate(section.lists, [], list => {

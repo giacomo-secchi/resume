@@ -30,7 +30,7 @@
                 "start": "febbraio 2020",
                 "end": "maggio 2023"
             },
-            "description": "Lavoro a 360 gradi per migliorare l'esperienza complessiva della piattaforma di vendita online <a href='https://www.francocantiere.it'>Francocantiere</a>; dall'interfaccia agli annunci di marketing e stringere accordi con i corrieri locali al fine di migliorare le vendite del sito web."
+            "description": "Lavoro a 360 gradi per migliorare l'esperienza complessiva della piattaforma di vendita online <a href='https://www.francocantiere.it' target='_blank'>Francocantiere</a>; dall'interfaccia agli annunci di marketing e stringere accordi con i corrieri locali al fine di migliorare le vendite del sito web."
         }, {
             "title": "Front-end web developer",
             "name": "YOOX NET-A-PORTER Group",
@@ -38,7 +38,7 @@
                 "start": "giugno 2015",
                 "end": "febbraio 2020"
             },
-            "description": "Creazione e mantenimento di interfacce web per le piattaforme ecommerce ufficiali di: <a href='https://www.ysl.com/'>YSL</a>, <a href='https://www.stellamccartney.com/'>Stella McCartney</a>, <a href='https://www.therow.com/'>The Row</a>."
+            "description": "Creazione e mantenimento di interfacce web per le piattaforme ecommerce ufficiali di: <a href='https://www.ysl.com/' target='_blank'>YSL</a>, <a href='https://www.stellamccartney.com/' target='_blank'>Stella McCartney</a>, <a href='https://www.therow.com/' target='_blank'>The Row</a>."
         }, {
             "title": "Magento Frontend Developer",
             "name": "MilkyWay S.r.l.",
@@ -69,7 +69,7 @@
         "icon": "journal-code",
         "projects": [{
             "title": "WritePoetry WordPress Plugin", 
-            "description": "Sono l'autore di <a href='https://github.com/WritePoetry/wordpress-plugin/'>WritePoetry</a>, un plugin per WordPress pensato per aiutare gli sviluppatori a realizzare progetti complessi senza dover scrivere codice. Attualmente in fase di sviluppo, il suo obiettivo è semplificare e velocizzare la creazione di siti web tramite configurazioni intuitive.",
+            "description": "Sono l'autore di <a href='https://github.com/WritePoetry/wordpress-plugin/' target='_blank'>WritePoetry</a>, un plugin per WordPress pensato per aiutare gli sviluppatori a realizzare progetti complessi senza dover scrivere codice. Attualmente in fase di sviluppo, il suo obiettivo è semplificare e velocizzare la creazione di siti web tramite configurazioni intuitive.",
             "link": {
                 "text": "Write Poetry website",
                 "url": "https://write-poetry.com"
@@ -120,7 +120,7 @@
             "description": "Realizzazione di libri elettronici in formato PDF, esame di Editoria multimediale (30/30 cum laude), Corso per i bibliotecari dell’Università di Modena e Reggio Emilia “Ebook : le caratteristiche, il mercato, l’integrazione in biblioteca”, sviluppo di piccole applicazioni editoriali in codice HTML5. Titolo testi: Riorganizzazione del testo nei libri digitali.",
             "link": {
                 "text": "Facoltà di Scienze della Comunicazione e dell’Economia",
-                "url": "https://www.dce.unimore.it/site/home.html"
+                "url": "https://www.dce.unimore.it/it"
             }
         }, {
             "type": "Educational",
@@ -146,7 +146,11 @@
                 "start": "novembere 2018",
                 "end": "aprile 2019"
             },
-            "description": "Corso di formazione aziendale del Service Team YNAP focalizzato sullo sviluppo di un software di migliore qualità. Abbiamo visto nel dettaglio come applicare metodologie SOLID e come lo sviluppo TDD (guidato dai test) può aiutarci nella scrittura di un codice più mantenibile. Dopo ho partecipato ad un corso di follow-up focalizzato sulla metodologia Agile Scrum (orientato al project management)."
+            "description": "Corso di formazione aziendale del Service Team YNAP focalizzato sullo sviluppo di un software di migliore qualità. Abbiamo visto nel dettaglio come applicare metodologie SOLID e come lo sviluppo TDD (guidato dai test) può aiutarci nella scrittura di un codice più mantenibile. Dopo ho partecipato ad un corso di follow-up focalizzato sulla metodologia Agile Scrum (orientato al project management).",
+            "link": {
+                "text": "agile42",
+                "url": "https://www.agile42.com/"
+            }
         }, {
             "type": "Educational",
             "name": "terrelibere.org",
